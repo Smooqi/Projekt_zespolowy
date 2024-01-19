@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model IEnumerable<Person>//SimpleMVC.Models.SimpleExemple
+
+@{
+    ViewData["Title"] = "View";
+    
+}
+
+<h1>View</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>ID Income</th>
+            <th>ID Spending</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var person in Model)
+        {  <tr>
+                <td>@person.Id</td>
+                <td>@person.FirstName</td>
+                <td>@person.LastName</td>
+                <td>@person.Age</td>
+                <td>@person.IdIncome</td>
+                <td>@person.IdSpending</td>
+                <td>
+                   <a asp-action="Details" asp-route-id="@person.Id" class="btn btn-outline-primary">Podgląd</a>
+                 </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@*
+
+
+<div>
+    @Html.ActionLink("Deatils", "Details", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Details" asp-controller="Home">Back to List</a>
+</div>
+*@

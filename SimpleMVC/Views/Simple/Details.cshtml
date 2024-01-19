@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Person//SimpleMVC.Models.SimpleExemple
+<form method="post">
+   <div>
+    <h1>View</h1>
+
+   
+   <div asp-validation-summary="All"></div> @* sumaryczne błędy na górze *@
+
+        <div class="mb-3">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control"/>
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control"/>
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Age"></label>
+            <input asp-for="Age" class="form-control"/>
+            <span asp-validation-for="Age" class="text-danger"></span>        
+        </div>
+   
+        <button type="submit" class="btn btn-primary" style="width: 150px">Zapisz zmiany</button>
+        <a asp-action="Index" class="btn btn-outline-primary" style="width: 150px">Anuluj</a>
+    </div>
+   </div>
+
+
+</form>
+
