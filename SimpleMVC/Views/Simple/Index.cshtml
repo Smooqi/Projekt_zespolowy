@@ -2,7 +2,7 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 
-@model IEnumerable<Person>//SimpleMVC.Models.SimpleExemple
+@model IEnumerable<ModelComplex>//SimpleMVC.Models.SimpleExemple
 
 @{
     ViewData["Title"] = "View";
@@ -18,21 +18,21 @@
             <th>First Name</th>
             <th>Last Name</th>
             <th>Age</th>
-            <th>ID Income</th>
-            <th>ID Spending</th>
+            <th>Dochody (wszystkie)</th>
+            <th>Wydatki (wszystkie)</th>
         </tr>
     </thead>
     <tbody>
-        @foreach(var person in Model)
+        @foreach(var modelc in Model)
         {  <tr>
-                <td>@person.Id</td>
-                <td>@person.FirstName</td>
-                <td>@person.LastName</td>
-                <td>@person.Age</td>
-                <td>@person.IdIncome</td>
-                <td>@person.IdSpending</td>
+                <td>@modelc.Person.Id</td>
+                <td>@modelc.Person.FirstName</td>
+                <td>@modelc.Person.LastName</td>
+                <td>@modelc.Person.Age</td>
+                <td>@modelc.Income.Rental+ @modelc.Income.Salary + @modelc.Income.SideJob </td>
+                <td>@modelc.Spending.Bills + @modelc.Spending.Loans + @modelc.Spending.Drugs + @modelc.Spending.Holidays + @modelc.Spending.Unexpected </td>
                 <td>
-                   <a asp-action="Details" asp-route-id="@person.Id" class="btn btn-outline-primary">Podgląd</a>
+                   <a asp-action="Details" asp-route-id="@modelc.Person.Id" class="btn btn-outline-primary">Podgląd</a>
                  </td>
             </tr>
         }

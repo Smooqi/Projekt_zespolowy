@@ -82,6 +82,16 @@ namespace SimpleMVC.Models
 
     #endregion
 
+    public class ModelComplex
+    {
+        public Person Person { get; set; }
+
+        public Income Income { get; set; }
+
+        public Spending Spending { get; set; }
+
+
+    }
 
     #region SimpleExemple
     public class SimpleExemple

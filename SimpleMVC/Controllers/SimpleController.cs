@@ -11,6 +11,9 @@ namespace SimpleMVC.Controllers
         private List<Person>? persons;
         private List<Income>? incomes;
         private List<Spending>? spendings;
+
+     //   public List<Person> Persons { get; set; } = new List<Person>();
+
       
         public ActionResult Index()
         {
@@ -45,9 +48,18 @@ namespace SimpleMVC.Controllers
 
             };
 
+            //     var modele = new Tuple<Person, Income, Spending>(Persons, incomes, spendings);
 
+            var model = new ModelComplex
+            {
+                Person = new Person(),
+                Income = new Income(),
+                Spending = new Spending()
+
+            };
+         
             //  exemples.Add(new SimpleExemple("trangle",3,5)); 
-            return View(persons);
+            return View(model);
         }
 
         // GET:SimpleController/Details/5
