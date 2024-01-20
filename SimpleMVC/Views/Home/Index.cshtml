@@ -1,10 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model IEnumerable<ModelComplex>//SimpleMVC.Models.SimpleExemple
+
+
+
 <div class="cont">
-<div class="sekcja1">
-    <h1>Dochód</h1>
-    <p>5156</p>
+ <div class="sekcja1">
+        @{
+            var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
+            if (personWithId2 != null)
+            {
+                <h1>@(personWithId2?.Person?.FirstName) Twój dochód to: </h1>
+            }
+            else
+            {
+                <h1>Brak informacji dla osoby o Id równym 2</h1>
+            }
+        }
+        
+    <p>@personWithId2.Income.Rental+ @personWithId2.Income.Salary + @personWithId2.Income.SideJob</p>
    
 </div>
 <div class="sekcja2">

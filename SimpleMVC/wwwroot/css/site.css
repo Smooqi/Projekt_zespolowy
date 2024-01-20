@@ -38,7 +38,7 @@ footer{
     position: center;
     background-color: white;
     width: 40%;
-    height: 150px;
+    height: 200px;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -46,7 +46,7 @@ footer{
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    box-shadow: 5px 5px 10px dodgerblue;
+    box-shadow: 5px 5px 10px #00b6d7;
 }
 
 .sekcja2 {
@@ -58,7 +58,7 @@ footer{
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    box-shadow: 1px 1px 10px dodgerblue;
+    box-shadow: 1px 1px 10px #00b6d7;
 }
 
 .sekcja3 {
@@ -74,18 +74,18 @@ footer{
 }
 
 h2 {
-    color: dodgerblue;
+    color: #00b6d7;
     font-family: Rubik;
     font-size: 32px;
     font-weight: 500;
 }
 
-    .sekcja1 > h1 {
-        color: dodgerblue;
-        font-family: Rubik;
-        font-size: 38px;
-        font-weight:500;
-    }
+.sekcja1 > h1 {
+    color: #00b6d7;
+    font-family: Rubik;
+    font-size: 38px;
+    font-weight: 500;
+}
 
 .sekcja1 > p {
     font-family: Rubik;
@@ -95,19 +95,36 @@ h2 {
 }
 
 
-
-
-
-nav {
-    color:white;
+.navbar-brand {
     font-family: Rubik;
     font-size: 22px;
-    background-color:dodgerblue;
+    color: white;
+}
+
+nav {
+    font-family: Rubik;
+    font-size: 22px;
+    color: white;
     
 }
-.navbar-nav {
-    text-align: center;
-    margin: auto;
+
+.navbar-dark {
+    background-color: #00b6d7;
+    
 }
+.navbar-nav{
+    justify-content:center;
+}
+
+.nav-link {
+    text-align: center;
+    
+    
+}
+
+
+
+
+
 
 

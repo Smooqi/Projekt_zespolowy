@@ -23,18 +23,18 @@ namespace SimpleMVC.Controllers
                 new Person() {Id = 1, FirstName = "Jan", LastName = "Kowalski", Age = 25, IdIncome = 1, IdSpending = 1},
                 new Person() {Id = 2, FirstName = "Ewa", LastName = "Farna", Age = 54, IdIncome = 2, IdSpending = 2},
                 new Person() {Id = 3, FirstName = "Stanisław", LastName = "Kamiński", Age = 45, IdIncome = 3, IdSpending = 3},
-                new Person() {Id = 5, FirstName = "Janina", LastName = "Kowalskia", Age = 17, IdIncome = 4, IdSpending = 4},
-                new Person() {Id = 6, FirstName = "Jurek", LastName = "Nowak", Age = 12, IdIncome = 5, IdSpending = 5}
+                new Person() {Id = 4, FirstName = "Janina", LastName = "Kowalskia", Age = 17, IdIncome = 4, IdSpending = 4},
+                new Person() {Id = 5, FirstName = "Jurek", LastName = "Nowak", Age = 12, IdIncome = 5, IdSpending = 5}
 
             };
 
             incomes = new List<Income>()
             {
                 new Income() {Id = 1, Date = DateTime.Now, Rental = 0, Salary = 4400, SideJob = 500},
-                new Income() {Id = 1, Date = DateTime.UtcNow, Rental = 0, Salary = 400, SideJob = 0},
-                new Income() {Id = 1, Date = DateTime.Now, Rental = 2000, Salary = 14400, SideJob = 1500},
-                new Income() {Id = 1, Date = DateTime.UtcNow, Rental = 1000, Salary = 2400, SideJob = 500},
-                new Income() {Id = 1, Date = DateTime.Now, Rental = 0, Salary = 3400, SideJob = 0}
+                new Income() {Id = 2, Date = DateTime.UtcNow, Rental = 0, Salary = 400, SideJob = 0},
+                new Income() {Id = 3, Date = DateTime.Now, Rental = 2000, Salary = 14400, SideJob = 1500},
+                new Income() {Id = 4, Date = DateTime.UtcNow, Rental = 1000, Salary = 2400, SideJob = 500},
+                new Income() {Id = 5, Date = DateTime.Now, Rental = 0, Salary = 3400, SideJob = 0}
             };
 
             spendings = new List<Spending>()
@@ -49,17 +49,22 @@ namespace SimpleMVC.Controllers
             };
 
             //     var modele = new Tuple<Person, Income, Spending>(Persons, incomes, spendings);
+            var models = new List<ModelComplex>();
 
-            var model = new ModelComplex
+            // Iteruj przez każdą osobę, przypisz jej odpowiedni dochód i wydatek
+            foreach (var person in persons)
             {
-                Person = new Person(),
-                Income = new Income(),
-                Spending = new Spending()
+                var model = new ModelComplex
+                {
+                    Person = person,
+                    Income = incomes.FirstOrDefault(i => i.Id == person.IdIncome),
+                    Spending = spendings.FirstOrDefault(s => s.Id == person.IdSpending)
+                };
 
-            };
-         
-            //  exemples.Add(new SimpleExemple("trangle",3,5)); 
-            return View(model);
+                models.Add(model);
+            }
+
+            return View(models);
         }
 
         // GET:SimpleController/Details/5
