@@ -27,19 +27,57 @@ body {
 footer{
     background-color:#2f2f2f;
 }
-
-.sekcja1{
-    
-    position:center;
-    background-color:white;
-    width:40%;
-    height:150px;
-    border-radius:20px;
-    padding:20px;
-    text-align:center;
+.cont{
+    width:100%;
+    height:auto;
     margin-left:auto;
-    margin-right:auto;
-    
+    margin-right:auto
+}
+
+.sekcja1 {
+    position: center;
+    background-color: white;
+    width: 40%;
+    height: 150px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 10px dodgerblue;
+}
+
+.sekcja2 {
+    display: inline-block;
+    float: left;
+    background-color: white;
+    width: 45%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 10px dodgerblue;
+}
+
+.sekcja3 {
+    float: right;
+    display: inline-block;
+    background-color: white;
+    width: 45%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 10px dodgerblue;
+}
+
+h2 {
+    color: dodgerblue;
+    font-family: Rubik;
+    font-size: 32px;
+    font-weight: 500;
 }
 
     .sekcja1 > h1 {
@@ -56,18 +94,20 @@ footer{
     color:black;
 }
 
-.navbar-collapse, .navbar-brand {
-    position:center;
+
+
+
+
+nav {
+    color:white;
     font-family: Rubik;
     font-size: 22px;
-    text-align: center;
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
+    background-color:dodgerblue;
+    
 }
 .navbar-nav {
-    position:center;
     text-align: center;
-        margin-left:auto;
-    margin-right: auto;
+    margin: auto;
 }
+
+
