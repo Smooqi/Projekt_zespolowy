@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using SimpleMVC.Models;
 
 namespace SimpleMVC.Controllers
@@ -8,6 +9,9 @@ namespace SimpleMVC.Controllers
     {
         // GET: SimpleController
         private List<Person>? persons;
+        private List<Income>? incomes;
+        private List<Spending>? spendings;
+      
         public ActionResult Index()
         {
             // SimpleExemple exemples = new SimpleExemple("trangle", 3.4f, 4.6f);
@@ -21,15 +25,46 @@ namespace SimpleMVC.Controllers
 
             };
 
-            
+            incomes = new List<Income>()
+            {
+                new Income() {Id = 1, Date = DateTime.Now, Rental = 0, Salary = 4400, SideJob = 500},
+                new Income() {Id = 1, Date = DateTime.UtcNow, Rental = 0, Salary = 400, SideJob = 0},
+                new Income() {Id = 1, Date = DateTime.Now, Rental = 2000, Salary = 14400, SideJob = 1500},
+                new Income() {Id = 1, Date = DateTime.UtcNow, Rental = 1000, Salary = 2400, SideJob = 500},
+                new Income() {Id = 1, Date = DateTime.Now, Rental = 0, Salary = 3400, SideJob = 0}
+            };
+
+            spendings = new List<Spending>()
+            {
+                new Spending() {Id = 1, Bills = 2000, Drugs = 0, Food = 800, Holidays = 3000, Loans = 500, Unexpected = 2000, Date = DateTime.Now },
+                new Spending() {Id = 2, Bills = 5000, Drugs = 500, Food = 1000, Holidays = 3000, Loans = 500, Unexpected = 500, Date = DateTime.Now },
+                new Spending() {Id = 3, Bills = 13000, Drugs = 0, Food = 1500, Holidays = 13000, Loans = 500, Unexpected = 1000, Date = DateTime.Now },
+                new Spending() {Id = 4, Bills = 0, Drugs = 200, Food = 500, Holidays = 0, Loans = 500, Unexpected = 0, Date = DateTime.Now },
+                new Spending() {Id = 5, Bills = 0, Drugs = 0, Food = 0, Holidays = 0, Loans = 500, Unexpected = 0, Date = DateTime.Now },
+
+
+            };
+
+
             //  exemples.Add(new SimpleExemple("trangle",3,5)); 
             return View(persons);
         }
 
-        // GET: SimpleController/Details/5
+        // GET:SimpleController/Details/5
+        [HttpPost]
         public ActionResult Details(int id)
         {
-            return View();
+            if (id == null)
+                return BadRequest("Nie ma takiej osoby w bazie");
+
+           // var oneperson = persons.
+            Person persons = new Person();
+           if((ModelState.IsValid)&&(persons.Id == id))
+            {
+                return View(persons.Id);
+            }
+           else
+            return RedirectToAction("Index");
         }
 
         // GET: SimpleController/Create
