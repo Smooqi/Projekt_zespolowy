@@ -27,6 +27,10 @@ namespace SimpleMVC.Models
         private int idspending;
 
         public int? IdSpending { get; set; }
+
+        private int idsavings;
+
+        public int? IdSavings { get; set; }
     }
     #endregion
 
@@ -36,14 +40,14 @@ namespace SimpleMVC.Models
         private int id;
         public int Id { get; set; }
 
-        private float salary;
-        public float Salary { get; set; }
+        private float wypłata;
+        public float Wypłata { get; set; }
 
-        private float sidejob;
-        public float SideJob { get; set; }
+        private float sdodatkowapraca;
+        public float DodatkowaPraca { get; set; }
 
-        private float rental;
-        public float Rental { get; set;}
+        private float renta;
+        public float Renta { get; set;}
         
         private DateTime? date;
         public DateTime? Date { get; set; } 
@@ -57,27 +61,57 @@ namespace SimpleMVC.Models
         private int id;
         public int Id { get; set; }
 
-        private float bills;
-        public float Bills { get; set; }
-        
-        private float food;
-        public float Food { get; set; }
-        
-        private float drugs;
-        public float Drugs { get; set; }
+        private float rachunki;
+        public float Rachunki { get; set; }
 
-        private float loans;
-        public float Loans { get; set; }
+        private float jedzenie;
+        public float Jedzenie { get; set; }
 
-        private float holidays;
-        public float Holidays { get; set; }
+        private float lekarstwa;
+        public float Lekarstwa { get; set; }
 
-        private float unexpected;
-        public float Unexpected { get; set; }
+        private float kredyty;
+        public float Kredyty { get; set; }
+
+        private float wakacje;
+        public float Wakacje { get; set; }
+
+        private float nieoczekiwane;
+        public float Nieoczekiwane { get; set; }
 
         private DateTime date;
         public DateTime Date { get; set; }
-        
+
+    }
+
+    #endregion
+
+    #region Saving
+    public class Saving
+    {
+        private int id;
+        public int Id { get; set; }
+
+        private float inwestycje;
+        public float Inwestycje { get; set; }
+
+        private float lokaty;
+        public float Lokaty { get; set; }
+
+        private float obligacje;
+        public float Obligacje { get; set; }
+
+        private float kieszonkowe;
+        public float Kieszonkowe { get; set; }
+
+        private float naprzyszłość;
+        public float NaPrzyszłość { get; set; }
+
+
+
+        private DateTime date;
+        public DateTime Date { get; set; }
+
     }
 
     #endregion
@@ -89,6 +123,8 @@ namespace SimpleMVC.Models
         public Income Income { get; set; }
 
         public Spending Spending { get; set; }
+
+        public Saving Saving { get; set; }
 
 
     }
