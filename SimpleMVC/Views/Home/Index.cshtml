@@ -1,22 +1,139 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model IEnumerable<ModelComplex>//SimpleMVC.Models.SimpleExemple
+
+
+
 <div class="cont">
-<div class="sekcja1">
-    <h1>Dochód</h1>
-    <p>5156</p>
+    <div class="info">
+    <div class="sekcja1">
+        @{
+            var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
+            if (personWithId2 != null)
+            {
+                <h1>@(personWithId2?.Person?.FirstName) Twój dochód to: </h1>
+            }
+            else
+            {
+                <h1>Brak informacji dla osoby o Id równym 2</h1>
+            }
+        }
+        
+    <p>@personWithId2.Income.Wypłata+ @personWithId2.Income.DodatkowaPraca + @personWithId2.Income.Renta</p>
    
-</div>
-<div class="sekcja2">
+    </div>
+    
+    <div class="sekcja2">
+        @{
+           
+            if (personWithId2 != null)
+            {
+                <h1>@(personWithId2?.Person?.FirstName) Twóje oszczędności to: </h1>
+                    
+            }
+            else
+            {
+                <h1>Brak informacji dla osoby o Id równym 2</h1>
+            }
+        }
+            <p>@personWithId2.Saving.Inwestycje+@personWithId2.Saving.Lokaty+@personWithId2.Saving.Obligacje+@personWithId2.Saving.Kieszonkowe+@personWithId2.Saving.NaPrzyszłość </p>
+
+
+    </div>
+    </div>
+    <div class="przyciski1">
+
+        <button class="przycisk1" type="text">+ Dodaj wydatek</button>
+
+
+        <button class="przycisk2" type="text">+ Dodaj przychód</button>
+
+
+        <button class="przycisk3" type="text">+ Dodaj oszczędności</button>
+
+    </div>
+ <div class="listy1">
+    <div class="sekcja3">
     <h2>Lista wydatków</h2>
-    <ul>
-    </ul>
+            <ul>
+                @{
+                    var spendingForId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2)?.Spending;
+                    if (spendingForId2 != null)
+                    {
+                        foreach (var property in spendingForId2.GetType().GetProperties())
+                        {
+                            if (property.PropertyType == typeof(float))
+                            {
+                                var value = (float)property.GetValue(spendingForId2);
+                                if (value != 0)
+                                {
+                                    <li>@property.Name: @value</li>
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <li>Brak informacji dla osoby o Id równym 2</li>
+                    }
+                }
+            </ul>
 
-</div>
+    </div>
 
-<div class="sekcja3">
+    <div class="sekcja4">
     <h2>Lista przychodów</h2>
-    <ul>
-    </ul>
-</div>
+            <ul>
+                @{
+                    var incomeForId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2)?.Income;
+                    if (incomeForId2 != null)
+                    {
+                        foreach (var property in incomeForId2.GetType().GetProperties())
+                        {
+                            if (property.PropertyType == typeof(float))
+                            {
+                                var value = (float)property.GetValue(incomeForId2);
+                                if (value != 0)
+                                {
+                                    <li>@property.Name: @value</li>
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <li>Brak informacji dla osoby o Id równym 2</li>
+                    }
+                }
+            </ul>
+    </div>
+    <div class="sekcja5">
+        <h2>Lista oszczędności</h2>
+            <ul>
+                @{
+                    var savingsForId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2)?.Saving;
+                    if (savingsForId2 != null)
+                    {
+                        foreach (var property in savingsForId2.GetType().GetProperties())
+                        {
+                            if (property.PropertyType == typeof(float))
+                            {
+                                var value = (float)property.GetValue(savingsForId2);
+                                if (value != 0)
+                                {
+                                    <li>@property.Name: @value</li>
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <li>Brak informacji dla osoby o Id równym 2</li>
+                    }
+                }
+            </ul>
+    </div>
+    </div>
+    
 </div>

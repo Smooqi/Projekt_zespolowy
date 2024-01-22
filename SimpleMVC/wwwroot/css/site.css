@@ -18,14 +18,14 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  background-color: #D4D9DB;
-  margin-left:auto;
-  margin-right:auto;
+    margin-bottom: 60px;
+    background-color: #E2E2E2;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-footer{
-    background-color:#2f2f2f;
+footer {
+    background-color: #002228;
 }
 .cont{
     width:100%;
@@ -33,81 +33,247 @@ footer{
     margin-left:auto;
     margin-right:auto
 }
+.info {
+    height: auto;
+    width:100%;
+    
+}
 
 .sekcja1 {
-    position: center;
+    
+    display: inline-block;
     background-color: white;
-    width: 40%;
-    height: 150px;
+    width: 45%;
+    float: left;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 5px 5px 10px dodgerblue;
+    margin-bottom: 100px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
 }
 
 .sekcja2 {
     display: inline-block;
-    float: left;
-    background-color: white;
+    float: right;
+    background-color: #00b6d7;
     width: 45%;
-    height: auto;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    box-shadow: 1px 1px 10px dodgerblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
 }
+
+.listy1 {
+    width:100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom:100px;
+    
+}
+
+    .listy1 li {
+        list-style-type: none;
+        background-color: white;
+        border-radius: 100px;
+        padding: 10px;
+        margin: 10px;
+        color: black;
+    }
+
 
 .sekcja3 {
-    float: right;
-    display: inline-block;
-    background-color: white;
-    width: 45%;
-    height: auto;
+    color: white;
+    flex: 1;
+    box-sizing: border-box;
+    background-color: #005362;
+    width: 30%;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    box-shadow: 1px 1px 10px dodgerblue;
+    box-shadow: 5px 5px 5px #343434;
 }
 
-h2 {
-    color: dodgerblue;
+.sekcja4 {
+    color: white;
+    flex: 1;
+    box-sizing: border-box;
+    background-color: #00859C;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #025462;
+}
+.sekcja5 {
+    color: white;
+    flex: 1;
+    box-sizing: border-box;
+    background-color: #00B6D7;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #00859C;
+}
+
+
+
+.przyciski1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:50px;
+}
+
+.przycisk1 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 100px;
     font-family: Rubik;
-    font-size: 32px;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: white;
+    color: #005362;
+    border: 3px solid #005362;
+}
+
+    .przycisk1:hover {
+        
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 100px;
+        padding: 22px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+.przycisk2 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 100px;
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: white;
+    color: #00859C;
+    border: 3px solid #00859C;
+}
+    .przycisk2:hover {
+        color: white;
+        text-align: center;
+        background-color: #00859C;
+        border-radius: 100px;
+        padding: 20px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+
+.przycisk3 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 100px;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    color: #00B6D7;
+    border: 3px solid #00B6D7;
+}
+    .przycisk3:hover {
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 100px;
+        padding: 20px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+
+
+.sekcja1 > h1 {
+    color: #00b6d7;
+    font-family: Rubik;
+    font-size: 35px;
     font-weight: 500;
 }
 
-    .sekcja1 > h1 {
-        color: dodgerblue;
-        font-family: Rubik;
-        font-size: 38px;
-        font-weight:500;
-    }
+.sekcja2 > h1 {
+    color: white;
+    font-family: Rubik;
+    font-size: 35px;
+    font-weight: 500;
+}
 
 .sekcja1 > p {
     font-family: Rubik;
-    font-size: 28px;
+    font-size: 30px;
     text-align: center;
-    color:black;
+    color: #005362;
 }
 
+.sekcja2 > p {
+    font-family: Rubik;
+    font-size: 30px;
+    text-align: center;
+    color: #005362;
+}
 
-
-
-
-nav {
-    color:white;
+h2{
+    font-family:Rubik;
+    font-size:30px;
+}
+.navbar-brand {
     font-family: Rubik;
     font-size: 22px;
-    background-color:dodgerblue;
+    color: white;
+}
+
+nav {
+    font-family: Rubik;
+    font-size: 22px;
+    color: white;
     
 }
-.navbar-nav {
-    text-align: center;
-    margin: auto;
+
+.navbar-dark {
+    background-color: #00b6d7;
+    
 }
+.navbar-nav{
+    justify-content:center;
+}
+
+.nav-link {
+    text-align: center;
+    
+    
+}
+
+
+
+
+
 
 

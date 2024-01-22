@@ -12,10 +12,75 @@ namespace SimpleMVC.Controllers
         {
             _logger = logger;
         }
+        private List<Person>? persons;
+        private List<Income>? incomes;
+        private List<Spending>? spendings;
+        private List<Saving> savings;
 
         public IActionResult Index()
         {
-            return View();
+            // SimpleExemple exemples = new SimpleExemple("trangle", 3.4f, 4.6f);
+            persons = new List<Person>()
+            {
+                new Person() {Id = 1, FirstName = "Jan", LastName = "Kowalski", Age = 25, IdIncome = 1, IdSpending = 1, IdSavings=1},
+                new Person() {Id = 2, FirstName = "Ewa", LastName = "Farna", Age = 54, IdIncome = 2, IdSpending = 2, IdSavings=2},
+                new Person() {Id = 3, FirstName = "Stanis³aw", LastName = "Kamiñski", Age = 70, IdIncome = 3, IdSpending = 3, IdSavings = 3},
+                new Person() {Id = 4, FirstName = "Janina", LastName = "Kowalskia", Age = 20, IdIncome = 4, IdSpending = 4, IdSavings = 4},
+                new Person() {Id = 5, FirstName = "Jurek", LastName = "Nowak", Age = 45, IdIncome = 5, IdSpending = 5, IdSavings = 5}
+
+            };
+
+            incomes = new List<Income>()
+            {
+                new Income() {Id = 1, Date = DateTime.Now, Wyp³ata = 3500, DodatkowaPraca = 500, Renta = 0},
+                new Income() {Id = 2, Date = DateTime.UtcNow,  Wyp³ata = 10000, DodatkowaPraca = 5000, Renta = 0},
+                new Income() {Id = 3, Date = DateTime.Now, Wyp³ata = 0, DodatkowaPraca = 0, Renta = 2500},
+                new Income() {Id = 4, Date = DateTime.UtcNow, Wyp³ata = 6500, DodatkowaPraca = 600, Renta = 0},
+                new Income() {Id = 5, Date = DateTime.Now, Wyp³ata = 5500, DodatkowaPraca = 700, Renta = 0}
+            };
+
+            spendings = new List<Spending>()
+            {
+                new Spending() {Id = 1, Rachunki = 1500, Lekarstwa = 0, Jedzenie = 800, Wakacje = 0, Kredyty = 500, Nieoczekiwane = 0, Date = DateTime.Now },
+                new Spending() {Id = 2, Rachunki = 2000, Lekarstwa = 0, Jedzenie = 2000, Wakacje = 5000, Kredyty = 500, Nieoczekiwane = 500, Date = DateTime.Now },
+                new Spending() {Id = 3, Rachunki = 600, Lekarstwa = 500, Jedzenie = 600, Wakacje = 0, Kredyty = 0, Nieoczekiwane = 500, Date = DateTime.Now },
+                new Spending() {Id = 4, Rachunki = 800, Lekarstwa = 200, Jedzenie = 800, Wakacje = 2500, Kredyty = 700, Nieoczekiwane = 600, Date = DateTime.Now },
+                new Spending() {Id = 5, Rachunki = 1000, Lekarstwa = 0, Jedzenie = 1000, Wakacje = 2000, Kredyty = 500, Nieoczekiwane = 0, Date = DateTime.Now },
+
+
+            };
+
+            savings = new List<Saving>()
+            {
+                new Saving() {Id = 1,  Inwestycje = 0, Lokaty = 0, Obligacje = 600, Kieszonkowe = 600, NaPrzysz³oœæ = 0, Date = DateTime.Now },
+                new Saving() {Id = 2,  Inwestycje = 1000, Lokaty = 500, Obligacje = 500, Kieszonkowe = 2000, NaPrzysz³oœæ = 1000, Date = DateTime.Now },
+                new Saving() {Id = 3,  Inwestycje = 0, Lokaty = 0, Obligacje = 0, Kieszonkowe = 0, NaPrzysz³oœæ = 300, Date = DateTime.Now },
+                new Saving() {Id = 4,  Inwestycje = 500, Lokaty = 0, Obligacje = 500, Kieszonkowe = 500, NaPrzysz³oœæ = 0, Date = DateTime.Now },
+                new Saving() {Id = 5,  Inwestycje = 200, Lokaty = 300, Obligacje = 300, Kieszonkowe = 500, NaPrzysz³oœæ = 400, Date = DateTime.Now },
+
+
+
+            };
+
+            //     var modele = new Tuple<Person, Income, Spending>(Persons, incomes, spendings);
+            var models = new List<ModelComplex>();
+
+            // Iteruj przez ka¿d¹ osobê, przypisz jej odpowiedni dochód i wydatek
+            foreach (var person in persons)
+            {
+                var model = new ModelComplex
+                {
+                    Person = person,
+                    Income = incomes.FirstOrDefault(i => i.Id == person.IdIncome),
+                    Spending = spendings.FirstOrDefault(s => s.Id == person.IdSpending),
+                    Saving = savings.FirstOrDefault(sa => sa.Id == person.IdSavings)
+
+                };
+
+                models.Add(model);
+            }
+
+            return View(models);
         }
 
         public IActionResult Privacy()
