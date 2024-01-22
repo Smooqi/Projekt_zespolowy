@@ -43,16 +43,58 @@
     </div>
     </div>
     <div class="przyciski1">
+        <div class="dodatkowe-przyciski1" id="dodatkowePrzyciski1" style="display: none;">
+            <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 1'); zobaczFormularzZwykly()">+zwykły wydatek</button>
+            <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 2')">+stały wydatek</button>
+        </div>
+        <button class="przycisk1" type="text" id="przyciskWydatek" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski1', 'przyciskWydatek')">+ Dodaj wydatek</button>
 
-        <button class="przycisk1" type="text">+ Dodaj wydatek</button>
+        <div class="dodatkowe-przyciski2" id="dodatkowePrzyciski2" style="display: none;">
+            <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 1')">+dodatkowy przychód</button>
+            <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 2')">+stały przychód</button>
+        </div>
+        <button class="przycisk2" type="text" id="przyciskPrzychod" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski2', 'przyciskPrzychod')">+ Dodaj przychód</button>
 
-
-        <button class="przycisk2" type="text">+ Dodaj przychód</button>
-
-
-        <button class="przycisk3" type="text">+ Dodaj oszczędności</button>
-
+        <div class="dodatkowe-przyciski3" id="dodatkowePrzyciski3" style="display: none;">
+            <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 1')">+dodatkowa oszczędność</button>
+            <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 2')">+stała oszczędność</button>
+        </div>
+        <button class="przycisk3" type="text" id="przyciskOszczednosc" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski3', 'przyciskOszczednosc')">+ Dodaj oszczędności</button>
     </div>
+
+    <div id="formularzZwyklyWydatek" class="formularz" style="display: none;">
+        <form id="formZwyklyWydatek">
+            <label for="nazwaZwyklegoWydatku">Nazwa zwykłego wydatku:</label>
+            <select id="nazwaZwyklegoWydatku" name="nazwaZwyklegoWydatku">
+                <!-- Dodaj opcje do wyboru -->
+                <option value="opcja1">Opcja 1</option>
+                <option value="opcja2">Opcja 2</option>
+                <!-- Dodaj więcej opcji według potrzeb -->
+            </select>
+            <br>
+
+            <label for="kategoriaZwyklegoWydatku">Kategoria zwykłego wydatku:</label>
+            <select id="kategoriaZwyklegoWydatku" name="kategoriaZwyklegoWydatku">
+                <!-- Dodaj opcje do wyboru -->
+                <option value="kategoria1">Kategoria 1</option>
+                <option value="kategoria2">Kategoria 2</option>
+                <!-- Dodaj więcej opcji według potrzeb -->
+            </select>
+            <br>
+
+            <label for="ileZwyklegoWydatku">Ilość zwykłego wydatku:</label>
+            <input type="number" id="ileZwyklegoWydatku" name="ileZwyklegoWydatku">
+            <br>
+
+            <label for="dataZwyklegoWydatku">Data zwykłego wydatku:</label>
+            <input type="date" id="dataZwyklegoWydatku" name="dataZwyklegoWydatku">
+            <br>
+
+            <button type="button" onclick="zapiszZwykly()">Zapisz zwykły wydatek</button>
+        </form>
+    </div>
+
+
  <div class="listy1">
     <div class="sekcja3">
     <h2>Lista wydatków</h2>

@@ -86,7 +86,9 @@ footer {
         border-radius: 100px;
         padding: 10px;
         margin: 10px;
-        color: black;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
     }
 
 
@@ -130,15 +132,17 @@ footer {
 
 
 .przyciski1 {
+    
     width: 90%;
     display: flex;
     justify-content: space-between;
-    margin-left:5%;
-    margin-right:5%;
-    margin-bottom:50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
 }
 
 .przycisk1 {
+    
     text-align: center;
     padding: 20px;
     border-radius: 100px;
@@ -150,18 +154,74 @@ footer {
     border: 3px solid #005362;
 }
 
+
     .przycisk1:hover {
-        
         color: white;
         text-align: center;
         background-color: #005362;
         border-radius: 100px;
-        padding: 22px;
+        padding: 20px;
         border: 3px solid white;
         font-family: Rubik;
         font-size: 22px;
         font-weight: 500;
     }
+
+
+.przyciskDodatkowy1,
+.przyciskDodatkowy2,
+.przyciskDodatkowy3 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 100px;
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.przyciskDodatkowy1 {
+    background-color: white;
+    color: #005362;
+    border: 3px solid #005362;
+}
+
+.przyciskDodatkowy2 {
+    background-color: white;
+    color: #00859C;
+    border: 3px solid #00859C;
+}
+
+.przyciskDodatkowy3 {
+    background-color: white;
+    color: #00B6D7;
+    border: 3px solid #00B6D7;
+}
+
+.przyciskDodatkowy1:hover {
+    color: white;
+    background-color: #005362;
+    border-radius: 100px;
+    padding: 20px;
+    border: 3px solid white;
+}
+
+.przyciskDodatkowy2:hover {
+    color: white;
+    background-color: #00859C;
+    border-radius: 100px;
+    padding: 20px;
+    border: 3px solid white;
+}
+
+.przyciskDodatkowy3:hover {
+    color: white;
+    background-color: #00B6D7;
+    border-radius: 100px;
+    padding: 20px;
+    border: 3px solid white;
+}
 
 .przycisk2 {
     text-align: center;
@@ -192,7 +252,7 @@ footer {
     padding: 20px;
     border-radius: 100px;
     font-family: Rubik;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     background-color: white;
     color: #00B6D7;
@@ -269,6 +329,9 @@ nav {
     text-align: center;
     
     
+}
+button:disabled {
+    background-color: #C6C6C6;
 }
 
 
