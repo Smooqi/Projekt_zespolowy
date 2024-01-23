@@ -45,19 +45,19 @@
     <div class="przyciski1">
         <div class="dodatkowe-przyciski1" id="dodatkowePrzyciski1" style="display: none;">
             <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 1'); zobaczFormularzZwykly()">+zwykły wydatek</button>
-            <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 2')">+stały wydatek</button>
+            <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 2');  zobaczFormularzStaly()">+stały wydatek</button>
         </div>
         <button class="przycisk1" type="text" id="przyciskWydatek" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski1', 'przyciskWydatek')">+ Dodaj wydatek</button>
 
         <div class="dodatkowe-przyciski2" id="dodatkowePrzyciski2" style="display: none;">
-            <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 1')">+dodatkowy przychód</button>
-            <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 2')">+stały przychód</button>
+            <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 1'); zobaczFormularzZwyklyPrzychod()">+dodatkowy przychód</button>
+            <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 2'); zobaczFormularzStalyPrzychod()">+stały przychód</button>
         </div>
         <button class="przycisk2" type="text" id="przyciskPrzychod" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski2', 'przyciskPrzychod')">+ Dodaj przychód</button>
 
         <div class="dodatkowe-przyciski3" id="dodatkowePrzyciski3" style="display: none;">
-            <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 1')">+dodatkowa oszczędność</button>
-            <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 2')">+stała oszczędność</button>
+            <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 1');  zobaczFormularzZwyklaOszczednosc()">+dodatkowa oszczędność</button>
+            <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 2'); zobaczFormularzStalaOszczednosc()">+stała oszczędność</button>
         </div>
         <button class="przycisk3" type="text" id="przyciskOszczednosc" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski3', 'przyciskOszczednosc')">+ Dodaj oszczędności</button>
     </div>
@@ -93,6 +93,157 @@
             <button type="button" onclick="zapiszZwykly()">Zapisz zwykły wydatek</button>
         </form>
     </div>
+
+    <div id="formularzStalyWydatek" class="formularz" style="display: none;">
+        <form id="formStalyWydatek">
+            <label for="nazwaStalegoWydatku">Nazwa wydatku:</label>
+            <select id="nazwaStalegoWydatku" name="nazwaStalegoWydatku">
+                <!-- Dodaj opcje do wyboru -->
+                <option value="opcja1">Opcja 1</option>
+                <option value="opcja2">Opcja 2</option>
+                <!-- Dodaj więcej opcji według potrzeb -->
+            </select>
+            <br>
+
+            <label for="ileStalegoWydatku">Ilość:</label>
+            <input type="number" id="ileStalegoWydatku" name="ileStalegoWydatku">
+            <br>
+
+            <label for="kiedyStalegoWydatku">Jak często ma  być pobierane?:</label>
+            <select id="kiedyStalegoWydatku" name="kiedyStalegoWydatku">
+            
+                <option value="kiedy1">Co 5 minut</option>
+                <option value="kiedy2">Co 1 godzine</option>
+                <option value="kiedy3">Codziennie</option>
+                <option value="kiedy4">Co tydzień</option>
+                <option value="kiedy5">Co miesiąc</option>
+                <option value="kiedy6">Co rok</option>
+               
+            </select>
+            <br>
+
+            <label for="dataStalegoWydatku">Data:</label>
+            <input type="date" id="dataStalegoWydatku" name="dataStalegoWydatku">
+            <br>
+
+            <button type="button" onclick="zapiszStaly()">Zapisz staly wydatek</button>
+        </form>
+    </div>
+
+    <div id="formularzZwyklyPrzychod" class="formularz" style="display: none;">
+        <form id="formZwyklyPrzychod">
+            <label for="nazwaZwyklegoPrzychodu">Nazwa przychodu:</label>
+            <select id="nazwaZwyklegoPrzychodu" name="nazwaZwyklegoPrzychodu">
+                <!-- Dodaj opcje do wyboru -->
+                <option value="opcja1">Opcja 1</option>
+                <option value="opcja2">Opcja 2</option>
+                <!-- Dodaj więcej opcji według potrzeb -->
+            </select>
+            <br>
+
+            <label for="ileZwyklegoPrzychodu">Ilość:</label>
+            <input type="number" id="ileZwyklegoPrzychodu" name="ileZwyklegoPrzychodu">
+            <br>
+
+            <label for="dataZwyklegoPrzychodu">Data:</label>
+            <input type="date" id="dataZwyklegoPrzychodu" name="dataZwyklegoPrzychodu">
+            <br>
+
+            <button type="button" onclick="zapiszZwyklyPrzychod()">Zapisz zwykły przychód</button>
+        </form>
+    </div>
+
+    <div id="formularzStalyPrzychod" class="formularz" style="display: none;">
+        <form id="formStalyPrzychod">
+            <label for="nazwaStalegoPrzychodu">Nazwa przychodu:</label>
+            <select id="nazwaStalegoPrzychodu" name="nazwaStalegoPrzychodu">
+                <!-- Dodaj opcje do wyboru -->
+                <option value="opcja1">Opcja 1</option>
+                <option value="opcja2">Opcja 2</option>
+                <!-- Dodaj więcej opcji według potrzeb -->
+            </select>
+            <br>
+
+            <label for="ileStalegoPrzychodu">Ilość:</label>
+            <input type="number" id="ileStalegoPrzychodu" name="ileStalegoPrzychodu">
+            <br>
+
+            <label for="kiedyStalegoPrzychodu">Jak często ma  być pobierane?:</label>
+            <select id="kiedyStalegoPrzychodu" name="kiedyStalegoPrzychodu">
+                <option value="kiedy1">Co 5 minut</option>
+                <option value="kiedy2">Co 1 godzinę</option>
+                <option value="kiedy3">Codziennie</option>
+                <option value="kiedy4">Co tydzień</option>
+                <option value="kiedy5">Co miesiąc</option>
+                <option value="kiedy6">Co rok</option>
+            </select>
+            <br>
+
+            <label for="dataStalegoPrzychodu">Data:</label>
+            <input type="date" id="dataStalegoPrzychodu" name="dataStalegoPrzychodu">
+            <br>
+
+            <button type="button" onclick="zapiszStalyPrzychod()">Zapisz stały przychód</button>
+        </form>
+    </div>
+
+    <div id="formularzZwyklaOszczednosc" class="formularz" style="display: none;">
+        <form id="formZwyklaOszczednosc">
+            <label for="nazwaZwyklejOszczednosci">Nazwa oszczędności:</label>
+            <select id="nazwaZwyklejOszczednosci" name="nazwaZwyklejOszczednosci">
+                <!-- Dodaj opcje do wyboru -->
+                <option value="opcja1">Opcja 1</option>
+                <option value="opcja2">Opcja 2</option>
+                <!-- Dodaj więcej opcji według potrzeb -->
+            </select>
+            <br>
+
+            <label for="ileZwyklejOszczednosci">Ilość:</label>
+            <input type="number" id="ileZwyklejOszczednosci" name="ileZwyklejOszczednosci">
+            <br>
+
+            <label for="dataZwyklejOszczednosci">Data:</label>
+            <input type="date" id="dataZwyklejOszczednosci" name="dataZwyklejOszczednosci">
+            <br>
+
+            <button type="button" onclick="zapiszZwyklaOszczednosc()">Zapisz zwykłą oszczędność</button>
+        </form>
+    </div>
+
+    <div id="formularzStalaOszczednosc" class="formularz" style="display: none;">
+        <form id="formStalaOszczednosc">
+            <label for="nazwaStalejOszczednosci">Nazwa oszczędności:</label>
+            <select id="nazwaStalejOszczednosci" name="nazwaStalejOszczednosci">
+                <!-- Dodaj opcje do wyboru -->
+                <option value="opcja1">Opcja 1</option>
+                <option value="opcja2">Opcja 2</option>
+                <!-- Dodaj więcej opcji według potrzeb -->
+            </select>
+            <br>
+
+            <label for="ileStalejOszczednosci">Ilość:</label>
+            <input type="number" id="ileStalejOszczednosci" name="ileStalejOszczednosci">
+            <br>
+
+            <label for="kiedyStalejOszczednosci">Jak często ma być pobierane?:</label>
+            <select id="kiedyStalejOszczednosci" name="kiedyStalejOszczednosci">
+                <option value="kiedy1">Co 5 minut</option>
+                <option value="kiedy2">Co 1 godzinę</option>
+                <option value="kiedy3">Codziennie</option>
+                <option value="kiedy4">Co tydzień</option>
+                <option value="kiedy5">Co miesiąc</option>
+                <option value="kiedy6">Co rok</option>
+            </select>
+            <br>
+
+            <label for="dataStalejOszczednosci">Data:</label>
+            <input type="date" id="dataStalejOszczednosci" name="dataStalejOszczednosci">
+            <br>
+
+            <button type="button" onclick="zapiszStalaOszczednosc()">Zapisz stałą oszczędność</button>
+        </form>
+    </div>
+    
 
 
  <div class="listy1">
