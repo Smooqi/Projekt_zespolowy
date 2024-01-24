@@ -311,4 +311,255 @@ function zapiszStalaOszczednosc() {
 }
 
 
+function zobaczFormularzMajatekR() {
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'none';
+    przyciskMajatekN.style.display = 'none';
+    przyciskMajatekMK.style.display = 'none';
+    przyciskMajatekPW.style.display = 'none';
+    przyciskMajatekG.style.display = 'none';
+
+
+
+    // Pokaż formularz stałej oszczędności
+    var formularz = document.getElementById('formularzMajatekR');
+    formularz.style.display = 'block';
+}
+
+function zapiszMajatekR() {
+    var nazwa = document.getElementById('nazwaMajatkuR').value;
+    var wartosc = document.getElementById('wartoscMajatekR').value;
+ 
+
+    // Tutaj możesz dodać kod obsługujący zapis 
+    // ...
+
+    // Po zapisie ukryj formularz
+    var formularz = document.getElementById('formularzMajatekR');
+    formularz.style.display = 'none';
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'block';
+    przyciskMajatekN.style.display = 'block';
+    przyciskMajatekMK.style.display = 'block';
+    przyciskMajatekPW.style.display = 'block';
+    przyciskMajatekG.style.display = 'block';
+
+
+   
+}
+
+function zobaczFormularzMajatekN() {
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'none';
+    przyciskMajatekN.style.display = 'none';
+    przyciskMajatekMK.style.display = 'none';
+    przyciskMajatekPW.style.display = 'none';
+    przyciskMajatekG.style.display = 'none';
+
+
+
+    // Pokaż formularz stałej oszczędności
+    var formularz = document.getElementById('formularzMajatekN');
+    formularz.style.display = 'block';
+}
+
+function zapiszMajatekN() {
+    var nazwa = document.getElementById('nazwaMajatkuN').value;
+    var wartosc = document.getElementById('wartoscMajatekN').value;
+    var powierzchnia = document.getElementById('powierzchniaMajatekN').value;
+
+
+    // Tutaj możesz dodać kod obsługujący zapis 
+    // ...
+
+    // Po zapisie ukryj formularz
+    var formularz = document.getElementById('formularzMajatekN');
+    formularz.style.display = 'none';
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'block';
+    przyciskMajatekN.style.display = 'block';
+    przyciskMajatekMK.style.display = 'block';
+    przyciskMajatekPW.style.display = 'block';
+    przyciskMajatekG.style.display = 'block';
+
+
+
+}
+
+function zobaczFormularzMajatekMK() {
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'none';
+    przyciskMajatekN.style.display = 'none';
+    przyciskMajatekMK.style.display = 'none';
+    przyciskMajatekPW.style.display = 'none';
+    przyciskMajatekG.style.display = 'none';
+
+
+
+    // Pokaż formularz stałej oszczędności
+    var formularz = document.getElementById('formularzMajatekMK');
+    formularz.style.display = 'block';
+}
+
+function zapiszMajatekMK() {
+    var nazwa = document.getElementById('nazwaMajatkuMK').value;
+    var wartosc = document.getElementById('wartoscMajatekMK').value;
+   
+
+
+    // Tutaj możesz dodać kod obsługujący zapis 
+    // ...
+
+    // Po zapisie ukryj formularz
+    var formularz = document.getElementById('formularzMajatekMK');
+    formularz.style.display = 'none';
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'block';
+    przyciskMajatekN.style.display = 'block';
+    przyciskMajatekMK.style.display = 'block';
+    przyciskMajatekPW.style.display = 'block';
+    przyciskMajatekG.style.display = 'block';
+
+
+
+}
+
+function zobaczFormularzMajatekPW() {
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'none';
+    przyciskMajatekN.style.display = 'none';
+    przyciskMajatekMK.style.display = 'none';
+    przyciskMajatekPW.style.display = 'none';
+    przyciskMajatekG.style.display = 'none';
+
+
+
+    // Pokaż formularz stałej oszczędności
+    var formularz = document.getElementById('formularzMajatekPW');
+    formularz.style.display = 'block';
+}
+
+function zapiszMajatekPW() {
+    var nazwa = document.getElementById('nazwaMajatkuPW').value;
+    var wartosc = document.getElementById('wartoscMajatekPW').value;
+    
+
+
+    // Tutaj możesz dodać kod obsługujący zapis 
+    // ...
+
+    // Po zapisie ukryj formularz
+    var formularz = document.getElementById('formularzMajatekPW');
+    formularz.style.display = 'none';
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'block';
+    przyciskMajatekN.style.display = 'block';
+    przyciskMajatekMK.style.display = 'block';
+    przyciskMajatekPW.style.display = 'block';
+    przyciskMajatekG.style.display = 'block';
+
+
+
+}
+
+function zobaczFormularzMajatekG() {
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'none';
+    przyciskMajatekN.style.display = 'none';
+    przyciskMajatekMK.style.display = 'none';
+    przyciskMajatekPW.style.display = 'none';
+    przyciskMajatekG.style.display = 'none';
+
+
+
+    // Pokaż formularz stałej oszczędności
+    var formularz = document.getElementById('formularzMajatekG');
+    formularz.style.display = 'block';
+}
+
+function zapiszMajatekG() {
+    var nazwa = document.getElementById('nazwaMajatkuG').value;
+    var wartosc = document.getElementById('wartoscMajatekG').value;
+
+
+
+    // Tutaj możesz dodać kod obsługujący zapis 
+    // ...
+
+    // Po zapisie ukryj formularz
+    var formularz = document.getElementById('formularzMajatekG');
+    formularz.style.display = 'none';
+
+    var przyciskMajatekR = document.getElementById('przyciskMajatekR');
+    var przyciskMajatekN = document.getElementById('przyciskMajatekN');
+    var przyciskMajatekMK = document.getElementById('przyciskMajatekMK');
+    var przyciskMajatekPW = document.getElementById('przyciskMajatekPW');
+    var przyciskMajatekG = document.getElementById('przyciskMajatekG');
+
+    przyciskMajatekR.style.display = 'block';
+    przyciskMajatekN.style.display = 'block';
+    przyciskMajatekMK.style.display = 'block';
+    przyciskMajatekPW.style.display = 'block';
+    przyciskMajatekG.style.display = 'block';
+
+
+
+}
+
+
+
 

@@ -31,6 +31,10 @@ namespace SimpleMVC.Models
         private int idsavings;
 
         public int? IdSavings { get; set; }
+
+        private int idfortune;
+
+        public int? IdFortune { get; set; }
     }
     #endregion
 
@@ -116,6 +120,36 @@ namespace SimpleMVC.Models
 
     #endregion
 
+    #region Fortune
+    public class Fortune
+    {
+        private int id;
+        public int Id { get; set; }
+
+        private float ruchomosci;
+        public float Ruchomosc { get; set; }
+
+        private float nieruchomosci;
+        public float Nieruchomosci { get; set; }
+
+        private float Metaleikamienie;
+        public float MetaleIKamienieSzlachetne { get; set; }
+
+        private float Papierywartosciowe;
+        public float PapieryWartosciowe { get; set; }
+
+        private float gotowka;
+        public float Gotowka { get; set; }
+
+
+
+        private DateTime date;
+        public DateTime Date { get; set; }
+
+    }
+
+    #endregion
+
     public class ModelComplex
     {
         public Person Person { get; set; }
@@ -125,6 +159,8 @@ namespace SimpleMVC.Models
         public Spending Spending { get; set; }
 
         public Saving Saving { get; set; }
+
+        public Fortune Fortune { get; set; }
 
 
     }
