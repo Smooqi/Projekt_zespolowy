@@ -660,6 +660,73 @@ button:disabled {
     box-shadow: 5px 5px 5px #00859C;
 }
 
+.formularz2
+ {
+    font-size: 20px;
+}
+
+    .formularz2 label
+     {
+        display: block;
+        margin-bottom: 8px;
+        color: #00B6D7;
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+
+
+    .formularz2 select,
+    .formularz2 input[type="number"]
+    
+     {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-radius: 100px;
+        border: 3px solid #00B6D7;
+    }
+
+    .formularz2 button
+     {
+        text-align: center;
+        padding: 20px;
+        border-radius: 100px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #00B6D7;
+        margin-bottom: 50px;
+    }
+
+        .formularz2 button:hover
+        {
+            color: white;
+            text-align: center;
+            background-color: #00B6D7;
+            border-radius: 100px;
+            padding: 20px;
+            border: 3px solid white;
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+    .formularz2 select:active,
+    .formularz2 input[type="number"]:active
+ {
+        border: 1px solid #00859C;
+    }
+
+    .formularz2 select:focus,
+    .formularz2 input[type="number"]:focus
+    {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #00859C;
+    }
 
 
 
