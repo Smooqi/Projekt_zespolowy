@@ -51,7 +51,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     box-shadow: 5px 5px 5px #00859C;
     box-sizing: border-box;
 }
@@ -67,7 +67,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     box-shadow: 5px 5px 5px #00859C;
     box-sizing: border-box;
 }
@@ -76,6 +76,7 @@ footer {
     width:100%;
       display: flex;
       justify-content: space-between;
+      margin-top:30px;
       margin-bottom:100px;
     
 }
@@ -86,7 +87,9 @@ footer {
         border-radius: 100px;
         padding: 10px;
         margin: 10px;
-        color: black;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
     }
 
 
@@ -130,15 +133,17 @@ footer {
 
 
 .przyciski1 {
+    
     width: 90%;
     display: flex;
     justify-content: space-between;
-    margin-left:5%;
-    margin-right:5%;
-    margin-bottom:50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
 }
 
 .przycisk1 {
+    
     text-align: center;
     padding: 20px;
     border-radius: 100px;
@@ -150,18 +155,74 @@ footer {
     border: 3px solid #005362;
 }
 
+
     .przycisk1:hover {
-        
         color: white;
         text-align: center;
         background-color: #005362;
         border-radius: 100px;
-        padding: 22px;
+        padding: 20px;
         border: 3px solid white;
         font-family: Rubik;
         font-size: 22px;
         font-weight: 500;
     }
+
+
+.przyciskDodatkowy1,
+.przyciskDodatkowy2,
+.przyciskDodatkowy3 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 100px;
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.przyciskDodatkowy1 {
+    background-color: white;
+    color: #005362;
+    border: 3px solid #005362;
+}
+
+.przyciskDodatkowy2 {
+    background-color: white;
+    color: #00859C;
+    border: 3px solid #00859C;
+}
+
+.przyciskDodatkowy3 {
+    background-color: white;
+    color: #00B6D7;
+    border: 3px solid #00B6D7;
+}
+
+.przyciskDodatkowy1:hover {
+    color: white;
+    background-color: #005362;
+    border-radius: 100px;
+    padding: 20px;
+    border: 3px solid white;
+}
+
+.przyciskDodatkowy2:hover {
+    color: white;
+    background-color: #00859C;
+    border-radius: 100px;
+    padding: 20px;
+    border: 3px solid white;
+}
+
+.przyciskDodatkowy3:hover {
+    color: white;
+    background-color: #00B6D7;
+    border-radius: 100px;
+    padding: 20px;
+    border: 3px solid white;
+}
 
 .przycisk2 {
     text-align: center;
@@ -192,7 +253,7 @@ footer {
     padding: 20px;
     border-radius: 100px;
     font-family: Rubik;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     background-color: white;
     color: #00B6D7;
@@ -210,7 +271,239 @@ footer {
         font-weight: 500;
     }
 
+/* Styl formularzy wydatków */
+#formularzZwyklyWydatek,
+#formularzStalyWydatek {
+    font-size: 20px;
+  
+}
 
+    #formularzZwyklyWydatek label,
+    #formularzStalyWydatek label {
+        display: block;
+        margin-bottom: 8px;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    #formularzZwyklyWydatek select,
+    #formularzStalyWydatek select,
+    #formularzZwyklyWydatek input[type="number"],
+    #formularzStalyWydatek input[type="number"],
+    #formularzZwyklyWydatek input[type="date"],
+    #formularzStalyWydatek input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-radius: 100px;
+        border: 3px solid #005362;
+    }
+
+    #formularzZwyklyWydatek button,
+    #formularzStalyWydatek button {
+        text-align: center;
+        padding: 20px;
+        border-radius: 100px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #005362;
+        margin-bottom:50px;
+    }
+
+        #formularzZwyklyWydatek button:hover,
+        #formularzStalyWydatek button:hover {
+            color: white;
+            text-align: center;
+            background-color: #005362;
+            border-radius: 100px;
+            padding: 20px;
+            border: 3px solid white;
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+    #formularzZwyklyWydatek select:active,
+    #formularzZwyklyWydatek input[type="number"]:active,
+    #formularzZwyklyWydatek input[type="date"]:active,
+    #formularzStalyWydatek select:active,
+    #formularzStalyWydatek input[type="number"]:active,
+    #formularzStalyWydatek input[type="date"]:active {
+        border: 1px solid #00B6D7;
+    }
+
+    #formularzZwyklyWydatek select:focus,
+    #formularzZwyklyWydatek input[type="number"]:focus,
+    #formularzZwyklyWydatek input[type="date"]:focus,
+    #formularzStalyWydatek select:focus,
+    #formularzStalyWydatek input[type="number"]:focus,
+    #formularzStalyWydatek input[type="date"]:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #00B6D7;
+    }
+
+/* Styl formularzy przychodów */
+#formularzZwyklyPrzychod,
+#formularzStalyPrzychod {
+    font-size: 20px;
+}
+
+    #formularzZwyklyPrzychod label,
+    #formularzStalyPrzychod label {
+        display: block;
+        margin-bottom: 8px;
+        color: #00859C;
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 500;
+        
+    }
+
+    #formularzZwyklyPrzychod select,
+    #formularzStalyPrzychod select,
+    #formularzZwyklyPrzychod input[type="number"],
+    #formularzStalyPrzychod input[type="number"],
+    #formularzZwyklyPrzychod input[type="date"],
+    #formularzStalyPrzychod input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-radius: 100px;
+        border: 3px solid #00859C;
+    }
+
+    #formularzZwyklyPrzychod button,
+    #formularzStalyPrzychod button {
+        text-align: center;
+        padding: 20px;
+        border-radius: 100px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #00859C;
+        margin-bottom: 50px;
+    }
+
+        #formularzZwyklyPrzychod button:hover,
+        #formularzStalyPrzychod button:hover {
+            color: white;
+            text-align: center;
+            background-color: #00859C;
+            border-radius: 100px;
+            padding: 20px;
+            border: 3px solid white;
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+    #formularzZwyklyPrzychod select:active,
+    #formularzZwyklyPrzychod input[type="number"]:active,
+    #formularzZwyklyPrzychod input[type="date"]:active,
+    #formularzStalyPrzychod select:active,
+    #formularzStalyPrzychod input[type="number"]:active,
+    #formularzStalyPrzychod input[type="date"]:active {
+        border: 1px solid #00B6D7;
+    }
+
+    #formularzZwyklyPrzychod select:focus,
+    #formularzZwyklyPrzychod input[type="number"]:focus,
+    #formularzZwyklyPrzychod input[type="date"]:focus,
+    #formularzStalyPrzychod select:focus,
+    #formularzStalyPrzychod input[type="number"]:focus,
+    #formularzStalyPrzychod input[type="date"]:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #00B6D7;
+    }
+
+/* Styl formularzy oszczêdnoœci */
+#formularzZwyklaOszczednosc,
+#formularzStalaOszczednosc {
+    font-size: 20px;
+    
+}
+
+    #formularzZwyklaOszczednosc label,
+    #formularzStalaOszczednosc label {
+        display: block;
+        margin-bottom: 8px;
+        color: #00B6D7;
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 500;
+        
+    }
+
+    
+
+        #formularzZwyklaOszczednosc select,
+        #formularzStalaOszczednosc select,
+        #formularzZwyklaOszczednosc input[type="number"],
+        #formularzStalaOszczednosc input[type="number"],
+        #formularzZwyklaOszczednosc input[type="date"],
+        #formularzStalaOszczednosc input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border-radius: 100px;
+            border: 3px solid #00B6D7;
+        }
+
+    #formularzZwyklaOszczednosc button,
+    #formularzStalaOszczednosc button {
+        text-align: center;
+        padding: 20px;
+        border-radius: 100px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #00B6D7;
+        margin-bottom: 50px;
+    }
+
+        #formularzZwyklaOszczednosc button:hover,
+        #formularzStalaOszczednosc button:hover {
+            color: white;
+            text-align: center;
+            background-color: #00B6D7;
+            border-radius: 100px;
+            padding: 20px;
+            border: 3px solid white;
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+    #formularzZwyklaOszczednosc select:active,
+    #formularzZwyklaOszczednosc input[type="number"]:active,
+    #formularzZwyklaOszczednosc input[type="date"]:active,
+    #formularzStalaOszczednosc select:active,
+    #formularzStalaOszczednosc input[type="number"]:active,
+    #formularzStalaOszczednosc input[type="date"]:active {
+        border: 1px solid #00859C;
+        
+    }
+
+    #formularzZwyklaOszczednosc select:focus,
+    #formularzZwyklaOszczednosc input[type="number"]:focus,
+    #formularzZwyklaOszczednosc input[type="date"]:focus,
+    #formularzStalaOszczednosc select:focus,
+    #formularzStalaOszczednosc input[type="number"]:focus,
+    #formularzStalaOszczednosc input[type="date"]:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #00859C;
+    }
+
+  
 
 .sekcja1 > h1 {
     color: #00b6d7;
@@ -270,7 +563,102 @@ nav {
     
     
 }
+button:disabled {
+    background-color: #C6C6C6;
+}
 
+
+.contm {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.infom {
+    height: auto;
+    width: 100%;
+}
+
+.sekcja1m {
+   
+    background-color: white;
+    width: 60%;
+   
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
+}
+
+.sekcja1m > p {
+    font-family: Rubik;
+    font-size: 30px;
+    text-align: center;
+    color: #005362;
+}
+
+
+
+.sekcja1m > h1 {
+    color: #00b6d7;
+    font-family: Rubik;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+
+.przyciski2 {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.przycisk3m {
+    text-align: center;
+    padding: 20px;
+    border-radius: 100px;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    margin:10px;
+    color: #00B6D7;
+    border: 3px solid #00B6D7;
+}
+
+    .przycisk3m:hover {
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 100px;
+        padding: 20px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+.sekcja6 {
+    color: white;
+    flex: 1;
+    box-sizing: border-box;
+    background-color: #00B6D7;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #00859C;
+}
 
 
 

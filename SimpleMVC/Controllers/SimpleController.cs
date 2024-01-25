@@ -12,6 +12,7 @@ namespace SimpleMVC.Controllers
         private List<Income>? incomes;
         private List<Spending>? spendings;
         private List<Saving> savings;
+        private List<Fortune> fortune;
 
         //   public List<Person> Persons { get; set; } = new List<Person>();
 
@@ -61,6 +62,18 @@ namespace SimpleMVC.Controllers
 
             };
 
+            fortune = new List<Fortune>()
+            {
+                new Fortune() {Id = 1,  Ruchomosc= 10000, Nieruchomosci = 500000, MetaleIKamienieSzlachetne = 200, PapieryWartosciowe = 0, Gotowka = 40000, Date = DateTime.Now },
+                new Fortune() {Id = 2,  Ruchomosc= 20000, Nieruchomosci = 400000, MetaleIKamienieSzlachetne = 800, PapieryWartosciowe = 1000, Gotowka = 30000, Date = DateTime.Now },
+                new Fortune() {Id = 3,  Ruchomosc= 30000, Nieruchomosci = 300000, MetaleIKamienieSzlachetne = 0, PapieryWartosciowe = 0, Gotowka = 15000, Date = DateTime.Now },
+                new Fortune() {Id = 4,  Ruchomosc= 10000, Nieruchomosci = 300000, MetaleIKamienieSzlachetne = 300, PapieryWartosciowe = 0, Gotowka = 100000, Date = DateTime.Now },
+                new Fortune() {Id = 5,  Ruchomosc= 20000, Nieruchomosci = 600000, MetaleIKamienieSzlachetne = 0, PapieryWartosciowe = 0, Gotowka = 20000, Date = DateTime.Now },
+
+
+
+            };
+
             //     var modele = new Tuple<Person, Income, Spending>(Persons, incomes, spendings);
             var models = new List<ModelComplex>();
 
@@ -72,7 +85,8 @@ namespace SimpleMVC.Controllers
                     Person = person,
                     Income = incomes.FirstOrDefault(i => i.Id == person.IdIncome),
                     Spending = spendings.FirstOrDefault(s => s.Id == person.IdSpending),
-                    Saving = savings.FirstOrDefault(sa => sa.Id == person.IdSavings)
+                    Saving=savings.FirstOrDefault(sa=>sa.Id==person.IdSavings),
+                    Fortune = fortune.FirstOrDefault(sa => sa.Id == person.IdSavings)
 
                 };
 
