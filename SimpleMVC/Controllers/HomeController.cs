@@ -32,11 +32,11 @@ namespace SimpleMVC.Controllers
 
             incomes = new List<Income>()
             {
-                new Income() {Id = 1, Date = DateTime.Now, Wyp³ata = 3500, DodatkowaPraca = 500, Renta = 0},
-                new Income() {Id = 2, Date = DateTime.UtcNow,  Wyp³ata = 10000, DodatkowaPraca = 5000, Renta = 0},
-                new Income() {Id = 3, Date = DateTime.Now, Wyp³ata = 0, DodatkowaPraca = 0, Renta = 2500},
-                new Income() {Id = 4, Date = DateTime.UtcNow, Wyp³ata = 6500, DodatkowaPraca = 600, Renta = 0},
-                new Income() {Id = 5, Date = DateTime.Now, Wyp³ata = 5500, DodatkowaPraca = 700, Renta = 0}
+                new Income() {Id = 1, Date = DateTime.Now, Wyplata = 3500, DodatkowaPraca = 500, Renta = 0, Wynajem = 0},
+                new Income() {Id = 2, Date = DateTime.UtcNow,  Wyplata = 10000, DodatkowaPraca = 5000, Renta = 0, Wynajem = 0},
+                new Income() {Id = 3, Date = DateTime.Now, Wyplata = 0, DodatkowaPraca = 0, Renta = 2500, Wynajem = 0},
+                new Income() {Id = 4, Date = DateTime.UtcNow, Wyplata = 6500, DodatkowaPraca = 600, Renta = 0, Wynajem = 0},
+                new Income() {Id = 5, Date = DateTime.Now, Wyplata = 5500, DodatkowaPraca = 700, Renta = 0, Wynajem = 0}
             };
 
             spendings = new List<Spending>()

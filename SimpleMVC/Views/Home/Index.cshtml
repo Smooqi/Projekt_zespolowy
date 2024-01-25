@@ -7,41 +7,44 @@
 
 <div class="cont">
     <div class="info">
-    <div class="sekcja1">
-        @{
-            var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
-            if (personWithId2 != null)
-            {
-                <h1>@(personWithId2?.Person?.FirstName) Twój dochód to: </h1>
+        <div class="sekcja1">
+            @{
+
+                var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
+                var personWithIdSavings = personWithId2.Saving.Inwestycje + personWithId2.Saving.Lokaty + personWithId2.Saving.Obligacje + personWithId2.Saving.Kieszonkowe + personWithId2.Saving.NaPrzyszłość;
+                var personWithIdExpenses = personWithId2.Income.Wyplata + personWithId2.Income.DodatkowaPraca + personWithId2.Income.Renta +
+                personWithId2.Income.Wynajem;
+                if (personWithId2 != null)
+                {
+                    <h1>@(personWithId2?.Person?.FirstName) Twój dochód to: </h1>
+                }
+                else
+                {
+                    <h1>Brak informacji dla osoby o Id równym 2</h1>
+                }
             }
-            else
-            {
-                <h1>Brak informacji dla osoby o Id równym 2</h1>
-            }
-        }
-        
-    <p>@personWithId2.Income.Wypłata+ @personWithId2.Income.DodatkowaPraca + @personWithId2.Income.Renta</p>
+
+            <p>@personWithIdExpenses</p>
    
-    </div>
+        </div>
     
-    <div class="sekcja2">
-        @{
+        <div class="sekcja2">
+            @{
            
-            if (personWithId2 != null)
-            {
-                <h1>@(personWithId2?.Person?.FirstName) Twóje oszczędności to: </h1>
+                if (personWithId2 != null)
+                {
+                    <h1>@(personWithId2?.Person?.FirstName) Twóje oszczędności to: </h1>
                     
+                }
+                else
+                {
+                    <h1>Brak informacji dla osoby o Id równym 2</h1>
+                }
             }
-            else
-            {
-                <h1>Brak informacji dla osoby o Id równym 2</h1>
-            }
-        }
-            <p>@personWithId2.Saving.Inwestycje+@personWithId2.Saving.Lokaty+@personWithId2.Saving.Obligacje+@personWithId2.Saving.Kieszonkowe+@personWithId2.Saving.NaPrzyszłość </p>
-
-
+            <p>@personWithIdSavings </p>
+        </div>
     </div>
-    </div>
+
     <div class="przyciski1">
 
         <button class="przycisk1" type="text">+ Dodaj wydatek</button>

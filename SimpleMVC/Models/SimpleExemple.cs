@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.TagHelpers.Cache;
+using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace SimpleMVC.Models
@@ -40,17 +41,21 @@ namespace SimpleMVC.Models
         private int id;
         public int Id { get; set; }
 
-        private float wypłata;
-        public float Wypłata { get; set; }
+        private float wyplata;
+        public float Wyplata { get; set; }
 
         private float sdodatkowapraca;
         public float DodatkowaPraca { get; set; }
 
         private float renta;
-        public float Renta { get; set;}
-        
+        public float Renta { get; set; }
+
+        private float wynajem;
+
+        public float Wynajem { get; set; }
+
         private DateTime? date;
-        public DateTime? Date { get; set; } 
+        public DateTime? Date { get; set; }
 
     }
     #endregion
@@ -129,34 +134,35 @@ namespace SimpleMVC.Models
 
     }
 
-    #region SimpleExemple
-    public class SimpleExemple
-    {
-        private string shape;
+    /* 
+       #region SimpleExemple
+       public class SimpleExemple
+       {
+           private string shape;
 
-        public string? Shape { get; set; }
+           public string? Shape { get; set; }
 
-        private float girth;
+           private float girth;
 
-        public float? Girth { get; set; }
-        
-        private float area;
+           public float? Girth { get; set; }
 
-        public float? Area { get; set; }
+           private float area;
 
-       public SimpleExemple(string shape, float girth, float area)
-        {
-            this.shape = shape;
-            this.girth = girth;
-            this.area = area;
-        }
+           public float? Area { get; set; }
 
-        public SimpleExemple()
-        {
-            this.shape = String.Empty;
-            this.girth = 0;
-            this.area = 0;
-        }
-    }
-    #endregion 
+          public SimpleExemple(string shape, float girth, float area)
+           {
+               this.shape = shape;
+               this.girth = girth;
+               this.area = area;
+           }
+
+           public SimpleExemple()
+           {
+               this.shape = String.Empty;
+               this.girth = 0;
+               this.area = 0;
+           }
+       }
+       #endregion */
 }

@@ -16,7 +16,7 @@ namespace SimpleMVC.Controllers
         //   public List<Person> Persons { get; set; } = new List<Person>();
 
 
-        public ActionResult Index()
+        public IActionResult Index()
         {
             // SimpleExemple exemples = new SimpleExemple("trangle", 3.4f, 4.6f);
             persons = new List<Person>()
@@ -31,11 +31,11 @@ namespace SimpleMVC.Controllers
 
             incomes = new List<Income>()
             {
-                new Income() {Id = 1, Date = DateTime.Now, Wypłata = 3500, DodatkowaPraca = 500, Renta = 0},
-                new Income() {Id = 2, Date = DateTime.UtcNow,  Wypłata = 10000, DodatkowaPraca = 5000, Renta = 0},
-                new Income() {Id = 3, Date = DateTime.Now, Wypłata = 0, DodatkowaPraca = 0, Renta = 2500},
-                new Income() {Id = 4, Date = DateTime.UtcNow, Wypłata = 6500, DodatkowaPraca = 600, Renta = 0},
-                new Income() {Id = 5, Date = DateTime.Now, Wypłata = 5500, DodatkowaPraca = 700, Renta = 0}
+                new Income() {Id = 1, Date = DateTime.Now, Wyplata = 3500, DodatkowaPraca = 500, Renta = 0, Wynajem = 0},
+                new Income() {Id = 2, Date = DateTime.UtcNow,  Wyplata = 10000, DodatkowaPraca = 5000, Renta = 0, Wynajem  = 0},
+                new Income() {Id = 3, Date = DateTime.Now, Wyplata = 0, DodatkowaPraca = 0, Renta = 2500, Wynajem = 0},
+                new Income() {Id = 4, Date = DateTime.UtcNow, Wyplata = 6500, DodatkowaPraca = 600, Renta = 0, Wynajem = 0},
+                new Income() {Id = 5, Date = DateTime.Now, Wyplata = 5500, DodatkowaPraca = 700, Renta = 0, Wynajem = 0}
             };
 
             spendings = new List<Spending>()
@@ -72,8 +72,8 @@ namespace SimpleMVC.Controllers
                     Person = person,
                     Income = incomes.FirstOrDefault(i => i.Id == person.IdIncome),
                     Spending = spendings.FirstOrDefault(s => s.Id == person.IdSpending),
-                    Saving=savings.FirstOrDefault(sa=>sa.Id==person.IdSavings)
-                   
+                    Saving = savings.FirstOrDefault(sa => sa.Id == person.IdSavings)
+
                 };
 
                 models.Add(model);
@@ -83,30 +83,30 @@ namespace SimpleMVC.Controllers
         }
 
         // GET:SimpleController/Details/5
-        [HttpPost]
-        public ActionResult Details(int id)
+
+        public IActionResult Details(int id)
         {
             if (id == null)
                 return BadRequest("Nie ma takiej osoby w bazie");
 
-           // var oneperson = persons.
+            // var oneperson = persons.
             Person persons = new Person();
-           if((ModelState.IsValid)&&(persons.Id == id))
+            if (ModelState.IsValid && persons.Id == id)
             {
                 return View(persons.Id);
             }
-           else
-            return RedirectToAction("Index");
+            else
+                return RedirectToAction("Index");
         }
 
         // GET: SimpleController/Create
-        public ActionResult Create()
+        public IActionResult Create()
         {
             return View();
         }
 
         // POST: SimpleController/Create
-        [HttpPost]
+
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
         {
@@ -121,15 +121,15 @@ namespace SimpleMVC.Controllers
         }
 
         // GET: SimpleController/Edit/5
-        public ActionResult Edit(int id)
+        public IActionResult Edit(int id)
         {
             return View();
         }
 
         // POST: SimpleController/Edit/5
-        [HttpPost]
+
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public IActionResult Edit(int id, IFormCollection collection)
         {
             try
             {
@@ -142,13 +142,13 @@ namespace SimpleMVC.Controllers
         }
 
         // GET: SimpleController/Delete/5
-        public ActionResult Delete(int id)
+        public IActionResult Delete(int id)
         {
             return View();
         }
 
         // POST: SimpleController/Delete/5
-        [HttpPost]
+
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {
