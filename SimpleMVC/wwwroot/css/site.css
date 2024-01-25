@@ -728,6 +728,59 @@ button:disabled {
         box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #00859C;
     }
 
+   footer a{
+        color:white;
+        font-family: Rubik;
+        font-size:18px;
+    }
+
+    footer a:hover {
+        color: #00B6D7;
+    }
+
+footer p {
+    color: white;
+    font-family: Rubik;
+    font-size: 18px;
+}
+
+.politykap h1 {
+    text-align:center;
+    margin-top:50px;
+    font-family: Rubik;
+    font-size: 30px;
+    color: #00B6D7;
+    
+}
+
+.politykap h2 {
+    text-align:center;
+    font-family: Rubik;
+    font-size: 25px;
+    color: #00B6D7;
+}
+
+.politykap p {
+    font-family: Rubik;
+    font-size: 20px;
+    color: #005362;
+    margin-bottom:50px;
+}
+
+.politykap a {
+    font-family: Rubik;
+    font-size: 20px;
+    color: #00B6D7;
+    margin-bottom: 50px;
+}
+
+    .politykap a:hover {
+        font-family: Rubik;
+        font-size: 20px;
+        color: #00859C;
+        margin-bottom: 50px;
+    }
+
 
 
 
