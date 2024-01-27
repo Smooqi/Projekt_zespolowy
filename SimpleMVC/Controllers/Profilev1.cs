@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿using Microsoft.AspNetCore.Mvc;
 using SimpleMVC.Models;
 
 namespace SimpleMVC.Controllers
 {
-    public class SimpleController : Controller
+    public class Profilev1 : Controller
     {
+        
         // GET: SimpleController
         private List<Person>? persons;
         private List<Income>? incomes;
@@ -85,7 +84,7 @@ namespace SimpleMVC.Controllers
                     Person = person,
                     Income = incomes.FirstOrDefault(i => i.Id == person.IdIncome),
                     Spending = spendings.FirstOrDefault(s => s.Id == person.IdSpending),
-                    Saving=savings.FirstOrDefault(sa=>sa.Id==person.IdSavings),
+                    Saving = savings.FirstOrDefault(sa => sa.Id == person.IdSavings),
                     Fortune = fortune.FirstOrDefault(sa => sa.Id == person.IdSavings)
 
                 };
@@ -103,14 +102,14 @@ namespace SimpleMVC.Controllers
             if (id == null)
                 return BadRequest("Nie ma takiej osoby w bazie");
 
-           // var oneperson = persons.
+            // var oneperson = persons.
             Person persons = new Person();
-           if((ModelState.IsValid)&&(persons.Id == id))
+            if ((ModelState.IsValid) && (persons.Id == id))
             {
                 return View(persons.Id);
             }
-           else
-            return RedirectToAction("Index");
+            else
+                return RedirectToAction("Index");
         }
 
         // GET: SimpleController/Create
@@ -177,3 +176,4 @@ namespace SimpleMVC.Controllers
         }
     }
 }
+

@@ -782,6 +782,246 @@ footer p {
     }
 
 
+.card1 {
+    background-color: white;
+    width: 60%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00B6D7;
+    box-sizing: border-box;
+}
+
+    .card1 h1 {
+        color: #00B6D7;
+        font-family: Rubik;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .card1 p {
+        font-family: Rubik;
+        font-size: 25px;
+        text-align: center;
+        color: #005362;
+    }
 
 
 
+    .card1 h2 {
+        font-family: Rubik;
+        font-size: 30px;
+        color: #005362;
+    }
+
+
+
+.listy2 {
+    width: 100%;
+    
+    
+}
+
+    .listy2 li {
+        border-radius: 20px;
+        background-color: white;
+        list-style-type: none;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .listy2 .jeden {
+       
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+    .listy2 .dwa {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy2 .trzy {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+    .listy2 .cztery {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy2 .piec {
+        background-color: #005362;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+.listy3 {
+    width: 100%;
+}
+
+    .listy3 li {
+        border-radius: 20px;
+        background-color: white;
+        list-style-type: none;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .listy3 .jeden {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy3 .dwa {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy3 .trzy {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy3 .cztery {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy3 .piec {
+        background-color: #005362;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+.listy4 {
+    width: 100%;
+}
+
+    .listy4 li {
+        border-radius: 20px;
+        background-color: white;
+        list-style-type: none;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .listy4 .jeden {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy4 .dwa {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy4 .trzy {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy4 .cztery {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy4 .piec {
+        background-color: #005362;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+.listy5 {
+    width: 100%;
+}
+
+    .listy5 li {
+        border-radius: 20px;
+        background-color: white;
+        list-style-type: none;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .listy5 .jeden {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy5 .dwa {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy5 .trzy {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy5 .cztery {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy5 .piec {
+        background-color: #005362;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+
+
+    
+    
