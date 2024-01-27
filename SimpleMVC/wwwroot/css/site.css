@@ -1020,8 +1020,189 @@ footer p {
         font-family: Rubik;
         font-size: 30px;
     }
+img {
+    width: 40%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
 
 
 
+.opis {
     
-    
+    background-color: white;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
+}
+    .opis h2 {
+        color: #00b6d7;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .opis p {
+        margin: 30px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: white;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+
+.zespol {
+   
+    background-color: #00b6d7;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
+}
+
+    .zespol h2 {
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+        
+    }
+
+    .zespol p {
+        margin:30px;
+        border-radius:20px;
+        padding:10px;
+        background-color:white;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+.klienci {
+    background-color: #00859C;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
+}
+
+.klienci h2 {
+    color: white;
+    font-family: Rubik;
+    font-size: 30px;
+}
+
+    .klienci h3 {
+        color: white;
+        font-family: Rubik;
+        font-size: 25px;
+    }
+
+    .klienci p {
+        margin: 30px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: white;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+.kontakt {
+    background-color: #005362;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
+}
+
+.kontakt h2 {
+    color: white;
+    font-family: Rubik;
+    font-size: 30px;
+}
+
+    .kontakt p {
+        margin: 30px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: white;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin-top: 30px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: #00b6d7;
+    border-radius: 20px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+h3, p {
+    margin: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

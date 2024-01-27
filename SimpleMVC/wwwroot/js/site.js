@@ -560,6 +560,35 @@ function zapiszMajatekG() {
 
 }
 
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let currentIndex = 0;
+
+nextBtn.addEventListener('click', () => {
+    if (currentIndex < slides.length - 1) {
+        currentIndex++;
+    } else {
+        currentIndex = 0;
+    }
+    updateSlider();
+});
+
+prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = slides.length - 1;
+    }
+    updateSlider();
+});
+
+function updateSlider() {
+    const translateValue = -currentIndex * 100 + '%';
+    slider.style.transform = 'translateX(' + translateValue + ')';
+}
+
 
 
 

@@ -1,0 +1,164 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<ModelComplex>//SimpleMVC.Models.SimpleExemple
+<div class="oNas">
+    <div class="opis">
+        <h2>Sejfer:</h2>
+        <p>
+            Sejfer to nowoczesna aplikacja webowa, która pomaga użytkownikom w łatwym i intuicyjnym
+            zarządzaniu budżetem domowym. Nasze narzędzie oferuje funkcje takie jak śledzenie wydatków,
+            planowanie budżetu oraz analizę finansów osobistych.
+        </p>
+
+        <h2>Nasz historia:</h2>
+        <p>
+            Aplikacja Sejfer powstała w 2022 roku z potrzeby stworzenia prostegoi intuicyjnego narzędzia do
+            zarządzania finansami domowymi. Zainspirowani własnymi doświadczeniami w zarządzaniu budżetem,
+            postanowiliśmy stworzyć rozwiązanie dostępne dla każdego.
+        </p>
+
+        <h2>Misja i Wizja:</h2>
+        <p>
+            Naszą misją jest umożliwienie każdej osobie efektywnego zarządzania ich finansami. Wizja Sejfer opiera
+            się na tworzeniu intuicyjnych, łatwych w użyciu narzędzi, które wspierają stabilność finansową i
+            pomagają osiągać cele oszczędnościowe.
+        </p>
+
+        <h2>Osiągnięcia:</h2>
+        <p>
+            Sejfer został wyróżniony w 2023 roku jako 'Najlepsza aplikacja do zarządzania finansami osobistymi'
+            przez magazyn FinTech Today.
+        </p>
+
+        <h2>Społeczna odpowiedzialność:</h2>
+        <p>
+            W Sejfer wierzymy w dawanie czegoś od siebie. Dlatego wspieramy lokalne inicjatywy edukacyjne
+            związane z finansami osobistymi, ucząc dzieci i młodzież podstaw zarządzania budżetem.
+        </p>
+        
+    </div>
+    <div class="zespol">
+        <img src="/img/zolniez.jpg" />
+        <h2>Dominika Hendrych, kierownik zespołu</h2>
+        <p>
+            Z zawodu żołnierz zawodowy, mistrzyni województwa
+            Kujawsko-Pomorskiego w ciskaniu granatami treningowymi. W wolnym czasie uwielbia relaksować
+            się z dobrą książką, choć nie potrafi czytać. W zespole odpowiada za rozdzielenie obowiązku,
+            kontrolę prac i bezpośredni kontakt z Klientem.
+        </p>
+
+        <img src="/img/sieciowiec.jpg" />
+        <h2>Miłosz Czerwczak, specjalista IT</h2>
+        <p>
+            Miłosz z zawodu jest specjalistą od spraw tragicznych w
+            środowisku IT, nie ma dla niego rzeczy niemożliwych. Zacięty papier w drukarce, niewłączający się
+            rzutnik, uszkodzona klawiatura/myszka to jego chleb powszedni. Miłosz wygrał plebiscyt tygodnika
+            INFORMATYK w kategorii : “Największa ilość włosów na głowie informatyka przed trzydziestką”.
+            Nagroda jest dowodem na to z jaką chłodną kalkulacją podchodzi do każdego zadania. W zespole
+            odpowiada za korelację aplikacji z potrzebami fizycznymi.
+        </p>
+
+        <img src="/img/bankowiec.jpg" />
+        <h2>Wojciech Danielewicz, bezrobotny</h2>
+        <p>
+            Wojtek reprezentuje najbardziej lubiany zawód na świecie, w
+            wolnych chwilach dzwoni do ludzi wypytując o kredyty. Jest laureatem konkursu na najszybsze
+            przybieranie wagi w czasie stu dni. Wojtek jest psiarzem, co chętnie podkreśla w każdej rozmowie.
+            Prywatnie zakochany w matematyce, jest mistrzem dodawania pojedynczych cyfr, ma nadzieje, że za
+            kilka lat pozna tajniki mnożenia. Z reguły bardzo uśmiechnięty i pozytywnie nastawiony człowiek z
+            syndromem klauna. W zespole odpowiada za podtrzymywanie na duchu Kierowniczki, raportowanie
+            i przedstawienie wyniku pracy.
+        </p>
+
+        <img src="/img/niania.jpg" />
+        <h2>Weronika Gajkowska, Visual Dyrektor</h2>
+        <p>
+            Weronika sama siebie nazywa mamą na telefon, pomaga
+            bowiem w wychowaniu pociech osobom, które tego potrzebują. Jej zainteresowania to psychologia
+            dziecięca i wychowanie wczesnoszkolne. W przyszłości marzy o karierze w tym obszarze. W wolnych
+            chwilach uwielbia zanurzyć się w odmętach ogólnie pojętej fantastyki. W zespole odpowiada za
+            wszystko co widzi użytkownik, ułożenie sekcji, menu, kolory, czcionki, dostępny, ikonki, wyskakujące
+            okna. Wykorzystuje przy tym razor, HTML, CSS, bootstrap i Java script.
+        </p>
+
+        <img src="/img/programista.jpg" />
+        <h2>Krzysztof Szwajka, Grand Developer</h2>
+        <p>
+            Krzysztof ma pseudonim “zegarek”, wszystko zawsze dowozi
+            na czas, dla niego nie ma rzeczy niemożliwych. W wolnym czasie, oprócz zbierania kurzu na półkach,
+            poznaje nowe języki. W kuluarach zespołu mówi się, że zna podobną ilość języków jak Tolkien, ale
+            Krzysztof je na co dzień wykorzystuje. Krzysztof uwielbia kodowanie, bo w przeciwieńśtwie do ludzi,
+            kod nie ma dla niego tajemnic.
+        </p>
+
+    </div>
+    <div class="klienci">
+        <h2>Klienci:</h2>
+        <p>
+            Jesteśmy dumni, że mogliśmy pomóc ponad 10 000 użyszkodnikom w efektywnym zarządzaniu ich
+            budżetem domowym. Oto co mówią niektórzy z naszych użytkowników:
+        </p>
+        
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <h3>Marta K.</h3>
+                    <p>
+                        Dzięki Sejferowi w końcu zapanowałam nad swoimi wydatkami. Intuicyjny interfejs i
+                        szczegółowe raporty pomagają mi dokładnie śledzić, gdzie wydaję pieniądze. Polecam każdemu, kto chce
+                        lepiej zarządzać swoim budżetem!
+                    </p>
+                </div>
+                <div class="slide">
+                    <h3>Anna i Jakub W.</h3>
+                    <p>
+                        Jako rodzina z dwójką dzieci, zawsze mieliśmy problem z utrzymaniem naszych
+                        finansów w ryzach. Sejfer pomógł nam zrozumieć nasze wydatki i lepiej planować przyszłe zakupy. Dzięki
+                        temu czujemy się bezpieczniej finansowo.
+                    </p>
+                </div>
+                <div class="slide">
+                    <h3>Katarzyna L.</h3>
+                    <p>
+                        Uwielbiam funkcję analizy wydatków w Sejferze. Dzięki niej mogę łatwo zidentyfikować,
+                        gdzie mogę zaoszczędzić. Aplikacja jest prosta w użyciu i naprawdę pomaga w codziennym zarządzaniu
+                        pieniędzmi.
+                    </p>
+                </div>
+                <div class="slide">
+                    <h3>Michał D.</h3>
+                    <p>
+                        Jako freelancer, zawsze miałem problem z organizacją swoich finansów. Sejfer dał mi
+                        narzędzia, których potrzebowałem, aby lepiej zarządzać moim budżetem i planować przyszłe wydatki. To
+                        najlepsza aplikacja do zarządzania finansami osobistymi, jakiej używałem.
+                    </p>
+                </div>
+                
+                
+            </div>
+            <i class="fas fa-arrow-left arrow prev"></i>
+            <i class="fas fa-arrow-right arrow next"></i>
+        </div>
+        
+       
+        
+        
+
+        
+
+       
+
+        
+
+    </div>
+    <div class="kontakt">
+        <h2>Kontakt:</h2>
+        <p>
+            Masz pytania? Skontaktuj się z nami pod adresem sejfer@gmail.com lub zadzwoń pod numer +48 123
+            456 789. Śledź nas także na Facebooku, Twitterze i Instagramie, aby być na bieżąco z najnowszymi
+            aktualizacjami i poradami finansowymi.
+        </p>
+    </div>
+
+</div>
