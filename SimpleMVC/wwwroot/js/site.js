@@ -310,6 +310,91 @@ function zapiszStalaOszczednosc() {
     odblokujPrzyciski();
 }
 
+function editSpending(category) {
+    // Implementacja logiki edycji dla wydatku o danej kategorii
+    // Możesz użyć modala lub formularza do wprowadzania nowych danych
+    alert('Edytuj wydatek: ' + category);
+}
+
+function deleteSpending(category) {
+    // Confirm deletion with the user
+    var confirmDelete = confirm('Czy na pewno chcesz usunąć wydatek: ' + category + '?');
+
+    if (confirmDelete) {
+        // Remove the corresponding expense from the list
+        var listItem = document.querySelector('li[data-category="' + category + '"]');
+        if (listItem) {
+            listItem.remove();
+        } else {
+            alert('Nie można odnaleźć wydatku do usunięcia.');
+        }
+    }
+}
+
+function editIncoming(category) {
+    // Implementacja logiki edycji dla wydatku o danej kategorii
+    // Możesz użyć modala lub formularza do wprowadzania nowych danych
+    alert('Edytuj przychod: ' + category);
+}
+
+function deleteIncoming(category) {
+    // Confirm deletion with the user
+    var confirmDelete = confirm('Czy na pewno chcesz usunąć przychod: ' + category + '?');
+
+    if (confirmDelete) {
+        // Remove the corresponding expense from the list
+        var listItem = document.querySelector('li[data-category="' + category + '"]');
+        if (listItem) {
+            listItem.remove();
+        } else {
+            alert('Nie można odnaleźć przychodu do usunięcia.');
+        }
+    }
+}
+
+function editSavings(category) {
+    // Implementacja logiki edycji dla wydatku o danej kategorii
+    // Możesz użyć modala lub formularza do wprowadzania nowych danych
+    alert('Edytuj oszczednosc: ' + category);
+}
+
+function deleteSavings(category) {
+    // Confirm deletion with the user
+    var confirmDelete = confirm('Czy na pewno chcesz usunąć oszczednosc: ' + category + '?');
+
+    if (confirmDelete) {
+        // Remove the corresponding expense from the list
+        var listItem = document.querySelector('li[data-category="' + category + '"]');
+        if (listItem) {
+            listItem.remove();
+        } else {
+            alert('Nie można odnaleźć oszczednosc do usunięcia.');
+        }
+    }
+}
+
+function editFortune(category) {
+    // Implementacja logiki edycji dla wydatku o danej kategorii
+    // Możesz użyć modala lub formularza do wprowadzania nowych danych
+    alert('Edytuj majatek: ' + category);
+}
+
+function deleteFortune(category) {
+    // Confirm deletion with the user
+    var confirmDelete = confirm('Czy na pewno chcesz usunąć majatek: ' + category + '?');
+
+    if (confirmDelete) {
+        // Remove the corresponding expense from the list
+        var listItem = document.querySelector('li[data-category="' + category + '"]');
+        if (listItem) {
+            listItem.remove();
+        } else {
+            alert('Nie można odnaleźć majatek do usunięcia.');
+        }
+    }
+}
+
+
 
 function zobaczFormularzMajatekR() {
 

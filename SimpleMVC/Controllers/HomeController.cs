@@ -93,5 +93,51 @@ namespace SimpleMVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpPost]
+        public ActionResult EditSpending(string category, float newValue)
+        {
+            // Udawana operacja edycji wydatku o danej kategorii
+            // Poni¿ej znajdziesz kod przyk³adowy - tutaj mo¿esz dostosowaæ go do swojej implementacji
+
+            // Zamiast rzeczywistej operacji na bazie danych
+            // var spending = dbContext.Spending.FirstOrDefault(s => s.Category == category);
+            // if (spending != null)
+            // {
+            //     spending.Value = newValue;
+            //     dbContext.SaveChanges();
+            //     return RedirectToAction("Index"); // Przekierowanie do g³ównej strony po edycji
+            // }
+            // else
+            // {
+            //     return RedirectToAction("Index");
+            // }
+
+            // Udawane zwrócenie wyniku
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public ActionResult DeleteSpending(string category)
+        {
+            // Udawana operacja usuwania wydatku o danej kategorii
+            // Poni¿ej znajdziesz kod przyk³adowy - tutaj mo¿esz dostosowaæ go do swojej implementacji
+
+            // Zamiast rzeczywistej operacji na bazie danych
+            // var spending = dbContext.Spending.FirstOrDefault(s => s.Category == category);
+            // if (spending != null)
+            // {
+            //     dbContext.Spending.Remove(spending);
+            //     dbContext.SaveChanges();
+            //     return RedirectToAction("Index"); // Przekierowanie do g³ównej strony po usuniêciu
+            // }
+            // else
+            // {
+            //     return RedirectToAction("Index");
+            // }
+
+            // Udawane zwrócenie wyniku
+            return RedirectToAction("Index");
+        }
     }
 }

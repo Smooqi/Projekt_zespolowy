@@ -213,7 +213,12 @@
                             var value = (float)property.GetValue(fortuneForId2);
                             if (value != 0)
                             {
-                                <li>@property.Name: @value</li>
+                                <li>@property.Name: @value
+                                    <div>
+                                        <button class="przycisk1s" onclick="editFortune('@property.Name')">Edytuj</button>
+                                        <button class="przycisk1s" onclick="deleteFortune('@property.Name')">Usuń</button>
+                                    </div>
+                                    </li>
                             }
                         }
                     }

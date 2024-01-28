@@ -256,20 +256,27 @@
 
  <div class="listy1">
     <div class="sekcja3">
-    <h2>Lista wydatków</h2>
+   
+            <h2>Lista wydatków</h2>
             <ul>
                 @{
                     var spendingForId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2)?.Spending;
                     if (spendingForId2 != null)
                     {
-                        foreach (var property in spendingForId2.GetType().GetProperties())
+                        @foreach (var property in spendingForId2.GetType().GetProperties())
                         {
                             if (property.PropertyType == typeof(float))
                             {
                                 var value = (float)property.GetValue(spendingForId2);
                                 if (value != 0)
                                 {
-                                    <li>@property.Name: @value</li>
+                                    <li data-category="@property.Name">
+                                        @property.Name: @value
+                                        <div>
+                                            <button class="przycisk1w" onclick="editSpending('@property.Name')">Edytuj</button>
+                                            <button class="przycisk1w" onclick="deleteSpending('@property.Name')">Usuń</button>
+                                        </div>
+                                    </li>
                                 }
                             }
                         }
@@ -297,7 +304,12 @@
                                 var value = (float)property.GetValue(incomeForId2);
                                 if (value != 0)
                                 {
-                                    <li>@property.Name: @value</li>
+                                    <li>@property.Name: @value
+                                        <div>
+                                            <button class="przycisk1i" onclick="editIncoming('@property.Name')">Edytuj</button>
+                                            <button class="przycisk1i" onclick="deleteIncoming('@property.Name')">Usuń</button>
+                                        </div>
+                                    </li>
                                 }
                             }
                         }
@@ -323,7 +335,12 @@
                                 var value = (float)property.GetValue(savingsForId2);
                                 if (value != 0)
                                 {
-                                    <li>@property.Name: @value</li>
+                                    <li>@property.Name: @value
+                                        <div>
+                                            <button class="przycisk1s" onclick="editSavings('@property.Name')">Edytuj</button>
+                                            <button class="przycisk1s" onclick="deleteSavings('@property.Name')">Usuń</button>
+                                        </div>
+                                    </li>
                                 }
                             }
                         }
