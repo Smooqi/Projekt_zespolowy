@@ -1,0 +1,250 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<ModelComplex>//SimpleMVC.Models.SimpleExemple
+<div class="sekcjap1">
+    @{
+        var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 1);
+        if (personWithId2 != null)
+        {
+            
+           
+            if (personWithId2?.Person?.Age >= 18 && personWithId2?.Person?.Age <= 29)
+            {
+                <div class="card1">
+                <h1>@(personWithId2?.Person?.FirstName) Twój profil to: </h1>
+                <h2>Profil finansowy 18+</h2>
+                </div>
+
+                <div class="listy2">
+                <ol>
+                    <li class="jeden">
+                        Awaryjny fundusz:
+                        <ul>
+                            <li>Dlaczego: Aby zabezpieczyć się przed nieprzewidzianymi wydatkami i utratą pracy.</li>
+                            <li>Cel: Utworzenie funduszu awaryjnego równego 3-6 miesiącom kosztów życia.</li>
+                            <li>Jak osiągnąć: Określ miesięczną kwotę na fundusz awaryjny i automatycznie przelewaj ją na osobne konto.</li>
+
+                        </ul>
+                    </li>
+                    <li class="dwa">
+                        Edukacja finansowa:
+                        <ul>
+                            <li>Dlaczego: Aby zrozumieć świat finansów, inwestycji i budżetowania.</li>
+                            <li>Cel: Wzrost wiedzy finansowej poprzez czytanie książek, uczestnictwo w kursach online i regularny monitoring rynku.</li>
+                            <li>Jak osiągnąć: Zainwestuj czas i środki w książki, kursy online, a także regularnie czytaj artykuły finansowe.</li>
+
+                        </ul>
+                    </li>
+                    <li class="trzy">
+                        Podróż życia:
+                        <ul>
+                            <li>Dlaczego: Aby zdobyć nowe doświadczenia i poszerzyć horyzonty.</li>
+                            <li>Cel: Oszczędzanie na specjalne konto przeznaczone wyłącznie na podróże życiowe.</li>
+                            <li>Jak osiągnąć: Określ, ile chciałbyś przeznaczyć na podróże rocznie, zainwestuj w tanie formy podróżowania, planuj wyjazdy z wyprzedzeniem.</li>
+
+                        </ul>
+                    </li>
+                    <li class="cztery">
+                        Inwestycje długoterminowe:
+                        <ul>
+                            <li>Dlaczego: Dla długoterminowego wzrostu kapitału i zabezpieczenia finansowego.</li>
+                            <li>Cel: Rozpoczęcie regularnych inwestycji w indeksowe fundusze ETF.</li>
+                            <li>Jak osiągnąć: Określ procent swojego dochodu do inwestycji, korzystaj z platform inwestycyjnych i stosuj strategię "kupuj i trzymaj".</li>
+
+                        </ul>
+                    </li>
+                    <li class="piec">
+                        Pierwsze mieszkanie:
+                        <ul>
+                            <li>Dlaczego: Aby osiągnąć stabilność finansową i uniezależnić się od czynszu.</li>
+                            <li>Cel: Oszczędzanie na wkład własny do pierwszego mieszkania.</li>
+                            <li>Jak osiągnąć: Określ kwotę wkładu własnego, pracuj nad zwiększeniem dochodu, korzystaj z programów wspierających zakup pierwszego mieszkania.</li>
+
+                        </ul>
+                    </li>
+
+                </ol>
+                </div>
+            }
+            else if (personWithId2?.Person?.Age >=30  && personWithId2?.Person?.Age <= 39)
+            {
+                <div class="card1">
+                <h1>@(personWithId2?.Person?.FirstName) Twój profil to: </h1>
+                <h2>Profil finansowy 30+</h2>
+                </div>
+
+                <div class="listy3">
+                <ol>
+                    <li class="jeden">
+                        Edukacja dzieci:
+                        <ul>
+                            <li>Dlaczego: Zapewnienie dzieciom edukacji bez obciążającego długu studenckiego.</li>
+                            <li>Cel: Oszczędzanie na edukację dzieci poprzez plany oszczędności edukacyjnych (529 Plan).</li>
+                            <li>Jak osiągnąć: Regularnie wpłacaj pieniądze na konta edukacyjne dzieci, korzystając z korzyści podatkowych oferowanych przez plany 529.</li>
+
+                        </ul>
+                    </li>
+                    <li class="dwa">
+                        Zabezpieczenie zdrowotne:
+                        <ul>
+                            <li>Dlaczego: Ochrona przed nieprzewidzianymi kosztami opieki zdrowotnej.</li>
+                            <li>Cel: Utworzenie funduszu zdrowotnego na nieprzewidziane wydatki związane z opieką zdrowotną.</li>
+                            <li>Jak osiągnąć: Regularnie zasilaj fundusz zdrowotny, korzystaj z planów ubezpieczeniowych i bądź gotowy na nieprzewidziane wydatki.</li>
+
+                        </ul>
+                    </li>
+                    <li class="trzy">
+                        Nieruchomość inwestycyjna:
+                        <ul>
+                            <li>Dlaczego: Diversyfikacja portfela i generowanie pasywnego dochodu.</li>
+                            <li>Cel: Oszczędzanie na wkład własny do inwestycji w nieruchomość.</li>
+                            <li>Jak osiągnąć: Analizuj rynek nieruchomości, określ cel inwestycji, zbieraj kapitał na wkład własny.</li>
+
+                        </ul>
+                    </li>
+                    <li class="cztery">
+                        Rozwój zawodowy:
+                        <ul>
+                            <li>Dlaczego: Inwestowanie w swoją karierę dla lepszych perspektyw finansowych.</li>
+                            <li>Cel: Inwestowanie w rozwój zawodowy poprzez kursy, szkolenia i zdobywanie nowych umiejętności.</li>
+                            <li>Jak osiągnąć: Określ obszary, w których chcesz się rozwijać, bierz udział w szkoleniach branżowych, konsultuj się z mentorami.</li>
+
+                        </ul>
+                    </li>
+                    <li class="piec">
+                        Fundusz rezerwowy:
+                        <ul>
+                            <li>Dlaczego: Zabezpieczenie przed nagłymi wydatkami rodzinymi.</li>
+                            <li>Cel: Utworzenie funduszu rezerwowego na nieprzewidziane wydatki rodzinne.</li>
+                            <li>Jak osiągnąć: Określ kwotę funduszu rezerwowego, zasilaj go regularnie i korzystaj tylko w sytuacjach awaryjnych.</li>
+
+                        </ul>
+                    </li>
+
+                </ol>
+                </div>
+            }
+            else if (personWithId2?.Person?.Age >= 40 && personWithId2?.Person?.Age <= 49)
+            {
+                <div class="card1">
+                <h1>@(personWithId2?.Person?.FirstName) Twój profil to: </h1>
+                <h2>Profil finansowy 40+</h2>
+                 </div>
+
+                <div class="listy4">
+                <ol>
+                    <li class="jeden">
+                        Ostatni etap spłaty kredytów:
+                        <ul>
+                            <li>Dlaczego: Eliminacja długów dla większej elastyczności finansowej.</li>
+                            <li>Cel: Przyśpieszenie spłaty pozostałych kredytów, zaczynając od tych o wyższych stopach procentowych.</li>
+                            <li>Jak osiągnąć: Przydziel dodatkowe środki na spłatę kredytów, zastanów się nad refinansowaniem.</li>
+
+                        </ul>
+                    </li>
+                    <li class="dwa">
+                        Planowanie emerytalne:
+                        <ul>
+                            <li>Dlaczego: Zabezpieczenie na późniejsze lata życia i utrzymanie standardu życia.</li>
+                            <li>Cel: Zwiększenie składek emerytalnych oraz dostosowanie strategii inwestycyjnej do zbliżającej się emerytury.</li>
+                            <li>Jak osiągnąć: Skonsultuj się z doradcą finansowym, rozważ opcje dodatkowych oszczędności emerytalnych.</li>
+
+                        </ul>
+                    </li>
+                    <li class="trzy">
+                        Edukacja dzieci na studia:
+                        <ul>
+                            <li>Dlaczego: Zminimalizowanie obciążenia finansowego dla dzieci.</li>
+                            <li>Cel: Długoterminowe oszczędzanie na studia dzieci, korzystając z różnych instrumentów inwestycyjnych.</li>
+                            <li>Jak osiągnąć: Regularnie zasilaj konta oszczędnościowe edukacyjne, monitoruj i dostosowuj strategię inwestycyjną.</li>
+
+                        </ul>
+                    </li>
+                    <li class="cztery">
+                        Zabezpieczenie zdrowotne:
+                        <ul>
+                            <li>Dlaczego: Ochrona przed rosnącymi kosztami opieki zdrowotnej na emeryturze.</li>
+                            <li>Cel: Zwiększenie funduszu zdrowotnego na przyszłe wydatki medyczne.</li>
+                            <li>Jak osiągnąć: Inwestuj w plany ubezpieczeń zdrowotnych, bierz pod uwagę rosnące koszty zdrowotne.</li>
+
+                        </ul>
+                    </li>
+                    <li class="piec">
+                        Redukcja ryzyka inwestycyjnego:
+                        <ul>
+                            <li>Dlaczego: Ochrona oszczędności przed gwałtownymi wahaniami rynku przed emeryturą.</li>
+                            <li>Cel: Skonsolidowanie portfela, przeniesienie części aktywów do stabilnych instrumentów finansowych.</li>
+                            <li>Jak osiągnąć: Analizuj swój portfel, minimalizuj ryzyko poprzez dywersyfikację.</li>
+
+                        </ul>
+                    </li>
+
+                </ol>
+                </div>
+            }
+            else if (personWithId2?.Person?.Age >= 50)
+            {
+                <div class="card1">
+                <h1>@(personWithId2?.Person?.FirstName) Twój profil to: </h1>
+                <h2>Profil finansowy 50+</h2>
+                </div>
+
+                <div class="listy5">
+                <ol>
+                    <li class="jeden">Działalność charytatywna:
+                        <ul>
+                            <li>Dlaczego: Wspieranie społeczności i organizacji charytatywnych.</li>
+                            <li>Cel: Oszczędzanie na cele charytatywne dla działań społecznych.</li>
+                            <li>Jak osiągnąć: Określ konkretne organizacje lub cele charytatywne, regularnie przekazuj środki na ich wsparcie.</li>
+
+                        </ul>
+                    </li>
+                    <li class="dwa">Długoletnia emerytura:
+                        <ul>
+                            <li>Dlaczego: Zabezpieczenie przed dłuższym okresem życia po przejściu na emeryturę.</li>
+                            <li>Cel: Intensywne oszczędzanie na długoletnią emeryturę, biorąc pod uwagę dłuższe okresy życia.</li>
+                            <li>Jak osiągnąć: Wykorzystaj specjalne plany emerytalne, inwestuj w instrumenty generujące stałe przychody.</li>
+
+                        </ul>
+                    </li>
+                    <li class="trzy">Dziedziczenie:
+                        <ul>
+                            <li>Dlaczego: Przekazanie majątku dzieciom i wnukom</li>
+                            <li>Cel: Planowanie spadku i dziedziczenia dla przyszłych pokoleń.</li>
+                            <li>Jak osiągnąć: Konsultuj się z prawnikiem ds. spadków, określ spójny plan i dokumentację dziedziczenia.</li>
+
+                        </ul>
+                    </li>
+                    <li class="cztery">Zrównoważone inwestycje:
+                        <ul>
+                            <li>Dlaczego: Inwestycje uwzględniające aspekty społeczne i ekologiczne.</li>
+                            <li>Cel: Inwestowanie w zrównoważone fundusze i przedsięwzięcia.</li>
+                            <li>Jak osiągnąć: Wybieraj inwestycje zgodne z zasadami ESG (Environmental, Social, Governance).</li>
+
+                        </ul>
+                    </li>
+                    <li class="piec">Zakup kolejnej nieruchomości:
+                        <ul>
+                            <li>Dlaczego: Dalsza dywersyfikacja portfela i generowanie pasywnego dochodu.</li>
+                            <li>Cel: Oszczędzanie na wkład własny do zakupu kolejnej nieruchomości.</li>
+                            <li>Jak osiągnąć: Analizuj rynki nieruchomości, wybieraj atrakcyjne lokalizacje, zbieraj kapitał na wkład własny.</li>
+
+                        </ul>
+                    </li>
+
+                </ol>
+                </div>
+            }
+        }
+        else
+        {
+            <h1>Brak informacji dla osoby o Id równym 2</h1>
+        }
+    }
+
+    
+
+</div>

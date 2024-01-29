@@ -98,7 +98,7 @@ footer {
     flex: 1;
     box-sizing: border-box;
     background-color: #005362;
-    width: 30%;
+    
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -110,7 +110,7 @@ footer {
     flex: 1;
     box-sizing: border-box;
     background-color: #00859C;
-    width: 30%;
+   
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 20px;
@@ -123,7 +123,7 @@ footer {
     flex: 1;
     box-sizing: border-box;
     background-color: #00B6D7;
-    width: 30%;
+   
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -165,6 +165,76 @@ footer {
         border: 3px solid white;
         font-family: Rubik;
         font-size: 22px;
+        font-weight: 500;
+    }
+
+.przycisk1w {
+    
+    text-align: center;
+   display:inline-block;
+    border-radius: 100px;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    color: #005362;
+    border: 3px solid #005362;
+}
+
+    .przycisk1w:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 100px;
+        border: 3px solid #005362;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+.przycisk1i {
+    text-align: center;
+    display: inline-block;
+    border-radius: 100px;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    color: #00859C;
+    border: 3px solid #00859C;
+}
+
+    .przycisk1i:hover {
+        color: white;
+        text-align: center;
+        background-color: #00859C;
+        border-radius: 100px;
+        border: 3px solid #00859C;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+.przycisk1s {
+    text-align: center;
+    display: inline-block;
+    border-radius: 100px;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    color: #00B6D7;
+    border: 3px solid #00B6D7;
+}
+
+    .przycisk1s:hover {
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 100px;
+        border: 3px solid #00B6D7;
+        font-family: Rubik;
+        font-size: 20px;
         font-weight: 500;
     }
 
@@ -660,8 +730,549 @@ button:disabled {
     box-shadow: 5px 5px 5px #00859C;
 }
 
+.formularz2
+ {
+    font-size: 20px;
+}
+
+    .formularz2 label
+     {
+        display: block;
+        margin-bottom: 8px;
+        color: #00B6D7;
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 500;
+    }
 
 
 
+    .formularz2 select,
+    .formularz2 input[type="number"]
+    
+     {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-radius: 100px;
+        border: 3px solid #00B6D7;
+    }
+
+    .formularz2 button
+     {
+        text-align: center;
+        padding: 20px;
+        border-radius: 100px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #00B6D7;
+        margin-bottom: 50px;
+    }
+
+        .formularz2 button:hover
+        {
+            color: white;
+            text-align: center;
+            background-color: #00B6D7;
+            border-radius: 100px;
+            padding: 20px;
+            border: 3px solid white;
+            font-family: Rubik;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+    .formularz2 select:active,
+    .formularz2 input[type="number"]:active
+ {
+        border: 1px solid #00859C;
+    }
+
+    .formularz2 select:focus,
+    .formularz2 input[type="number"]:focus
+    {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #00859C;
+    }
+
+   footer a{
+        color:white;
+        font-family: Rubik;
+        font-size:18px;
+    }
+
+    footer a:hover {
+        color: #00B6D7;
+    }
+
+footer p {
+    color: white;
+    font-family: Rubik;
+    font-size: 18px;
+}
+
+.politykap h1 {
+    text-align:center;
+    margin-top:50px;
+    font-family: Rubik;
+    font-size: 30px;
+    color: #00B6D7;
+    
+}
+
+.politykap h2 {
+    text-align:center;
+    font-family: Rubik;
+    font-size: 25px;
+    color: #00B6D7;
+}
+
+.politykap p {
+    font-family: Rubik;
+    font-size: 20px;
+    color: #005362;
+    margin-bottom:50px;
+}
+
+.politykap a {
+    font-family: Rubik;
+    font-size: 20px;
+    color: #00B6D7;
+    margin-bottom: 50px;
+}
+
+    .politykap a:hover {
+        font-family: Rubik;
+        font-size: 20px;
+        color: #00859C;
+        margin-bottom: 50px;
+    }
 
 
+.card1 {
+    background-color: white;
+    width: 60%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00B6D7;
+    box-sizing: border-box;
+}
+
+    .card1 h1 {
+        color: #00B6D7;
+        font-family: Rubik;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .card1 p {
+        font-family: Rubik;
+        font-size: 25px;
+        text-align: center;
+        color: #005362;
+    }
+
+
+
+    .card1 h2 {
+        font-family: Rubik;
+        font-size: 30px;
+        color: #005362;
+    }
+
+
+
+.listy2 {
+    width: 100%;
+    
+    
+}
+
+    .listy2 li {
+        border-radius: 20px;
+        background-color: white;
+        list-style-type: none;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .listy2 .jeden {
+       
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+    .listy2 .dwa {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy2 .trzy {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+    .listy2 .cztery {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy2 .piec {
+        background-color: #005362;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+.listy3 {
+    width: 100%;
+}
+
+    .listy3 li {
+        border-radius: 20px;
+        background-color: white;
+        list-style-type: none;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .listy3 .jeden {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy3 .dwa {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy3 .trzy {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy3 .cztery {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy3 .piec {
+        background-color: #005362;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+.listy4 {
+    width: 100%;
+}
+
+    .listy4 li {
+        border-radius: 20px;
+        background-color: white;
+        list-style-type: none;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .listy4 .jeden {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy4 .dwa {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy4 .trzy {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy4 .cztery {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy4 .piec {
+        background-color: #005362;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+.listy5 {
+    width: 100%;
+}
+
+    .listy5 li {
+        border-radius: 20px;
+        background-color: white;
+        list-style-type: none;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .listy5 .jeden {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy5 .dwa {
+        background-color: #00B6D7;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy5 .trzy {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy5 .cztery {
+        background-color: #00859C;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .listy5 .piec {
+        background-color: #005362;
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+img {
+    width: 40%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+
+
+.opis {
+    
+    background-color: white;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
+}
+    .opis h2 {
+        color: #00b6d7;
+        font-family: Rubik;
+        font-size: 30px;
+    }
+
+    .opis p {
+        margin: 30px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: white;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+
+.zespol {
+   
+    background-color: #00b6d7;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
+}
+
+    .zespol h2 {
+        color: white;
+        font-family: Rubik;
+        font-size: 30px;
+        
+    }
+
+    .zespol p {
+        margin:30px;
+        border-radius:20px;
+        padding:10px;
+        background-color:white;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+.klienci {
+    background-color: #00859C;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
+}
+
+.klienci h2 {
+    color: white;
+    font-family: Rubik;
+    font-size: 30px;
+}
+
+    .klienci h3 {
+        color: white;
+        font-family: Rubik;
+        font-size: 25px;
+    }
+
+    .klienci p {
+        margin: 30px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: white;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+.kontakt {
+    background-color: #005362;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 5px #00859C;
+    box-sizing: border-box;
+}
+
+.kontakt h2 {
+    color: white;
+    font-family: Rubik;
+    font-size: 30px;
+}
+
+    .kontakt p {
+        margin: 30px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: white;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin-top: 30px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: #00b6d7;
+    border-radius: 20px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+h3, p {
+    margin: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

@@ -69,20 +69,28 @@
 
     <div id="formularzZwyklyWydatek" class="formularz" style="display: none;">
         <form id="formZwyklyWydatek">
-            <label for="nazwaZwyklegoWydatku">Nazwa wydatku:</label>
-            <select id="nazwaZwyklegoWydatku" name="nazwaZwyklegoWydatku">
-                <!-- Dodaj opcje do wyboru -->
-                <option value="opcja1">Opcja 1</option>
-                <option value="opcja2">Opcja 2</option>
-                <!-- Dodaj więcej opcji według potrzeb -->
-            </select>
-            <br>
+            
+         
 
             <label for="kategoriaZwyklegoWydatku">Kategoria wydatku:</label>
             <select id="kategoriaZwyklegoWydatku" name="kategoriaZwyklegoWydatku">
                 <!-- Dodaj opcje do wyboru -->
-                <option value="kategoria1">Kategoria 1</option>
-                <option value="kategoria2">Kategoria 2</option>
+                <option value="kategoria1">Jedzenie</option>
+                <option value="kategoria2">Rozrywka</option>
+                <option value="kategoria2">Używki</option>
+                <!-- Dodaj więcej opcji według potrzeb -->
+            </select>
+            <br>
+            <label for="nazwaZwyklegoWydatku">Nazwa wydatku:</label>
+            <select id="nazwaZwyklegoWydatku" name="nazwaZwyklegoWydatku">
+                <!-- Dodaj opcje do wyboru -->
+                <option value="opcja1">Jablko</option>
+                <option value="opcja2">Banan</option>
+                <option value="opcja3">Ogórek</option>
+                <option value="opcja4">Kino</option>
+                <option value="opcja5">Teatr</option>
+                <option value="opcja6">Alkochol</option>
+                <option value="opcja7">Papierosy</option>
                 <!-- Dodaj więcej opcji według potrzeb -->
             </select>
             <br>
@@ -253,20 +261,27 @@
 
  <div class="listy1">
     <div class="sekcja3">
-    <h2>Lista wydatków</h2>
+   
+            <h2>Lista wydatków</h2>
             <ul>
                 @{
                     var spendingForId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2)?.Spending;
                     if (spendingForId2 != null)
                     {
-                        foreach (var property in spendingForId2.GetType().GetProperties())
+                        @foreach (var property in spendingForId2.GetType().GetProperties())
                         {
                             if (property.PropertyType == typeof(float))
                             {
                                 var value = (float)property.GetValue(spendingForId2);
                                 if (value != 0)
                                 {
-                                    <li>@property.Name: @value</li>
+                                    <li data-category="@property.Name">
+                                        @property.Name: @value
+                                        <div>
+                                            <button class="przycisk1w" onclick="editSpending('@property.Name')">Edytuj</button>
+                                            <button class="przycisk1w" onclick="deleteSpending('@property.Name')">Usuń</button>
+                                        </div>
+                                    </li>
                                 }
                             }
                         }
@@ -294,7 +309,12 @@
                                 var value = (float)property.GetValue(incomeForId2);
                                 if (value != 0)
                                 {
-                                    <li>@property.Name: @value</li>
+                                    <li>@property.Name: @value
+                                        <div>
+                                            <button class="przycisk1i" onclick="editIncoming('@property.Name')">Edytuj</button>
+                                            <button class="przycisk1i" onclick="deleteIncoming('@property.Name')">Usuń</button>
+                                        </div>
+                                    </li>
                                 }
                             }
                         }
@@ -320,7 +340,12 @@
                                 var value = (float)property.GetValue(savingsForId2);
                                 if (value != 0)
                                 {
-                                    <li>@property.Name: @value</li>
+                                    <li>@property.Name: @value
+                                        <div>
+                                            <button class="przycisk1s" onclick="editSavings('@property.Name')">Edytuj</button>
+                                            <button class="przycisk1s" onclick="deleteSavings('@property.Name')">Usuń</button>
+                                        </div>
+                                    </li>
                                 }
                             }
                         }

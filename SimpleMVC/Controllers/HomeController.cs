@@ -22,7 +22,7 @@ namespace SimpleMVC.Controllers
             // SimpleExemple exemples = new SimpleExemple("trangle", 3.4f, 4.6f);
             persons = new List<Person>()
             {
-                new Person() {Id = 1, FirstName = "Jan", LastName = "Kowalski", Age = 25, IdIncome = 1, IdSpending = 1, IdSavings=1},
+                new Person() {Id = 1, FirstName = "Jan", LastName = "Kowalski", Age = 35, IdIncome = 1, IdSpending = 1, IdSavings=1},
                 new Person() {Id = 2, FirstName = "Ewa", LastName = "Farna", Age = 54, IdIncome = 2, IdSpending = 2, IdSavings=2},
                 new Person() {Id = 3, FirstName = "Stanis³aw", LastName = "Kamiñski", Age = 70, IdIncome = 3, IdSpending = 3, IdSavings = 3},
                 new Person() {Id = 4, FirstName = "Janina", LastName = "Kowalskia", Age = 20, IdIncome = 4, IdSpending = 4, IdSavings = 4},
@@ -98,6 +98,52 @@ namespace SimpleMVC.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpPost]
+        public ActionResult EditSpending(string category, float newValue)
+        {
+            // Udawana operacja edycji wydatku o danej kategorii
+            // Poni¿ej znajdziesz kod przyk³adowy - tutaj mo¿esz dostosowaæ go do swojej implementacji
+
+            // Zamiast rzeczywistej operacji na bazie danych
+            // var spending = dbContext.Spending.FirstOrDefault(s => s.Category == category);
+            // if (spending != null)
+            // {
+            //     spending.Value = newValue;
+            //     dbContext.SaveChanges();
+            //     return RedirectToAction("Index"); // Przekierowanie do g³ównej strony po edycji
+            // }
+            // else
+            // {
+            //     return RedirectToAction("Index");
+            // }
+
+            // Udawane zwrócenie wyniku
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public ActionResult DeleteSpending(string category)
+        {
+            // Udawana operacja usuwania wydatku o danej kategorii
+            // Poni¿ej znajdziesz kod przyk³adowy - tutaj mo¿esz dostosowaæ go do swojej implementacji
+
+            // Zamiast rzeczywistej operacji na bazie danych
+            // var spending = dbContext.Spending.FirstOrDefault(s => s.Category == category);
+            // if (spending != null)
+            // {
+            //     dbContext.Spending.Remove(spending);
+            //     dbContext.SaveChanges();
+            //     return RedirectToAction("Index"); // Przekierowanie do g³ównej strony po usuniêciu
+            // }
+            // else
+            // {
+            //     return RedirectToAction("Index");
+            // }
+
+            // Udawane zwrócenie wyniku
+            return RedirectToAction("Index");
         }
     }
 }
