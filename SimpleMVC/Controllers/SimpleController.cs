@@ -5,6 +5,7 @@ using SimpleMVC.Models;
 
 namespace SimpleMVC.Controllers
 {
+  
     public class SimpleController : Controller
     {
         // GET: SimpleController

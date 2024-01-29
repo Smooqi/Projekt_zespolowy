@@ -101,19 +101,19 @@ namespace SimpleMVC.Models
         private int id;
         public int Id { get; set; }
 
-        private float inwestycje;
+        private float? inwestycje;
         public float Inwestycje { get; set; }
 
-        private float lokaty;
+        private float? lokaty;
         public float Lokaty { get; set; }
 
-        private float obligacje;
+        private float? obligacje;
         public float Obligacje { get; set; }
 
-        private float kieszonkowe;
+        private float? kieszonkowe;
         public float Kieszonkowe { get; set; }
 
-        private float naprzyszłość;
+        private float? naprzyszłość;
         public float NaPrzyszłość { get; set; }
 
 

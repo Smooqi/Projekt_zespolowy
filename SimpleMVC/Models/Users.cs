@@ -1,49 +1,247 @@
 ﻿using Microsoft.AspNetCore.Mvc.TagHelpers.Cache;
 using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace SimpleMVC.Models
 {
-    public class Users
+    public class Osoba
     {
-        public static List<Users> userList = new List<Users>()
-        {
-            new Users { UserName = "u1", Password = "pass1" },
-            new Users { UserName = "u2", Password = "pass2" },
-        // Dodaj więcej użytkowników
-        };
-/*
-        private readonly int id;
+        [Key]
         public int Id { get; set; }
-*/
-        private string? userName;
+        public int IdDostepu { get; set; }
+        public int IdMajatek { get; set; }
+        public int IdPrzychodStaly { get; set; }
+        public int IdPrzychodZmienny { get; set; }
+        public int IdOszczednosciStale { get; set; }
+        public int IdOszczednosciZmienne { get; set; }
+        public int IdWydatekStaly { get; set; }
+        public int IdWydatekZmienny { get; set; }
+        public string Imie { get; set; }
+        public string Nazwisko { get; set; }
+        public int Wiek { get; set; }
+        public DateTime DataDodaniaOsoby { get; set; }
 
-        public string? UserName { get; set; }
+        [ForeignKey("IdDostepu")]
+        public Dostep Dostep { get; set; }
+        [ForeignKey("IdDostepu")]
+        public Majatek Majatek { get; set; }    
+    
+        [ForeignKey("IdPrzychudStaly")]
+        public PrzychodStaly PrzychodStaly { get; set; }
+ 
+        [ForeignKey("IdPrzychodZmienn")]
+        public PrzychodZmienny PrzychodZmienny { get; set; }
 
-        private string? password;
+        [ForeignKey("IdOszczednosciStal")]
+        public OszczednosciStale OszczednosciStale { get; set; }
+     
+        [ForeignKey("IdOszczednosciZmienne")]
+        public OszczednosciZmienne OszczednosciZmienne { get; set; }
+        [ForeignKey("IdWydatekStal")]
+        public WydatekStaly WydatekStaly { get; set; }
+        [ForeignKey("IdWydatekZmienny")]
+        public WydatekZmienny WydatekZienny { get; set; }
+       
+    }
+    public class Dostep
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Login { get; set; } = "u1";
+        public string Haslo { get; set; } = "p1";
+        public DateTime DataLogowania { get; set; }
+    }
 
-        public string? Password { get; set; }
+    public class Majatek
+    {
+        [Key]
+        public int Id { get; set; }
+        public int IdNieruchomosc { get; set; }
+        public int IdRuchomosc { get; set; }
+        public int IdKamienieMetale { get; set; }
+        public int IdPapieryWartosciowe { get; set; }
+        public int IdGotowka { get; set; }
 
-  /*      private DateTime dateCreate;
+        [ForeignKey("IdNieruchomosc")]
+        public Nieruchomosc Nieruchomosc { get; set; }
 
-        public DateTime DateCreate { get; set; }
+        [ForeignKey("IdNieruchomosc")]
+        public Ruchomosc Ruchomosc { get; set; }
+        
+        [ForeignKey("IdKamienieMetale")]
+        public KamienieMetale KamienieMetale { get; set; }
+        
+        [ForeignKey("IdPapieryWartosciowe")]
+        public PapieryWartosciowe PapieryWartosciowe { get; set; }
+        
+        [ForeignKey("IdGotowka")]
+        public Gotowka Gotowka { get; set; }
+    }
 
-        private DateTime dateLastLoginErr;
+    public class Nieruchomosc
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public double Powierzchnia { get; set; }
+        public decimal Wartosc { get; set; }
+        public DateTime Data { get; set; }
+    }
+    public class Ruchomosc
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public decimal Wartosc { get; set; }
+        public DateTime Data { get; set; }
+    }
+    public class KamienieMetale
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public decimal Wartosc { get; set; }
+        public DateTime Data { get; set; }
+    }
+    public class PapieryWartosciowe
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public decimal Wartosc { get; set; }
+        public DateTime Data { get; set; }
+    }
 
-        public DateTime DateLastErr { get; set; }
+    public class Gotowka
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public decimal Wartosc { get; set; }
+        public DateTime Data { get; set; }
+    }
 
-        private DateTime dateLastLoginGood;
 
-        public DateTime DateLastLoginGood { get; set; }
+public class PrzychodStaly
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public decimal Wartosc { get; set; }
+        public string Aktualizacja { get; set; }
+        public DateTime Data { get; set; }
+    }
+;
 
-        private string email;
+public class PrzychodZmienny
+    {
+        [Key]
+        public int Id { get; set; }
 
-        public string Email { get; set; }
+        public string Nazwa { get; set; }
 
-        private string tel;
+        public decimal Wartosc { get; set; }
 
-        public string Tel { get; set; }*/
+        public DateTime Data { get; set; }
+    }
+
+
+public class OszczednosciStale
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public decimal Wartosc { get; set; }
+        public string Aktualizacja { get; set; }
+        public DateTime Data { get; set; }
+    }
+    public class OszczednosciZmienne
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public decimal Wartosc { get; set; }
+        public DateTime Data { get; set; }
+    }
+
+    public class WydatekStaly
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public decimal Wartosc { get; set; }
+        public string Aktualizacja { get; set; }
+        public DateTime Data { get; set; }
+    }
+    public class WydatekZmienny
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public int IdDostepu { get; set; }
+        public int IdKategoria { get; set; }
+        public decimal Wartosc { get; set; }
+        public DateTime Data { get; set; }
+    }
+    public class Kategorie
+    {
+        [Key]
+        public int Id { get; set; }
+        public int IdJedzenie { get; set; }
+        public int IdUzywki { get; set; }
+        public int IdRozrywka { get; set; }
+        public int IdNieoczekiwane { get; set; }
+        public int IdUbrania { get; set; }
+        public string Nazwa { get; set; }
+
+        [ForeignKey("IdJedzenie")]
+        public Jedzenie Jedzenie { get; set; }
+
+        [ForeignKey("IdUzywki")]
+        public Uzywki Uzywki { get; set; }
+
+        [ForeignKey("IdRozrywka")]
+        public Rozrywka Rozrywka { get; set; }
+
+        [ForeignKey("IdNieoczekiwane")]
+        public Nieoczekiwane Nieoczekiwane { get; set; }
+
+        [ForeignKey("IdUbrania")]
+        public Ubrania Ubrania { get; set; }
+
+    }
+    public class Jedzenie
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+    }
+    public class Uzywki
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+    }
+    public class Rozrywka
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+    }
+    public class Nieoczekiwane
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+    }
+    public class Ubrania
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
     }
 
 }

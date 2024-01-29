@@ -6,105 +6,49 @@ namespace SimpleMVC.Controllers
 {
     public class AccountController : Controller
     {
-        
-            private bool IsValidUser(string username, string password)
-            {
-            //var user = Users.userList.SingleOrDefault(u => u.UserName == username);
-            bool taknie = false;
-            foreach (var testc in Users.userList)
-            {
-                if ((username == testc.UserName) && (password == testc.Password))
-                {
-                    taknie = true; // Użytkownik istnieje i hasło jest poprawne
-                    break;
-                }
-                else
-                    taknie = false;
-            }
-            if(taknie)
-                return true;
-            else
-                return false;
-           // return false;
-            //      if (user != null)
-            //   {
-            // Sprawdź hasło
-            //if (password.Equals(user.Password))
-            //if (password == "pass1")
-            //{
-            //    }
-        }
-        //}
 
-        // return false; // Użytkownik nie istnieje lub hasło jest niepoprawne
-    
-            //}
-                    
-        /*
-                [HttpPost]
-                public IActionResult Index()
-                {
-                    return View();
-                }
-
-                //[Authorize]
-                [HttpGet]
-                public IActionResult Login(Users us)
-                {
-
-                    if (ModelState.IsValid)
-                    {
-                        // Sprawdź dane logowania i autoryzuj użytkownika
-                        if (IsValidUser(us.UserName, us.Password))
-                        {
-
-
-                            return RedirectToAction("Index", "Simple");
-                        }
-                        else
-                        {
-                            // Nieprawidłowe dane logowania
-                            ViewData["ErrorMessage"] = "Invalid user name or password.";
-                        }
-                    }
-
-                        return View(us);
-                }
-
-                        public IActionResult Logout()
-                        {
-                            // Wyloguj użytkownika
-                            // ...
-
-                            return RedirectToAction("Index", "Home");
-                        }
-                */
-        [HttpPost]
-        public IActionResult Login()
+        public IActionResult StronaLogowania()
         {
-            return View();
+            return View("../Account/Login");
+        }
+
+        private bool IsValidUser(string username, string password)
+        {
+            Dostep users = new Dostep();
+            if ((password == users.Haslo)&&(username == users.Login))
+                return true; 
+            else return false;
+    
         }
 
         [HttpGet]
-        public IActionResult Login(Users model)
+        public IActionResult Login(Dostep us)
         {
-            // Sprawdź dane logowania i autoryzuj użytkownika
-            if (IsValidUser(model.UserName, model.Password))
+            if (ModelState.IsValid)
             {
-                ViewData["ErrorMessage"] = "Jest ok";
-                // Pomyślna autoryzacja - przekieruj gdzie trzeba
-                return RedirectToAction("Index", "Home");
+                if (IsValidUser(us.Login, us.Haslo))
+                    return RedirectToAction("Index", "Home");
+                else
+                    return RedirectToAction("NieZalogowany", "Home");
             }
             else
             {
-                // Nieprawidłowe dane logowania
-                ViewData["ErrorMessage"] = "Invalid username or password.";
-                return View(model);
+                ViewData["Error"] = "Nie ma takiego uzytkownika";
+                return View("ViewData[Error]");
+
             }
         }
+         
+       public IActionResult Logout(Dostep us)
+       {
+            us.Login = string.Empty;
+            us.Haslo = string.Empty;
+            return RedirectToAction("Index", "Home");
+       }
+     
         public IActionResult LoginErr()
         {
-            return View();
+            return View("LoginErr");
         }
     }
 }

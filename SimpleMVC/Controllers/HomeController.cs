@@ -89,6 +89,12 @@ namespace SimpleMVC.Controllers
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+        public IActionResult Niezalogowany()
+        {
+            return RedirectToAction("LoginErr", "Account");
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

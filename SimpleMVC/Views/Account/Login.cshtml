@@ -1,6 +1,7 @@
-﻿@model Users
+﻿@model Dostep
 
 @{
+    
     ViewData["Logowanie"] = "Logowanie";
 }
 
@@ -10,18 +11,18 @@
 
     <div> <!--style="background-color: red">-->
         <div>
-            <label asp-for="UserName">User name: </label>
-            <input  asp-for="UserName"type="text" required />
+            <label>User name: </label>
+            <input asp-for="Login"type="text" required />
         </div>
         <div>
-            <label asp-for="Password">Password: </label>
-            <input  asp-for="Password" type="password" required />
+            <label>Password: </label>
+            <input  asp-for="Haslo" type="password" required />
         </div>
         <button type="submit">Login</button>
     </div>
     <div>
         <a href="#">Don't have an account? Register here</a>
     </div>
-    <div>@ViewData["ErrorMessage"]</div>
+   
 
 </form>
