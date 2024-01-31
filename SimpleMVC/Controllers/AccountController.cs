@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SimpleMVC.Models;
 
+
 namespace SimpleMVC.Controllers
 {
     public class AccountController : Controller
@@ -27,6 +28,7 @@ namespace SimpleMVC.Controllers
             if (ModelState.IsValid)
             {
                 if (IsValidUser(us.Login, us.Haslo))
+
                     return RedirectToAction("Index", "Home");
                 else
                     return RedirectToAction("NieZalogowany", "Home");
@@ -43,7 +45,7 @@ namespace SimpleMVC.Controllers
        {
             us.Login = string.Empty;
             us.Haslo = string.Empty;
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("StronaLogowania", "Account");
        }
      
         public IActionResult LoginErr()
@@ -51,4 +53,5 @@ namespace SimpleMVC.Controllers
             return View("LoginErr");
         }
     }
+
 }
