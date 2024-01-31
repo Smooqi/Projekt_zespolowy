@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using SimpleMVC.Data;
 using SimpleMVC.Models;
 using System.Diagnostics;
 
@@ -19,6 +20,8 @@ namespace SimpleMVC.Controllers
 
         public IActionResult Index()
         {
+            
+
             // SimpleExemple exemples = new SimpleExemple("trangle", 3.4f, 4.6f);
             persons = new List<Person>()
             {

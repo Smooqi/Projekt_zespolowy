@@ -33,6 +33,13 @@ footer {
     margin-left:auto;
     margin-right:auto
 }
+
+.cont2 {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto
+}
 .info {
     height: auto;
     width:100%;
@@ -635,6 +642,1761 @@ nav {
 }
 button:disabled {
     background-color: #C6C6C6;
+}
+
+
+/* For Mobile View */
+
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .cont {
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja1 > h1 {
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja2 > h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja1 > p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja2 > p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    nav {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przyciski1 {
+       justify-content:center;
+       text-align:center;
+       display:flex;
+       
+        margin-bottom: 50px;
+    }
+}
+
+ 
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk1 {
+        margin: 5px;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 2px solid #005362;
+    }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk1:hover {
+        margin: 5px;
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        padding: 10px;
+        border: 2px solid white;
+        font-family: Rubik;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk2 {
+        margin: 5px;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: white;
+        color: #00859C;
+        border: 2px solid #00859C;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk2:hover {
+        margin: 5px;
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: #00859C;
+        border-radius: 50px;
+        padding: 10px;
+        border: 2px solid white;
+        font-family: Rubik;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk3 {
+        margin: 5px;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: white;
+        color: #00B6D7;
+        border: 2px solid #00B6D7;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk3:hover {
+        margin: 5px;
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 50px;
+        padding: 10px;
+        border: 2px solid white;
+        font-family: Rubik;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przyciskDodatkowy1,
+    .przyciskDodatkowy2,
+    .przyciskDodatkowy3 {
+        margin:5px;
+        display: block;
+        text-align: center;
+        padding: 5px;
+        border-radius: 40px;
+        font-family: Rubik;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s, border 0.3s, color 0.3s;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przyciskDodatkowy1 {
+        border: 2px solid #005362;
+    }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przyciskDodatkowy2 {
+        border: 2px solid #00859C;
+    }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przyciskDodatkowy3 {
+        border: 2px solid #00B6D7;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyWydatek,
+    #formularzStalyWydatek {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyWydatek label,
+    #formularzStalyWydatek label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 8px;
+        color: #005362;
+        font-family: Rubik;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyWydatek select,
+    #formularzStalyWydatek select,
+    #formularzZwyklyWydatek input[type="number"],
+    #formularzStalyWydatek input[type="number"],
+    #formularzZwyklyWydatek input[type="date"],
+    #formularzStalyWydatek input[type="date"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        border: 2px solid #005362;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyWydatek button,
+    #formularzStalyWydatek button {
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 2px solid #005362;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyWydatek button:hover,
+    #formularzStalyWydatek button:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        padding: 10px;
+        border: 2px solid white;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyPrzychod,
+    #formularzStalyPrzychod {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyPrzychod label,
+    #formularzStalyPrzychod label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 8px;
+        color: #005362;
+        font-family: Rubik;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyPrzychod select,
+    #formularzStalyPrzychod select,
+    #formularzZwyklyPrzychod input[type="number"],
+    #formularzStalyPrzychod input[type="number"],
+    #formularzZwyklyPrzychod input[type="date"],
+    #formularzStalyPrzychod input[type="date"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        border: 2px solid #005362;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyPrzychod button,
+    #formularzStalyPrzychod button
+     {
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 2px solid #005362;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklyPrzychod button:hover,
+    #formularzStalyPrzychod button:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        padding: 10px;
+        border: 2px solid white;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklaOszczednosc,
+    #formularzStalaOszczednosc {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklaOszczednosc label,
+    #formularzStalaOszczednosc label {
+        display: block;
+        margin-bottom: 8px;
+        color: #00B6D7;
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklaOszczednosc select,
+    #formularzStalaOszczednosc select,
+    #formularzZwyklaOszczednosc input[type="number"],
+    #formularzStalaOszczednosc input[type="number"],
+    #formularzZwyklaOszczednosc input[type="date"],
+    #formularzStalaOszczednosc input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-radius: 100px;
+        border: 2px solid #00B6D7;
+    }
+}
+
+
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklaOszczednosc button,
+    #formularzStalaOszczednosc button {
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 2px solid #00B6D7;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    #formularzZwyklaOszczednosc button:hover,
+    #formularzStalaOszczednosc button:hover {
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 50px;
+        padding: 10px;
+        border: 2px solid white;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .listy1 {
+        width: 90%;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .listy1 {
+        width: 90%;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .listy1 li {
+        list-style-type: none;
+        background-color: white;
+        border-radius: 50px;
+        padding: 10px;
+        margin: 10px;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja3 {
+        color: white;
+        flex: 1;
+        box-sizing: border-box;
+        background-color: #005362;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px #343434;
+        margin-bottom:30px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja4 {
+        color: white;
+        flex: 1;
+        box-sizing: border-box;
+        background-color: #00859C;
+       margin:0px;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px #025462;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja5 {
+        margin-top:30px;
+        color: white;
+        flex: 1;
+        box-sizing: border-box;
+        background-color: #00B6D7;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px #00859C;
+    }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja3 h2 {
+        font-size:20px;
+    }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja4 h2 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .sekcja5 h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk1w {
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 2px solid #005362;
+    }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk1w:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        border: 2px solid #005362;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk1i {
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: white;
+        color: #00859C;
+        border: 2px solid #00859C;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk1i:hover {
+        color: white;
+        text-align: center;
+        background-color: #00859C;
+        border-radius: 50px;
+        border: 2px solid #00859C;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk1s {
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: white;
+        color: #00B6D7;
+        border: 2px solid #00B6D7;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .przycisk1s:hover {
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 50px;
+        border: 2px solid #00B6D7;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    footer a {
+        font-family: Rubik;
+        font-size: 15px;
+    }
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    footer p {
+        font-family:Rubik;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+/* For Tablet View */
+
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .cont {
+        width: 95%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja1 > h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja2 > h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja1 > p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja2 > p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    nav {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przyciski1 {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk1 {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk1:hover {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        padding: 15px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk2 {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #00859C;
+        border: 3px solid #00859C;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk2:hover {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: #00859C;
+        border-radius: 50px;
+        padding: 15px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk3 {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #00B6D7;
+        border: 3px solid #00B6D7;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk3:hover {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 50px;
+        padding: 15px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przyciskDodatkowy1,
+    .przyciskDodatkowy2,
+    .przyciskDodatkowy3 {
+        margin: 5px;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        border-radius: 60px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s, border 0.3s, color 0.3s;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przyciskDodatkowy1 {
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przyciskDodatkowy2 {
+        border: 3px solid #00859C;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przyciskDodatkowy3 {
+        border: 3px solid #00B6D7;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyWydatek,
+    #formularzStalyWydatek {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyWydatek label,
+    #formularzStalyWydatek label {
+        font-size: 22px;
+        display: block;
+        margin-bottom: 8px;
+        color: #005362;
+        font-family: Rubik;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyWydatek select,
+    #formularzStalyWydatek select,
+    #formularzZwyklyWydatek input[type="number"],
+    #formularzStalyWydatek input[type="number"],
+    #formularzZwyklyWydatek input[type="date"],
+    #formularzStalyWydatek input[type="date"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyWydatek button,
+    #formularzStalyWydatek button {
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #005362;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyWydatek button:hover,
+    #formularzStalyWydatek button:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        padding: 10px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyPrzychod,
+    #formularzStalyPrzychod {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyPrzychod label,
+    #formularzStalyPrzychod label {
+        font-size: 22px;
+        display: block;
+        margin-bottom: 8px;
+        color: #005362;
+        font-family: Rubik;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyPrzychod select,
+    #formularzStalyPrzychod select,
+    #formularzZwyklyPrzychod input[type="number"],
+    #formularzStalyPrzychod input[type="number"],
+    #formularzZwyklyPrzychod input[type="date"],
+    #formularzStalyPrzychod input[type="date"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyPrzychod button,
+    #formularzStalyPrzychod button {
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #005362;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklyPrzychod button:hover,
+    #formularzStalyPrzychod button:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        padding: 10px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklaOszczednosc,
+    #formularzStalaOszczednosc {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklaOszczednosc label,
+    #formularzStalaOszczednosc label {
+        display: block;
+        margin-bottom: 8px;
+        color: #00B6D7;
+        font-family: Rubik;
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklaOszczednosc select,
+    #formularzStalaOszczednosc select,
+    #formularzZwyklaOszczednosc input[type="number"],
+    #formularzStalaOszczednosc input[type="number"],
+    #formularzZwyklaOszczednosc input[type="date"],
+    #formularzStalaOszczednosc input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-radius: 100px;
+        border: 3px solid #00B6D7;
+    }
+}
+
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklaOszczednosc button,
+    #formularzStalaOszczednosc button {
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #00B6D7;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    #formularzZwyklaOszczednosc button:hover,
+    #formularzStalaOszczednosc button:hover {
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 50px;
+        padding: 10px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .listy1 {
+        width: 90%;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .listy1 {
+        width: 96%;
+        display: block;
+       margin-right:4%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .listy1 li {
+        list-style-type: none;
+        background-color: white;
+        border-radius: 50px;
+        padding: 10px;
+        margin: 10px;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja3 {
+        color: white;
+        flex: 1;
+        box-sizing: border-box;
+        background-color: #005362;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px #343434;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja4 {
+        color: white;
+        flex: 1;
+        box-sizing: border-box;
+        background-color: #00859C;
+        margin: 0px;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px #025462;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja5 {
+        margin-top: 30px;
+        color: white;
+        flex: 1;
+        box-sizing: border-box;
+        background-color: #00B6D7;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px #00859C;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja3 h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja4 h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .sekcja5 h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk1w {
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk1w:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        border: 3px solid #005362;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk1i {
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #00859C;
+        border: 3px solid #00859C;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk1i:hover {
+        color: white;
+        text-align: center;
+        background-color: #00859C;
+        border-radius: 50px;
+        border: 3px solid #00859C;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk1s {
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+        color: #00B6D7;
+        border: 3px solid #00B6D7;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .przycisk1s:hover {
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 50px;
+        border: 3px solid #00B6D7;
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    footer a {
+        font-family: Rubik;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    footer p {
+        font-family: Rubik;
+        font-size: 18px;
+    }
+}
+
+/* For Laptop View */
+
+
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .cont {
+        width: 95%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja1 > h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja2 > h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja1 > p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja2 > p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    nav {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przyciski1 {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk1 {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk1:hover {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        padding: 15px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk2 {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: #00859C;
+        border: 3px solid #00859C;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk2:hover {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: #00859C;
+        border-radius: 50px;
+        padding: 15px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk3 {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: #00B6D7;
+        border: 3px solid #00B6D7;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk3:hover {
+        margin: 10px;
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 50px;
+        padding: 15px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przyciskDodatkowy1,
+    .przyciskDodatkowy2,
+    .przyciskDodatkowy3 {
+        margin: 5px;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        border-radius: 60px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s, border 0.3s, color 0.3s;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przyciskDodatkowy1 {
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przyciskDodatkowy2 {
+        border: 3px solid #00859C;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przyciskDodatkowy3 {
+        border: 3px solid #00B6D7;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyWydatek,
+    #formularzStalyWydatek {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyWydatek label,
+    #formularzStalyWydatek label {
+        font-size: 30px;
+        display: block;
+        margin-bottom: 8px;
+        color: #005362;
+        font-family: Rubik;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyWydatek select,
+    #formularzStalyWydatek select,
+    #formularzZwyklyWydatek input[type="number"],
+    #formularzStalyWydatek input[type="number"],
+    #formularzZwyklyWydatek input[type="date"],
+    #formularzStalyWydatek input[type="date"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyWydatek button,
+    #formularzStalyWydatek button {
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #005362;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyWydatek button:hover,
+    #formularzStalyWydatek button:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        padding: 10px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyPrzychod,
+    #formularzStalyPrzychod {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyPrzychod label,
+    #formularzStalyPrzychod label {
+        font-size: 30px;
+        display: block;
+        margin-bottom: 8px;
+        color: #005362;
+        font-family: Rubik;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyPrzychod select,
+    #formularzStalyPrzychod select,
+    #formularzZwyklyPrzychod input[type="number"],
+    #formularzStalyPrzychod input[type="number"],
+    #formularzZwyklyPrzychod input[type="date"],
+    #formularzStalyPrzychod input[type="date"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyPrzychod button,
+    #formularzStalyPrzychod button {
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #005362;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklyPrzychod button:hover,
+    #formularzStalyPrzychod button:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        padding: 10px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklaOszczednosc,
+    #formularzStalaOszczednosc {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklaOszczednosc label,
+    #formularzStalaOszczednosc label {
+        display: block;
+        margin-bottom: 8px;
+        color: #00B6D7;
+        font-family: Rubik;
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklaOszczednosc select,
+    #formularzStalaOszczednosc select,
+    #formularzZwyklaOszczednosc input[type="number"],
+    #formularzStalaOszczednosc input[type="number"],
+    #formularzZwyklaOszczednosc input[type="date"],
+    #formularzStalaOszczednosc input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-radius: 100px;
+        border: 3px solid #00B6D7;
+    }
+}
+
+
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklaOszczednosc button,
+    #formularzStalaOszczednosc button {
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #00B6D7;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    #formularzZwyklaOszczednosc button:hover,
+    #formularzStalaOszczednosc button:hover {
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 50px;
+        padding: 10px;
+        border: 3px solid white;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .listy1 {
+        width: 96%;
+        display: block;
+        margin-right: 4%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .listy1 li {
+        list-style-type: none;
+        background-color: white;
+        border-radius: 50px;
+        padding: 10px;
+        margin: 10px;
+        color: #005362;
+        font-family: Rubik;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja3 {
+        color: white;
+        flex: 1;
+        box-sizing: border-box;
+        background-color: #005362;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px #343434;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja4 {
+        color: white;
+        flex: 1;
+        box-sizing: border-box;
+        background-color: #00859C;
+        margin: 0px;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px #025462;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja5 {
+        margin-top: 30px;
+        color: white;
+        flex: 1;
+        box-sizing: border-box;
+        background-color: #00B6D7;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 5px #00859C;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja3 h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja4 h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .sekcja5 h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk1w {
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: #005362;
+        border: 3px solid #005362;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk1w:hover {
+        color: white;
+        text-align: center;
+        background-color: #005362;
+        border-radius: 50px;
+        border: 3px solid #005362;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk1i {
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: #00859C;
+        border: 3px solid #00859C;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk1i:hover {
+        color: white;
+        text-align: center;
+        background-color: #00859C;
+        border-radius: 50px;
+        border: 3px solid #00859C;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk1s {
+        text-align: center;
+        display: inline-block;
+        border-radius: 50px;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: #00B6D7;
+        border: 3px solid #00B6D7;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    .przycisk1s:hover {
+        color: white;
+        text-align: center;
+        background-color: #00B6D7;
+        border-radius: 50px;
+        border: 3px solid #00B6D7;
+        font-family: Rubik;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    footer a {
+        font-family: Rubik;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1023px) {
+    footer p {
+        font-family: Rubik;
+        font-size: 20px;
+    }
 }
 
 
