@@ -26,21 +26,21 @@ namespace SimpleMVC.Models
 
         [ForeignKey("IdDostepu")]
         public Dostep Dostep { get; set; }
-        [ForeignKey("IdDostepu")]
+        [ForeignKey("IdMajatek")]
         public Majatek Majatek { get; set; }    
     
-        [ForeignKey("IdPrzychudStaly")]
+        [ForeignKey("IdPrzychodStaly")]
         public PrzychodStaly PrzychodStaly { get; set; }
  
-        [ForeignKey("IdPrzychodZmienn")]
+        [ForeignKey("IdPrzychodZmienny")]
         public PrzychodZmienny PrzychodZmienny { get; set; }
 
-        [ForeignKey("IdOszczednosciStal")]
+        [ForeignKey("IdOszczednosciStale")]
         public OszczednosciStale OszczednosciStale { get; set; }
      
         [ForeignKey("IdOszczednosciZmienne")]
         public OszczednosciZmienne OszczednosciZmienne { get; set; }
-        [ForeignKey("IdWydatekStal")]
+        [ForeignKey("IdWydatekStaly")]
         public WydatekStaly WydatekStaly { get; set; }
         [ForeignKey("IdWydatekZmienny")]
         public WydatekZmienny WydatekZienny { get; set; }
@@ -50,8 +50,8 @@ namespace SimpleMVC.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Login { get; set; } = "u1";
-        public string Haslo { get; set; } = "p1";
+        public string Login { get; set; }
+        public string Haslo { get; set; }
         public DateTime DataLogowania { get; set; }
     }
 
@@ -68,7 +68,7 @@ namespace SimpleMVC.Models
         [ForeignKey("IdNieruchomosc")]
         public Nieruchomosc Nieruchomosc { get; set; }
 
-        [ForeignKey("IdNieruchomosc")]
+        [ForeignKey("IdRuchomosc")]
         public Ruchomosc Ruchomosc { get; set; }
         
         [ForeignKey("IdKamienieMetale")]

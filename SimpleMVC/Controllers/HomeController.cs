@@ -95,6 +95,10 @@ namespace SimpleMVC.Controllers
             return RedirectToAction("LoginErr", "Account");
         }
 
+        public IActionResult User(Osoba os)
+        {
+            return View("User", os);
+        }
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

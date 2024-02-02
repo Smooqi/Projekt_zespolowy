@@ -1,42 +1,46 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
 }
-@model IEnumerable<ModelComplex>//SimpleMVC.Models.SimpleExemple
 
-
+@model Osoba
 
 <div class="cont">
     <div>View</div>
-   
+
     <div class="info">
         <div class="sekcja1">
             @{
 
-                var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
-                var personWithIdSavings = personWithId2.Saving.Inwestycje + personWithId2.Saving.Lokaty + personWithId2.Saving.Obligacje + personWithId2.Saving.Kieszonkowe + personWithId2.Saving.NaPrzyszłość;
-                var personWithIdExpenses = personWithId2.Income.Wyplata + personWithId2.Income.DodatkowaPraca + personWithId2.Income.Renta +
-                personWithId2.Income.Wynajem;
-                if (personWithId2 != null)
-                {
-                    <h1>@(personWithId2?.Person?.FirstName) Twój dochód to: </h1>
-                }
-                else
-                {
-                    <h1>Brak informacji dla osoby o Id równym 2</h1>
-                }
+                var personWithID = Model.Id;
+                @:<div> @Model.Nazwisko, @Model.Imie </div>
+                //var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
+                //var personWithSaving = Model.OszczednosciStale.Wartosc;
+                //var personWithIdSavings = personWithId2.Saving.Inwestycje + personWithId2.Saving.Lokaty + personWithId2.Saving.Obligacje + personWithId2.Saving.Kieszonkowe + personWithId2.Saving.NaPrzyszłość;
+                //var personWithIdExpenses = personWithId2.Income.Wyplata + personWithId2.Income.DodatkowaPraca + personWithId2.Income.Renta +
+              //  personWithId2.Income.Wynajem;
+             //  if (personWithId2 != null)
+            //    {
+            //        <h1>@(personWithId2?.Person?.FirstName) Twój dochód to: </h1>
+            //    }
+            //    else
+           //     {
+            //        <h1>Brak informacji dla osoby o Id równym 2</h1>
+             //   }
             }
 
-            <p>@personWithIdExpenses</p>
-   
+           @* <p>@personWithIdExpenses</p>*@
+
         </div>
-    
+        @*
         <div class="sekcja2">
             @{
-           
+
                 if (personWithId2 != null)
                 {
                     <h1>@(personWithId2?.Person?.FirstName) Twóje oszczędności to: </h1>
-                    
+
                 }
                 else
                 {
@@ -44,9 +48,9 @@
                 }
             }
             <p>@personWithIdSavings </p>
-        </div>
+        </div>*@
     </div>
-
+@*
     <div class="przyciski1">
         <div class="dodatkowe-przyciski1" id="dodatkowePrzyciski1" style="display: none;">
             <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 1'); zobaczFormularzZwykly()">+zwykły wydatek</button>
@@ -69,8 +73,8 @@
 
     <div id="formularzZwyklyWydatek" class="formularz" style="display: none;">
         <form id="formZwyklyWydatek">
-            
-         
+
+
 
             <label for="kategoriaZwyklegoWydatku">Kategoria wydatku:</label>
             <select id="kategoriaZwyklegoWydatku" name="kategoriaZwyklegoWydatku">
@@ -124,14 +128,14 @@
 
             <label for="kiedyStalegoWydatku">Jak często ma  być pobierane?:</label>
             <select id="kiedyStalegoWydatku" name="kiedyStalegoWydatku">
-            
+
                 <option value="kiedy1">Co 5 minut</option>
                 <option value="kiedy2">Co 1 godzine</option>
                 <option value="kiedy3">Codziennie</option>
                 <option value="kiedy4">Co tydzień</option>
                 <option value="kiedy5">Co miesiąc</option>
                 <option value="kiedy6">Co rok</option>
-               
+
             </select>
             <br>
 
@@ -256,12 +260,12 @@
             <button type="button" onclick="zapiszStalaOszczednosc()">Zapisz stałą oszczędność</button>
         </form>
     </div>
-    
+
 
 
  <div class="listy1">
     <div class="sekcja3">
-   
+
             <h2>Lista wydatków</h2>
             <ul>
                 @{
@@ -358,5 +362,9 @@
             </ul>
     </div>
     </div>
-    
+
 </div>
+
+
+
+</form>*@
