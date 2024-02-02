@@ -6,11 +6,12 @@
 
 
 <div class="cont">
-    <div>View</div>
-   
+    
+    
     <div class="info">
         <div class="sekcja1">
             @{
+
 
                 var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
                 var personWithIdSavings = personWithId2.Saving.Inwestycje + personWithId2.Saving.Lokaty + personWithId2.Saving.Obligacje + personWithId2.Saving.Kieszonkowe + personWithId2.Saving.NaPrzyszłość;

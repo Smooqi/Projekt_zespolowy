@@ -65,6 +65,10 @@ await next();
 
 app.MapControllerRoute(
     name: "default",
+    pattern: "{controller=Account}/{action=StronaLogowania}/{id?}");
+
+app.MapControllerRoute(
+    name: "other",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
