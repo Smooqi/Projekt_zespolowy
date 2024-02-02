@@ -138,7 +138,7 @@ namespace SimpleMVC.Models
         public float Nieruchomosci { get; set; }
 
         private float Metaleikamienie;
-        public float MetaleIKamienieSzlachetne { get; set; }
+        public float MetaleIKamienie { get; set; }
 
         private float Papierywartosciowe;
         public float PapieryWartosciowe { get; set; }

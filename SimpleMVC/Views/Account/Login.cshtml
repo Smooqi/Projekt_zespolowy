@@ -8,22 +8,33 @@
 
 
 <form asp-controller="Account" asp-action="Login" method="get">
-    <div class="logowanie">
-        <div> <!--style="background-color: red">-->
-            <div>
-                <label>Login: </label>
-                <input asp-for="Login"type="text" required />
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="logowanie text-center">
+                    <div>
+                        <!--style="background-color: red">-->
+                        <div>
+                            <label>Login: </label>
+                            <input asp-for="Login" type="text" required />
+                        </div>
+                        <div>
+                            <label>Hasło: </label>
+                            <input asp-for="Haslo" type="password" required />
+                        </div>
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="linkRejestracja text-center">
+
+                        <a asp-area="" asp-controller="Rejestration" asp-action="Index">Nie masz konta? Zarejestruj się tutaj</a>
+                    </div>
+                    
+                </div>
             </div>
-            <div>
-                <label>Hasło: </label>
-                <input  asp-for="Haslo" type="password" required />
-            </div>
-            <button type="submit">Login</button>
         </div>
-        <div>
-            
-            <a  asp-area="" asp-controller="Rejestration" asp-action="Index">Nie masz konta? Zarejestruj się tutaj</a>
-        </div>
+        
+        
+    
     </div>
 
 </form>

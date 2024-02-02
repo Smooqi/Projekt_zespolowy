@@ -63,11 +63,11 @@ namespace SimpleMVC.Controllers
 
             fortune = new List<Fortune>()
             {
-                new Fortune() {Id = 1,  Ruchomosc= 10000, Nieruchomosci = 500000, MetaleIKamienieSzlachetne = 200, PapieryWartosciowe = 0, Gotowka = 40000, Date = DateTime.Now },
-                new Fortune() {Id = 2,  Ruchomosc= 20000, Nieruchomosci = 400000, MetaleIKamienieSzlachetne = 800, PapieryWartosciowe = 1000, Gotowka = 30000, Date = DateTime.Now },
-                new Fortune() {Id = 3,  Ruchomosc= 30000, Nieruchomosci = 300000, MetaleIKamienieSzlachetne = 0, PapieryWartosciowe = 0, Gotowka = 15000, Date = DateTime.Now },
-                new Fortune() {Id = 4,  Ruchomosc= 10000, Nieruchomosci = 300000, MetaleIKamienieSzlachetne = 300, PapieryWartosciowe = 0, Gotowka = 100000, Date = DateTime.Now },
-                new Fortune() {Id = 5,  Ruchomosc= 20000, Nieruchomosci = 600000, MetaleIKamienieSzlachetne = 0, PapieryWartosciowe = 0, Gotowka = 20000, Date = DateTime.Now },
+                new Fortune() {Id = 1,  Ruchomosc= 10000, Nieruchomosci = 500000, MetaleIKamienie = 200, PapieryWartosciowe = 0, Gotowka = 40000, Date = DateTime.Now },
+                new Fortune() {Id = 2,  Ruchomosc= 20000, Nieruchomosci = 400000, MetaleIKamienie = 800, PapieryWartosciowe = 1000, Gotowka = 30000, Date = DateTime.Now },
+                new Fortune() {Id = 3,  Ruchomosc= 30000, Nieruchomosci = 300000, MetaleIKamienie = 0, PapieryWartosciowe = 0, Gotowka = 15000, Date = DateTime.Now },
+                new Fortune() {Id = 4,  Ruchomosc= 10000, Nieruchomosci = 300000, MetaleIKamienie = 300, PapieryWartosciowe = 0, Gotowka = 100000, Date = DateTime.Now },
+                new Fortune() {Id = 5,  Ruchomosc= 20000, Nieruchomosci = 600000, MetaleIKamienie = 0, PapieryWartosciowe = 0, Gotowka = 20000, Date = DateTime.Now },
 
 
 
