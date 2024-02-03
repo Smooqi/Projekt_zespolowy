@@ -55,6 +55,8 @@ namespace SimpleMVC.Models
         public DateTime DataLogowania { get; set; }
     }
 
+   
+
     public class Majatek
     {
         [Key]

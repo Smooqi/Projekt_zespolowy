@@ -6,17 +6,20 @@
 
 @model Osoba
 
+
 <div class="cont">
-    <div>View</div>
+   @* <div>View</div>*@
 
     <div class="info">
         <div class="sekcja1">
             @{
-
-                var personWithID = Model.Id;
-                @:<div> @Model.Nazwisko, @Model.Imie </div>
+                
+             //   var personWithID = Model.Id; 
+                
+              
+               <div> @Model.Nazwisko, @Model.Imie </div>
                 //var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
-                //var personWithSaving = Model.OszczednosciStale.Wartosc;
+               
                 //var personWithIdSavings = personWithId2.Saving.Inwestycje + personWithId2.Saving.Lokaty + personWithId2.Saving.Obligacje + personWithId2.Saving.Kieszonkowe + personWithId2.Saving.NaPrzyszłość;
                 //var personWithIdExpenses = personWithId2.Income.Wyplata + personWithId2.Income.DodatkowaPraca + personWithId2.Income.Renta +
               //  personWithId2.Income.Wynajem;

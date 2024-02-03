@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Plugins;
 using SimpleMVC.Data;
 using SimpleMVC.Models;
 using System.Diagnostics;
@@ -7,12 +9,13 @@ namespace SimpleMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ApplicationDbContext db)
         {
-            _logger = logger;
+            this.db = db;
         }
+
         private List<Person>? persons;
         private List<Income>? incomes;
         private List<Spending>? spendings;
@@ -100,7 +103,18 @@ namespace SimpleMVC.Controllers
 
         public IActionResult User(Osoba os)
         {
-            return View("User", os);
+          //  DaneO oszczednosci = new DaneO();
+
+          //  var oszczednosciStale = db.OszczednosciStale.FirstOrDefault(o => o.Id == os.Id);
+
+         //   if (oszczednosciStale == null)
+        //    {
+        //        return View(); // Obs³uga przypadku, gdy osoba nie ma przypisanych oszczêdnoœci sta³ych
+        //    }
+
+       //     oszczednosci.savings = (float)oszczednosciStale.Wartosc;
+
+            return View("../Home/User", os);
         }
         public IActionResult Error()
         {
