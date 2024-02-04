@@ -21,18 +21,18 @@ namespace SimpleMVC.Controllers
 
 
 
-        public IActionResult Index()
+        public IActionResult Index(Osoba os)
         {
-            var viewModel = new HomeViewModel
+            var viewModel = new HomeViewModelOne
             {
-                ImieUzytkownika = HttpContext.User.Identity.Name,
-                PrzychodyStale = db.PrzychodyStale.ToList(),
-                PrzychodyZmienne = db.PrzychodyZmienne.ToList(),
-                WydatkiStale = db.WydatkiStale.ToList(),
-                WydatkiZmienne = db.WydatkiZmienne.ToList(),
-                OszczednosciStale = db.OszczednosciStale.ToList(),
-                OszczednosciZmienne = db.OszczednosciZmienne.ToList(),
-                Osoba = null // Tutaj zainicjalizuj obiekt Osoba
+                Imie = os.Imie,//HttpContext.User.Identity.Name,
+                PrzychodStaly = db.PrzychodyStale.FirstOrDefault(x => x.Id == os.IdPrzychodStaly),
+                PrzychodZmienny = db.PrzychodyZmienne.FirstOrDefault(x => x.Id == os.IdPrzychodZmienny),
+                WydatekStaly = db.WydatkiStale.FirstOrDefault(x => x.Id == os.IdWydatekStaly),
+                WydatekZmienny = db.WydatkiZmienne.FirstOrDefault(x => x.Id == os.IdWydatekZmienny),
+                OszczednosciStale = db.OszczednosciStale.FirstOrDefault(x => x.Id == os.IdOszczednosciStale),
+                OszczednosciZmienne = db.OszczednosciZmienne.FirstOrDefault(x => x.Id == os.IdOszczednosciZmienne),
+                Osoba = os // Tutaj zainicjalizuj obiekt Osoba
             };
 
             return View(viewModel);

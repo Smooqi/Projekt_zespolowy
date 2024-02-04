@@ -47,21 +47,21 @@ namespace SimpleMVC.Controllers
             if (dostep != null)
             {
                 var osoba = PobierzOsobe(dostep);
-                string imieUzytkownika = osoba?.Imie;
+                /*        string imieUzytkownika = osoba?.Imie;
 
-                var viewModel = new HomeViewModel
-                {
-                    ImieUzytkownika = imieUzytkownika,
-                    PrzychodyStale = db.PrzychodyStale.ToList(),
-                    PrzychodyZmienne = db.PrzychodyZmienne.ToList(),
-                    WydatkiStale = db.WydatkiStale.ToList(),
-                    WydatkiZmienne = db.WydatkiZmienne.ToList(),
-                    OszczednosciStale = db.OszczednosciStale.ToList(),
-                    OszczednosciZmienne = db.OszczednosciZmienne.ToList(),
-                    Osoba = osoba
-                };
+                        var viewModel = new HomeViewModel
+                        {
+                            ImieUzytkownika = imieUzytkownika,
+                            PrzychodyStale = db.PrzychodyStale.ToList(),
+                            PrzychodyZmienne = db.PrzychodyZmienne.ToList(),
+                            WydatkiStale = db.WydatkiStale.ToList(),
+                            WydatkiZmienne = db.WydatkiZmienne.ToList(),
+                            OszczednosciStale = db.OszczednosciStale.ToList(),
+                            OszczednosciZmienne = db.OszczednosciZmienne.ToList(),
+                            Osoba = osoba
+                        };*/
 
-                return RedirectToAction("Index", "Home", viewModel);
+                return RedirectToAction("Index", "Home", /*viewModel);*/osoba);
             }
             else
             {

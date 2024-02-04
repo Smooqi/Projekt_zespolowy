@@ -3,7 +3,7 @@
 *@
 @{
 }
- @model SimpleMVC.ViewModels.HomeViewModel
+ @model SimpleMVC.ViewModels.HomeViewModelOne
 
 
 
@@ -17,7 +17,7 @@
 
 
 
-                    <h1>  @Model.ImieUzytkownika to twój dochód </h1>
+                    <h1>  @Model.Imie to twój dochód </h1>
 
                 }
 
@@ -28,7 +28,7 @@
         <div class="col-12 col-md-6">
             <div class="sekcja2">
 
-                <h1>@Model.ImieUzytkownika Twóje oszczędności to: </h1>
+                <h1>@Model.Imie Twóje oszczędności to: </h1>
 
 
                 <p>5600</p>
@@ -272,30 +272,30 @@
                 <h2>Lista wydatków</h2>
 
                 <ul>
-                    @foreach (var wydatekStaly in Model.WydatkiStale)
-                    {
+                    @*foreach (var wydatekStaly in Model.WydatekStaly)*@
+                    
                         <li>
-                            @wydatekStaly.Nazwa: @wydatekStaly.Wartosc
+                            @Model.WydatekStaly.Nazwa: @Model.WydatekStaly.Wartosc
                             <div>
-                                <button class="przycisk1w" onclick="editSpending('@wydatekStaly.Nazwa')">Edytuj</button>
-                                <button class="przycisk1w" onclick="deleteSpending('@wydatekStaly.Nazwa')">Usuń</button>
+                                <button class="przycisk1w" onclick="editSpending('@Model.WydatekStaly.Nazwa')">Edytuj</button>
+                                <button class="przycisk1w" onclick="deleteSpending('@Model.WydatekStaly.Nazwa')">Usuń</button>
                             </div>
                         </li>
-                    }
+                    
                 </ul>
 
 
                 <ul>
-                    @foreach (var wydatekZmienny in Model.WydatkiZmienne)
-                    {
+                    @*foreach (var wydatekZmienny in Model.WydatkiZmienne)*@
+                    
                         <li>
-                            @wydatekZmienny.Nazwa: @wydatekZmienny.Wartosc
+                            @Model.WydatekZmienny.Nazwa: @Model.WydatekZmienny.Wartosc
                             <div>
-                                <button class="przycisk1w" onclick="editSpending('@wydatekZmienny.Nazwa')">Edytuj</button>
-                                <button class="przycisk1w" onclick="deleteSpending('@wydatekZmienny.Nazwa')">Usuń</button>
+                                <button class="przycisk1w" onclick="editSpending('@Model.WydatekZmienny.Nazwa')">Edytuj</button>
+                                <button class="przycisk1w" onclick="deleteSpending('@Model.WydatekZmienny.Nazwa')">Usuń</button>
                             </div>
                         </li>
-                    }
+                    
                 </ul>
 
             </div>
@@ -305,30 +305,30 @@
             <div class="sekcja4">
                 <h2>Lista przychodów</h2>
                 <ul>
-                    @foreach (var przychodStaly in Model.PrzychodyStale)
-                    {
+                    @*foreach (var przychodStaly in Model.PrzychodyStale)*@
+                    
                         <li>
-                            @przychodStaly.Nazwa: @przychodStaly.Wartosc
+                            @Model.PrzychodStaly.Nazwa: @Model.PrzychodStaly.Wartosc
                             <div>
-                                <button class="przycisk1i" onclick="editIncome('@przychodStaly.Nazwa')">Edytuj</button>
-                                <button class="przycisk1i" onclick="deleteIncome('@przychodStaly.Nazwa')">Usuń</button>
+                                <button class="przycisk1i" onclick="editIncome('@Model.PrzychodStaly.Nazwa')">Edytuj</button>
+                                <button class="przycisk1i" onclick="deleteIncome('@Model.PrzychodStaly.Nazwa')">Usuń</button>
                             </div>
                         </li>
-                    }
+                    
                 </ul>
 
 
                 <ul>
-                    @foreach (var przychodZmienny in Model.PrzychodyZmienne)
-                    {
+                    @*foreach (var przychodZmienny in Model.PrzychodyZmienne)*@
+                    
                         <li>
-                            @przychodZmienny.Nazwa: @przychodZmienny.Wartosc
+                            @Model.PrzychodZmienny.Nazwa: @Model.PrzychodZmienny.Wartosc
                             <div>
-                                <button class="przycisk1i" onclick="editIncome('@przychodZmienny.Nazwa')">Edytuj</button>
-                                <button class="przycisk1i" onclick="deleteIncome('@przychodZmienny.Nazwa')">Usuń</button>
+                                <button class="przycisk1i" onclick="editIncome('@Model.PrzychodZmienny.Nazwa')">Edytuj</button>
+                                <button class="przycisk1i" onclick="deleteIncome('@Model.PrzychodZmienny.Nazwa')">Usuń</button>
                             </div>
                         </li>
-                    }
+                    
                 </ul>
 
 
@@ -339,30 +339,30 @@
             <div class="sekcja5">
                 <h2>Lista oszczędności </h2>
                 <ul>
-                    @foreach (var oszczednoscStala in Model.OszczednosciStale)
-                    {
+                    @*foreach (var oszczednoscStala in Model.OszczednosciStale)*@
+                    
                         <li>
-                            @oszczednoscStala.Nazwa: @oszczednoscStala.Wartosc
+                            @Model.OszczednosciStale.Nazwa: @Model.OszczednosciStale.Wartosc
                             <div>
-                                <button class="przycisk1s" onclick="editSavings('@oszczednoscStala.Nazwa')">Edytuj</button>
-                                <button class="przycisk1s" onclick="deleteSavings('@oszczednoscStala.Nazwa')">Usuń</button>
+                                <button class="przycisk1s" onclick="editSavings('@Model.OszczednosciStale.Nazwa')">Edytuj</button>
+                                <button class="przycisk1s" onclick="deleteSavings('@Model.OszczednosciStale.Nazwa')">Usuń</button>
                             </div>
                         </li>
-                    }
+                    
                 </ul>
 
 
                 <ul>
-                    @foreach (var oszczednoscZmienna in Model.OszczednosciZmienne)
-                    {
+                    @*foreach (var oszczednoscZmienna in Model.OszczednosciZmienne)*@
+                    
                         <li>
-                            @oszczednoscZmienna.Nazwa: @oszczednoscZmienna.Wartosc
+                            @Model.OszczednosciZmienne.Nazwa: @Model.OszczednosciZmienne.Wartosc
                             <div>
-                                <button class="przycisk1s" onclick="editSavings('@oszczednoscZmienna.Nazwa')">Edytuj</button>
-                                <button class="przycisk1s" onclick="deleteSavings('@oszczednoscZmienna.Nazwa')">Usuń</button>
+                                <button class="przycisk1s" onclick="editSavings('@Model.OszczednosciZmienne.Nazwa')">Edytuj</button>
+                                <button class="przycisk1s" onclick="deleteSavings('@Model.OszczednosciZmienne.Nazwa')">Usuń</button>
                             </div>
                         </li>
-                    }
+                    
                 </ul>
             </div>
         </div>

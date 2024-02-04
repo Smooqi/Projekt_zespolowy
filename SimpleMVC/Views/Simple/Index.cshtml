@@ -2,12 +2,11 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 
-@model IEnumerable<ModelComplex>//SimpleMVC.Models.SimpleExemple
-
-@{
-    ViewData["Title"] = "View";
+@*model IEnumerable<ModelComplex>//SimpleMVC.Models.SimpleExemple*@
+@model SimpleMVC.ViewModels.HomeViewModelOne
     
-}
+
+
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -15,17 +14,11 @@
                 @{
 
 
-                    var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
-
-                    if (personWithId2 != null)
-                    {
-                        <h1>@(personWithId2?.Person?.FirstName) Twój majątek to: </h1>
-                        <h2>550000</h2>
-                    }
-                    else
-                    {
-                        <h1>Brak informacji dla osoby o Id równym 2</h1>
-                    }
+                   
+                        <h1>@Model.Imie Twój majątek to: </h1>
+                        <h2>2</h2>
+               
+                 
                 }
 
 
@@ -225,25 +218,12 @@
                     <h2>Majątek lista</h2>
                     <ul>
                         @{
-                            var fortuneForId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2)?.Fortune;
-                            if (fortuneForId2 != null)
-                            {
-                                foreach (var property in fortuneForId2.GetType().GetProperties())
-                                {
-                                    if (property.PropertyType == typeof(float))
-                                    {
-                                        var value = (float)property.GetValue(fortuneForId2);
-                                        if (value != 0)
-                                        {
-                                            <li>@property.Name: @value</li>
-                                        }
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                <li>Brak informacji dla osoby o Id równym 2</li>
-                            }
+                          
+               
+                                            <li>@Model.Majatek.Gotowka.ToString()</li>
+                               
+                
+                          
                         }
                     </ul>
                 </div>
