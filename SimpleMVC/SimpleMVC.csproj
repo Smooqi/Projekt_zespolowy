@@ -23,6 +23,7 @@
   <ItemGroup>
     <Content Remove="Views\Home\User.cshtml" />
     <Content Remove="Views\Rejestration.cshtml" />
+    <Content Remove="wwwroot\js\Chart.js" />
   </ItemGroup>
 
   <ItemGroup>

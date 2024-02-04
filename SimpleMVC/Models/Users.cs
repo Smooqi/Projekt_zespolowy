@@ -28,17 +28,17 @@ namespace SimpleMVC.Models
         public Dostep Dostep { get; set; }
 
         [ForeignKey("IdMajatek")]
-        public Majatek Majatek { get; set; }    
-    
+        public Majatek Majatek { get; set; }
+
         [ForeignKey("IdPrzychodStaly")]
         public PrzychodStaly PrzychodStaly { get; set; }
- 
+
         [ForeignKey("IdPrzychodZmienny")]
         public PrzychodZmienny PrzychodZmienny { get; set; }
 
         [ForeignKey("IdOszczednosciStale")]
         public OszczednosciStale OszczednosciStale { get; set; }
-     
+
         [ForeignKey("IdOszczednosciZmienne")]
         public OszczednosciZmienne OszczednosciZmienne { get; set; }
         [ForeignKey("IdWydatekStaly")]
@@ -46,11 +46,11 @@ namespace SimpleMVC.Models
         [ForeignKey("IdWydatekZmienny")]
         public WydatekZmienny WydatekZienny { get; set; }
 
-       
-        
+
+
     }
 
-    
+
 
     public class Dostep
     {
@@ -61,7 +61,7 @@ namespace SimpleMVC.Models
         public DateTime DataLogowania { get; set; }
     }
 
-   
+
 
     public class Majatek
     {
@@ -78,13 +78,13 @@ namespace SimpleMVC.Models
 
         [ForeignKey("IdRuchomosc")]
         public Ruchomosc Ruchomosc { get; set; }
-        
+
         [ForeignKey("IdKamienieMetale")]
         public KamienieMetale KamienieMetale { get; set; }
-        
+
         [ForeignKey("IdPapieryWartosciowe")]
         public PapieryWartosciowe PapieryWartosciowe { get; set; }
-        
+
         [ForeignKey("IdGotowka")]
         public Gotowka Gotowka { get; set; }
     }
@@ -94,8 +94,8 @@ namespace SimpleMVC.Models
         [Key]
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public decimal Powierzchnia { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Powierzchnia { get; set; }
+        public int Wartosc { get; set; }
         public DateTime Data { get; set; }
     }
     public class Ruchomosc
@@ -103,7 +103,7 @@ namespace SimpleMVC.Models
         [Key]
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
         public DateTime Data { get; set; }
     }
     public class KamienieMetale
@@ -111,7 +111,7 @@ namespace SimpleMVC.Models
         [Key]
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
         public DateTime Data { get; set; }
     }
     public class PapieryWartosciowe
@@ -119,7 +119,7 @@ namespace SimpleMVC.Models
         [Key]
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
         public DateTime Data { get; set; }
     }
 
@@ -128,41 +128,41 @@ namespace SimpleMVC.Models
         [Key]
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
         public DateTime Data { get; set; }
     }
 
 
-public class PrzychodStaly
+    public class PrzychodStaly
     {
         [Key]
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
         public string Aktualizacja { get; set; }
         public DateTime Data { get; set; }
     }
-;
+    ;
 
-public class PrzychodZmienny
+    public class PrzychodZmienny
     {
         [Key]
         public int Id { get; set; }
 
         public string Nazwa { get; set; }
 
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
 
         public DateTime Data { get; set; }
     }
 
 
-public class OszczednosciStale
+    public class OszczednosciStale
     {
         [Key]
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
         public string Aktualizacja { get; set; }
         public DateTime Data { get; set; }
     }
@@ -171,7 +171,7 @@ public class OszczednosciStale
         [Key]
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
         public DateTime Data { get; set; }
     }
 
@@ -180,7 +180,7 @@ public class OszczednosciStale
         [Key]
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
         public string Aktualizacja { get; set; }
         public DateTime Data { get; set; }
     }
@@ -191,7 +191,7 @@ public class OszczednosciStale
         public string Nazwa { get; set; }
         public int IdDostepu { get; set; }
         public int IdKategoria { get; set; }
-        public decimal Wartosc { get; set; }
+        public int Wartosc { get; set; }
         public DateTime Data { get; set; }
     }
     public class Kategorie

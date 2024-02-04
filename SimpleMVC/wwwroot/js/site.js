@@ -80,10 +80,13 @@ function zobaczFormularzZwykly() {
 
 function zapiszZwykly() {
     var nazwa = document.getElementById('nazwaZwyklegoWydatku').value;
-    var kategoria = document.getElementById('kategoriaZwyklegoWydatku').value;
     var ile = document.getElementById('ileZwyklegoWydatku').value;
     var data = document.getElementById('dataZwyklegoWydatku').value;
 
+    if (nazwa === '' || ile === '' || data === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
     // Tutaj możesz dodać kod obsługujący zapis wydatku
     // ...
 
@@ -126,6 +129,10 @@ function zapiszStaly() {
     var kiedy = document.getElementById('kiedyStalegoWydatku').value;
     var data = document.getElementById('dataStalegoWydatku').value;
 
+    if (nazwa === '' || ile === '' || kiedy === '' || data === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
     // Tutaj możesz dodać kod obsługujący zapis wydatku
     // ...
 
@@ -167,6 +174,10 @@ function zapiszZwyklyPrzychod() {
     var ile = document.getElementById('ileZwyklegoPrzychodu').value;
     var data = document.getElementById('dataZwyklegoPrzychodu').value;
 
+    if (nazwa === '' || ile === ''  || data === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
     // Tutaj możesz dodać kod obsługujący zapis przychodu
     // ...
 
@@ -209,6 +220,10 @@ function zapiszStalyPrzychod() {
     var kiedy = document.getElementById('kiedyStalegoPrzychodu').value;
     var data = document.getElementById('dataStalegoPrzychodu').value;
 
+    if (nazwa === '' || ile === '' || kiedy === '' || data === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
     // Tutaj możesz dodać kod obsługujący zapis stałego przychodu
     // ...
 
@@ -249,6 +264,10 @@ function zapiszZwyklaOszczednosc() {
     var ile = document.getElementById('ileZwyklejOszczednosci').value;
     var data = document.getElementById('dataZwyklejOszczednosci').value;
 
+    if (nazwa === '' || ile === ''  || data === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
     // Tutaj możesz dodać kod obsługujący zapis oszczędności
     // ...
 
@@ -291,6 +310,10 @@ function zapiszStalaOszczednosc() {
     var kiedy = document.getElementById('kiedyStalejOszczednosci').value;
     var data = document.getElementById('dataStalejOszczednosci').value;
 
+    if (nazwa === '' || ile === '' || kiedy === '' || data === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
     // Tutaj możesz dodać kod obsługujący zapis stałej oszczędności
     // ...
 
@@ -421,7 +444,10 @@ function zapiszMajatekR() {
     var nazwa = document.getElementById('nazwaMajatkuR').value;
     var wartosc = document.getElementById('wartoscMajatekR').value;
  
-
+    if (nazwa === '' || wartosc === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
     // Tutaj możesz dodać kod obsługujący zapis 
     // ...
 
@@ -471,6 +497,10 @@ function zapiszMajatekN() {
     var wartosc = document.getElementById('wartoscMajatekN').value;
     var powierzchnia = document.getElementById('powierzchniaMajatekN').value;
 
+    if (nazwa === '' || wartosc === '' || powierzchnia === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
 
     // Tutaj możesz dodać kod obsługujący zapis 
     // ...
@@ -520,7 +550,10 @@ function zapiszMajatekMK() {
     var nazwa = document.getElementById('nazwaMajatkuMK').value;
     var wartosc = document.getElementById('wartoscMajatekMK').value;
    
-
+    if (nazwa === '' || wartosc === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
 
     // Tutaj możesz dodać kod obsługujący zapis 
     // ...
@@ -570,7 +603,10 @@ function zapiszMajatekPW() {
     var nazwa = document.getElementById('nazwaMajatkuPW').value;
     var wartosc = document.getElementById('wartoscMajatekPW').value;
     
-
+    if (nazwa === '' || wartosc === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
 
     // Tutaj możesz dodać kod obsługujący zapis 
     // ...
@@ -620,7 +656,10 @@ function zapiszMajatekG() {
     var nazwa = document.getElementById('nazwaMajatkuG').value;
     var wartosc = document.getElementById('wartoscMajatekG').value;
 
-
+    if (nazwa === '' || wartosc === '') {
+        alert('Wypełnij wszystkie pola!');
+        return;
+    }
 
     // Tutaj możesz dodać kod obsługujący zapis 
     // ...
@@ -732,3 +771,4 @@ var myBarChart = new Chart(ctxB, {
         }
     }
 })
+

@@ -74,35 +74,26 @@
 
 
 
-                    <label for="kategoriaZwyklegoWydatku">Kategoria wydatku:</label>
-                    <select id="kategoriaZwyklegoWydatku" name="kategoriaZwyklegoWydatku">
-                        <!-- Dodaj opcje do wyboru -->
-                        <option value="kategoria1">Jedzenie</option>
-                        <option value="kategoria2">Rozrywka</option>
-                        <option value="kategoria2">Używki</option>
-                        <!-- Dodaj więcej opcji według potrzeb -->
-                    </select>
-                    <br>
+                   
                     <label for="nazwaZwyklegoWydatku">Nazwa wydatku:</label>
-                    <select id="nazwaZwyklegoWydatku" name="nazwaZwyklegoWydatku">
+                    <select id="nazwaZwyklegoWydatku" name="nazwaZwyklegoWydatku" required>
                         <!-- Dodaj opcje do wyboru -->
-                        <option value="opcja1">Jablko</option>
-                        <option value="opcja2">Banan</option>
-                        <option value="opcja3">Ogórek</option>
-                        <option value="opcja4">Kino</option>
-                        <option value="opcja5">Teatr</option>
-                        <option value="opcja6">Alkochol</option>
-                        <option value="opcja7">Papierosy</option>
+                        <option value="opcja1">Zakupy spożywcze</option>
+                        <option value="opcja2">Restauracja</option>
+                        <option value="opcja3">Bilety na koncert</option>
+                        <option value="opcja4">Naprawa samochodu</option>
+                        <option value="opcja5">Prezenty</option>
+                       
                         <!-- Dodaj więcej opcji według potrzeb -->
                     </select>
                     <br>
 
                     <label for="ileZwyklegoWydatku">Ilość:</label>
-                    <input type="number" id="ileZwyklegoWydatku" name="ileZwyklegoWydatku">
+                    <input type="number" id="ileZwyklegoWydatku" name="ileZwyklegoWydatku" required>
                     <br>
 
                     <label for="dataZwyklegoWydatku">Data:</label>
-                    <input type="date" id="dataZwyklegoWydatku" name="dataZwyklegoWydatku">
+                    <input type="date" id="dataZwyklegoWydatku" name="dataZwyklegoWydatku" required>
                     <br>
 
                     <button type="button" onclick="zapiszZwykly()">Zapisz zwykły wydatek</button>
@@ -112,33 +103,34 @@
             <div id="formularzStalyWydatek" class="formularz" style="display: none;">
                 <form id="formStalyWydatek">
                     <label for="nazwaStalegoWydatku">Nazwa wydatku:</label>
-                    <select id="nazwaStalegoWydatku" name="nazwaStalegoWydatku">
+                    <select id="nazwaStalegoWydatku" name="nazwaStalegoWydatku" required>
                         <!-- Dodaj opcje do wyboru -->
-                        <option value="opcja1">Opcja 1</option>
-                        <option value="opcja2">Opcja 2</option>
+                        <option value="opcja1">Czynsz</option>
+                        <option value="opcja2">Kredyt</option>
+                        <option value="opcja3">Abonament</option>
+                        <option value="opcja4">Raty</option>
+                        <option value="opcja5">Ubezpieczenie</option>
+                        
                         <!-- Dodaj więcej opcji według potrzeb -->
                     </select>
                     <br>
 
                     <label for="ileStalegoWydatku">Ilość:</label>
-                    <input type="number" id="ileStalegoWydatku" name="ileStalegoWydatku">
+                    <input type="number" id="ileStalegoWydatku" name="ileStalegoWydatku" required>
                     <br>
 
                     <label for="kiedyStalegoWydatku">Jak często ma  być pobierane?:</label>
-                    <select id="kiedyStalegoWydatku" name="kiedyStalegoWydatku">
+                    <select id="kiedyStalegoWydatku" name="kiedyStalegoWydatku" required>
 
-                        <option value="kiedy1">Co 5 minut</option>
-                        <option value="kiedy2">Co 1 godzine</option>
-                        <option value="kiedy3">Codziennie</option>
-                        <option value="kiedy4">Co tydzień</option>
-                        <option value="kiedy5">Co miesiąc</option>
-                        <option value="kiedy6">Co rok</option>
+                        <option value="kiedy1">Miesiecznie</option>
+                        <option value="kiedy2">Rocznie</option>
+                        
 
                     </select>
                     <br>
 
                     <label for="dataStalegoWydatku">Data:</label>
-                    <input type="date" id="dataStalegoWydatku" name="dataStalegoWydatku">
+                    <input type="date" id="dataStalegoWydatku" name="dataStalegoWydatku" required>
                     <br>
 
                     <button type="button" onclick="zapiszStaly()">Zapisz staly wydatek</button>
@@ -148,20 +140,21 @@
             <div id="formularzZwyklyPrzychod" class="formularz" style="display: none;">
                 <form id="formZwyklyPrzychod">
                     <label for="nazwaZwyklegoPrzychodu">Nazwa przychodu:</label>
-                    <select id="nazwaZwyklegoPrzychodu" name="nazwaZwyklegoPrzychodu">
-                        <!-- Dodaj opcje do wyboru -->
-                        <option value="opcja1">Opcja 1</option>
-                        <option value="opcja2">Opcja 2</option>
-                        <!-- Dodaj więcej opcji według potrzeb -->
+                    <select id="nazwaZwyklegoPrzychodu" name="nazwaZwyklegoPrzychodu" required>
+                        <option value="opcja1">Premia</option>
+                        <option value="opcja2">Bonus</option>
+                        <option value="opcja3">Dodatek</option>
+                        <option value="opcja4">Sprzedaż</option>
+                        <option value="opcja5">Honorarium</option>
                     </select>
                     <br>
 
                     <label for="ileZwyklegoPrzychodu">Ilość:</label>
-                    <input type="number" id="ileZwyklegoPrzychodu" name="ileZwyklegoPrzychodu">
+                    <input type="number" id="ileZwyklegoPrzychodu" name="ileZwyklegoPrzychodu" required>
                     <br>
 
                     <label for="dataZwyklegoPrzychodu">Data:</label>
-                    <input type="date" id="dataZwyklegoPrzychodu" name="dataZwyklegoPrzychodu">
+                    <input type="date" id="dataZwyklegoPrzychodu" name="dataZwyklegoPrzychodu" required>
                     <br>
 
                     <button type="button" onclick="zapiszZwyklyPrzychod()">Zapisz zwykły przychód</button>
@@ -171,31 +164,29 @@
             <div id="formularzStalyPrzychod" class="formularz" style="display: none;">
                 <form id="formStalyPrzychod">
                     <label for="nazwaStalegoPrzychodu">Nazwa przychodu:</label>
-                    <select id="nazwaStalegoPrzychodu" name="nazwaStalegoPrzychodu">
-                        <!-- Dodaj opcje do wyboru -->
-                        <option value="opcja1">Opcja 1</option>
-                        <option value="opcja2">Opcja 2</option>
-                        <!-- Dodaj więcej opcji według potrzeb -->
+                    <select id="nazwaStalegoPrzychodu" name="nazwaStalegoPrzychodu" required>
+                        <option value="opcja1">Pensja</option>
+                        <option value="opcja2">Emerytura</option>
+                        <option value="opcja3">Dochód z Nieruchomości</option>
+                        <option value="opcja4">Wynajem</option>
+                        <option value="opcja5">Inwestycje</option>
                     </select>
                     <br>
 
                     <label for="ileStalegoPrzychodu">Ilość:</label>
-                    <input type="number" id="ileStalegoPrzychodu" name="ileStalegoPrzychodu">
+                    <input type="number" id="ileStalegoPrzychodu" name="ileStalegoPrzychodu" required>
                     <br>
 
                     <label for="kiedyStalegoPrzychodu">Jak często ma  być pobierane?:</label>
-                    <select id="kiedyStalegoPrzychodu" name="kiedyStalegoPrzychodu">
-                        <option value="kiedy1">Co 5 minut</option>
-                        <option value="kiedy2">Co 1 godzinę</option>
-                        <option value="kiedy3">Codziennie</option>
-                        <option value="kiedy4">Co tydzień</option>
-                        <option value="kiedy5">Co miesiąc</option>
-                        <option value="kiedy6">Co rok</option>
+                    <select id="kiedyStalegoPrzychodu" name="kiedyStalegoPrzychodu" required>
+                        <option value="kiedy1">Miesięcznie</option>
+                        <option value="kiedy2">Rocznie</option>
+                        
                     </select>
                     <br>
 
-                    <label for="dataStalegoPrzychodu">Data:</label>
-                    <input type="date" id="dataStalegoPrzychodu" name="dataStalegoPrzychodu">
+                    <label for="dataStalegoPrzychodu">Data:</label >
+                    <input type="date" id="dataStalegoPrzychodu" name="dataStalegoPrzychodu" required>
                     <br>
 
                     <button type="button" onclick="zapiszStalyPrzychod()">Zapisz stały przychód</button>
@@ -205,20 +196,21 @@
             <div id="formularzZwyklaOszczednosc" class="formularz" style="display: none;">
                 <form id="formZwyklaOszczednosc">
                     <label for="nazwaZwyklejOszczednosci">Nazwa oszczędności:</label>
-                    <select id="nazwaZwyklejOszczednosci" name="nazwaZwyklejOszczednosci">
-                        <!-- Dodaj opcje do wyboru -->
-                        <option value="opcja1">Opcja 1</option>
-                        <option value="opcja2">Opcja 2</option>
-                        <!-- Dodaj więcej opcji według potrzeb -->
+                    <select id="nazwaZwyklejOszczednosci" name="nazwaZwyklejOszczednosci" required>
+                         <option value="opcja1">Skarbonka</option>
+                        <option value="opcja2">Skrzynka Bankowa</option> 
+                        <option value="opcja3">Kasa</option>
+                        <option value="opcja4">Fundusz Inwestycyjny</option>
+                        <option value="opcja5">Lokata</option>
                     </select>
                     <br>
 
                     <label for="ileZwyklejOszczednosci">Ilość:</label>
-                    <input type="number" id="ileZwyklejOszczednosci" name="ileZwyklejOszczednosci">
+                    <input type="number" id="ileZwyklejOszczednosci" name="ileZwyklejOszczednosci" required>
                     <br>
 
                     <label for="dataZwyklejOszczednosci">Data:</label>
-                    <input type="date" id="dataZwyklejOszczednosci" name="dataZwyklejOszczednosci">
+                    <input type="date" id="dataZwyklejOszczednosci" name="dataZwyklejOszczednosci" required>
                     <br>
 
                     <button type="button" onclick="zapiszZwyklaOszczednosc()">Zapisz zwykłą oszczędność</button>
@@ -228,31 +220,29 @@
             <div id="formularzStalaOszczednosc" class="formularz" style="display: none;">
                 <form id="formStalaOszczednosc">
                     <label for="nazwaStalejOszczednosci">Nazwa oszczędności:</label>
-                    <select id="nazwaStalejOszczednosci" name="nazwaStalejOszczednosci">
-                        <!-- Dodaj opcje do wyboru -->
-                        <option value="opcja1">Opcja 1</option>
-                        <option value="opcja2">Opcja 2</option>
-                        <!-- Dodaj więcej opcji według potrzeb -->
+                    <select id="nazwaStalejOszczednosci" name="nazwaStalejOszczednosci" required>
+                        <option value="opcja1">Konto Oszczędnościowe</option>
+                        <option value="opcja2">Lokata</option>
+                        <option value="opcja3">Obligacje</option>
+                        <option value="opcja4">Fundusz Inwestycyjny</option>
+                        <option value="opcja5">IKE</option>
                     </select>
                     <br>
 
                     <label for="ileStalejOszczednosci">Ilość:</label>
-                    <input type="number" id="ileStalejOszczednosci" name="ileStalejOszczednosci">
+                    <input type="number" id="ileStalejOszczednosci" name="ileStalejOszczednosci" required>
                     <br>
 
                     <label for="kiedyStalejOszczednosci">Jak często ma być pobierane?:</label>
-                    <select id="kiedyStalejOszczednosci" name="kiedyStalejOszczednosci">
-                        <option value="kiedy1">Co 5 minut</option>
-                        <option value="kiedy2">Co 1 godzinę</option>
-                        <option value="kiedy3">Codziennie</option>
-                        <option value="kiedy4">Co tydzień</option>
-                        <option value="kiedy5">Co miesiąc</option>
-                        <option value="kiedy6">Co rok</option>
+                    <select id="kiedyStalejOszczednosci" name="kiedyStalejOszczednosci" required>
+                        <option value="kiedy1">Miesięcznie</option>
+                        <option value="kiedy2">Rocznie</option>
+                        
                     </select>
                     <br>
 
                     <label for="dataStalejOszczednosci">Data:</label>
-                    <input type="date" id="dataStalejOszczednosci" name="dataStalejOszczednosci">
+                    <input type="date" id="dataStalejOszczednosci" name="dataStalejOszczednosci" required>
                     <br>
 
                     <button type="button" onclick="zapiszStalaOszczednosc()">Zapisz stałą oszczędność</button>
