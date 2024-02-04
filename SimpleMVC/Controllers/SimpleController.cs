@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using SimpleMVC.Data;
 using SimpleMVC.Models;
+using SimpleMVC.ViewModels;
 
 namespace SimpleMVC.Controllers
 {
@@ -17,8 +19,33 @@ namespace SimpleMVC.Controllers
 
         //   public List<Person> Persons { get; set; } = new List<Person>();
 
+        private readonly ApplicationDbContext db;
 
-        public IActionResult Index()
+        public SimpleController(ApplicationDbContext db)
+        {
+            this.db = db;
+        }
+
+
+
+        public IActionResult Index(Osoba os)
+        {
+            var viewModel = new HomeViewModelOne
+            {
+                Imie = os.Imie,//HttpContext.User.Identity.Name,
+                PrzychodStaly = db.PrzychodyStale.FirstOrDefault(x => x.Id == os.IdPrzychodStaly),
+                PrzychodZmienny = db.PrzychodyZmienne.FirstOrDefault(x => x.Id == os.IdPrzychodZmienny),
+                WydatekStaly = db.WydatkiStale.FirstOrDefault(x => x.Id == os.IdWydatekStaly),
+                WydatekZmienny = db.WydatkiZmienne.FirstOrDefault(x => x.Id == os.IdWydatekZmienny),
+                OszczednosciStale = db.OszczednosciStale.FirstOrDefault(x => x.Id == os.IdOszczednosciStale),
+                OszczednosciZmienne = db.OszczednosciZmienne.FirstOrDefault(x => x.Id == os.IdOszczednosciZmienne),
+                Majatek = db.Majatki.FirstOrDefault(x => x.Id == os.IdMajatek),
+                Osoba = os // Tutaj zainicjalizuj obiekt Osoba
+            };
+
+            return View(viewModel);
+        }
+     /*   public IActionResult Index(Osoby os)
         {
             // SimpleExemple exemples = new SimpleExemple("trangle", 3.4f, 4.6f);
             persons = new List<Person>()
@@ -95,7 +122,7 @@ namespace SimpleMVC.Controllers
             }
 
             return View(models);
-        }
+        }*/
 
         // GET:SimpleController/Details/5
 
