@@ -1,363 +1,385 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
 }
-@model IEnumerable<ModelComplex>//SimpleMVC.Models.SimpleExemple
+ @model SimpleMVC.ViewModels.HomeViewModel
 
 
 
-<div class="cont">
-    
-    
-    <div class="info">
-        <div class="sekcja1">
-            @{
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="sekcja1">
+                @{
 
 
-                var personWithId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2);
-                var personWithIdSavings = personWithId2.Saving.Inwestycje + personWithId2.Saving.Lokaty + personWithId2.Saving.Obligacje + personWithId2.Saving.Kieszonkowe + personWithId2.Saving.NaPrzyszłość;
-                var personWithIdExpenses = personWithId2.Income.Wyplata + personWithId2.Income.DodatkowaPraca + personWithId2.Income.Renta +
-                personWithId2.Income.Wynajem;
-                if (personWithId2 != null)
-                {
-                    <h1>@(personWithId2?.Person?.FirstName) Twój dochód to: </h1>
+
+
+                    <h1>  @Model.ImieUzytkownika to twój dochód </h1>
+
                 }
-                else
-                {
-                    <h1>Brak informacji dla osoby o Id równym 2</h1>
-                }
-            }
 
-            <p>@personWithIdExpenses</p>
-   
+                <p>50000</p>
+
+            </div>
         </div>
-    
-        <div class="sekcja2">
-            @{
-           
-                if (personWithId2 != null)
-                {
-                    <h1>@(personWithId2?.Person?.FirstName) Twóje oszczędności to: </h1>
-                    
-                }
-                else
-                {
-                    <h1>Brak informacji dla osoby o Id równym 2</h1>
-                }
-            }
-            <p>@personWithIdSavings </p>
+        <div class="col-12 col-md-6">
+            <div class="sekcja2">
+
+                <h1>@Model.ImieUzytkownika Twóje oszczędności to: </h1>
+
+
+                <p>5600</p>
+
+            </div>
         </div>
     </div>
 
-    <div class="przyciski1">
-        <div class="dodatkowe-przyciski1" id="dodatkowePrzyciski1" style="display: none;">
-            <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 1'); zobaczFormularzZwykly()">+zwykły wydatek</button>
-            <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 2');  zobaczFormularzStaly()">+stały wydatek</button>
-        </div>
-        <button class="przycisk1" type="text" id="przyciskWydatek" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski1', 'przyciskWydatek')">+ Dodaj wydatek</button>
+    <div class="row">
 
-        <div class="dodatkowe-przyciski2" id="dodatkowePrzyciski2" style="display: none;">
-            <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 1'); zobaczFormularzZwyklyPrzychod()">+dodatkowy przychód</button>
-            <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 2'); zobaczFormularzStalyPrzychod()">+stały przychód</button>
-        </div>
-        <button class="przycisk2" type="text" id="przyciskPrzychod" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski2', 'przyciskPrzychod')">+ Dodaj przychód</button>
+        <div class="col-12 col-lg-4 " >
 
-        <div class="dodatkowe-przyciski3" id="dodatkowePrzyciski3" style="display: none;">
-            <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 1');  zobaczFormularzZwyklaOszczednosc()">+dodatkowa oszczędność</button>
-            <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 2'); zobaczFormularzStalaOszczednosc()">+stała oszczędność</button>
-        </div>
-        <button class="przycisk3" type="text" id="przyciskOszczednosc" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski3', 'przyciskOszczednosc')">+ Dodaj oszczędności</button>
-    </div>
-
-    <div id="formularzZwyklyWydatek" class="formularz" style="display: none;">
-        <form id="formZwyklyWydatek">
             
-         
+                <div class="dodatkowe-przyciski1" id="dodatkowePrzyciski1" style="display: none;">
+                    <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 1'); zobaczFormularzZwykly()">+zwykły wydatek</button>
+                    <button class="przyciskDodatkowy1" onclick="wybierzOpcje('+ Dodaj wydatek 2');  zobaczFormularzStaly()">+stały wydatek</button>
+                </div>
+                <button class="przycisk1" type="text" id="przyciskWydatek" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski1', 'przyciskWydatek')">+ Dodaj wydatek</button>
+        </div>
+        <div class="col-12 col-lg-4 ">
+            <div class="dodatkowe-przyciski2" id="dodatkowePrzyciski2" style="display: none;">
+    <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 1'); zobaczFormularzZwyklyPrzychod()">+dodatkowy przychód</button>
+    <button class="przyciskDodatkowy2" onclick="wybierzOpcje('+ Dodaj przychod 2'); zobaczFormularzStalyPrzychod()">+stały przychód</button>
+    </div>
+    <button class="przycisk2" type="text" id="przyciskPrzychod" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski2', 'przyciskPrzychod')">+ Dodaj przychód</button>
 
-            <label for="kategoriaZwyklegoWydatku">Kategoria wydatku:</label>
-            <select id="kategoriaZwyklegoWydatku" name="kategoriaZwyklegoWydatku">
-                <!-- Dodaj opcje do wyboru -->
-                <option value="kategoria1">Jedzenie</option>
-                <option value="kategoria2">Rozrywka</option>
-                <option value="kategoria2">Używki</option>
-                <!-- Dodaj więcej opcji według potrzeb -->
-            </select>
-            <br>
-            <label for="nazwaZwyklegoWydatku">Nazwa wydatku:</label>
-            <select id="nazwaZwyklegoWydatku" name="nazwaZwyklegoWydatku">
-                <!-- Dodaj opcje do wyboru -->
-                <option value="opcja1">Jablko</option>
-                <option value="opcja2">Banan</option>
-                <option value="opcja3">Ogórek</option>
-                <option value="opcja4">Kino</option>
-                <option value="opcja5">Teatr</option>
-                <option value="opcja6">Alkochol</option>
-                <option value="opcja7">Papierosy</option>
-                <!-- Dodaj więcej opcji według potrzeb -->
-            </select>
-            <br>
+        </div>
+        <div class="col-12 col-lg-4 ">
 
-            <label for="ileZwyklegoWydatku">Ilość:</label>
-            <input type="number" id="ileZwyklegoWydatku" name="ileZwyklegoWydatku">
-            <br>
+                <div class="dodatkowe-przyciski3" id="dodatkowePrzyciski3" style="display: none;">
+                    <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 1');  zobaczFormularzZwyklaOszczednosc()">+dodatkowa oszczędność</button>
+                    <button class="przyciskDodatkowy3" onclick="wybierzOpcje('+ Dodaj oszczednosc 2'); zobaczFormularzStalaOszczednosc()">+stała oszczędność</button>
+                </div>
+                <button class="przycisk3" type="text" id="przyciskOszczednosc" onclick="pokazDodatkowePrzyciski('dodatkowePrzyciski3', 'przyciskOszczednosc')">+ Dodaj oszczędności</button>
 
-            <label for="dataZwyklegoWydatku">Data:</label>
-            <input type="date" id="dataZwyklegoWydatku" name="dataZwyklegoWydatku">
-            <br>
 
-            <button type="button" onclick="zapiszZwykly()">Zapisz zwykły wydatek</button>
-        </form>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="formularzZwyklyWydatek" class="formularz" style="display: none;">
+                <form id="formZwyklyWydatek">
+
+
+
+                    <label for="kategoriaZwyklegoWydatku">Kategoria wydatku:</label>
+                    <select id="kategoriaZwyklegoWydatku" name="kategoriaZwyklegoWydatku">
+                        <!-- Dodaj opcje do wyboru -->
+                        <option value="kategoria1">Jedzenie</option>
+                        <option value="kategoria2">Rozrywka</option>
+                        <option value="kategoria2">Używki</option>
+                        <!-- Dodaj więcej opcji według potrzeb -->
+                    </select>
+                    <br>
+                    <label for="nazwaZwyklegoWydatku">Nazwa wydatku:</label>
+                    <select id="nazwaZwyklegoWydatku" name="nazwaZwyklegoWydatku">
+                        <!-- Dodaj opcje do wyboru -->
+                        <option value="opcja1">Jablko</option>
+                        <option value="opcja2">Banan</option>
+                        <option value="opcja3">Ogórek</option>
+                        <option value="opcja4">Kino</option>
+                        <option value="opcja5">Teatr</option>
+                        <option value="opcja6">Alkochol</option>
+                        <option value="opcja7">Papierosy</option>
+                        <!-- Dodaj więcej opcji według potrzeb -->
+                    </select>
+                    <br>
+
+                    <label for="ileZwyklegoWydatku">Ilość:</label>
+                    <input type="number" id="ileZwyklegoWydatku" name="ileZwyklegoWydatku">
+                    <br>
+
+                    <label for="dataZwyklegoWydatku">Data:</label>
+                    <input type="date" id="dataZwyklegoWydatku" name="dataZwyklegoWydatku">
+                    <br>
+
+                    <button type="button" onclick="zapiszZwykly()">Zapisz zwykły wydatek</button>
+                </form>
+            </div>
+
+            <div id="formularzStalyWydatek" class="formularz" style="display: none;">
+                <form id="formStalyWydatek">
+                    <label for="nazwaStalegoWydatku">Nazwa wydatku:</label>
+                    <select id="nazwaStalegoWydatku" name="nazwaStalegoWydatku">
+                        <!-- Dodaj opcje do wyboru -->
+                        <option value="opcja1">Opcja 1</option>
+                        <option value="opcja2">Opcja 2</option>
+                        <!-- Dodaj więcej opcji według potrzeb -->
+                    </select>
+                    <br>
+
+                    <label for="ileStalegoWydatku">Ilość:</label>
+                    <input type="number" id="ileStalegoWydatku" name="ileStalegoWydatku">
+                    <br>
+
+                    <label for="kiedyStalegoWydatku">Jak często ma  być pobierane?:</label>
+                    <select id="kiedyStalegoWydatku" name="kiedyStalegoWydatku">
+
+                        <option value="kiedy1">Co 5 minut</option>
+                        <option value="kiedy2">Co 1 godzine</option>
+                        <option value="kiedy3">Codziennie</option>
+                        <option value="kiedy4">Co tydzień</option>
+                        <option value="kiedy5">Co miesiąc</option>
+                        <option value="kiedy6">Co rok</option>
+
+                    </select>
+                    <br>
+
+                    <label for="dataStalegoWydatku">Data:</label>
+                    <input type="date" id="dataStalegoWydatku" name="dataStalegoWydatku">
+                    <br>
+
+                    <button type="button" onclick="zapiszStaly()">Zapisz staly wydatek</button>
+                </form>
+            </div>
+
+            <div id="formularzZwyklyPrzychod" class="formularz" style="display: none;">
+                <form id="formZwyklyPrzychod">
+                    <label for="nazwaZwyklegoPrzychodu">Nazwa przychodu:</label>
+                    <select id="nazwaZwyklegoPrzychodu" name="nazwaZwyklegoPrzychodu">
+                        <!-- Dodaj opcje do wyboru -->
+                        <option value="opcja1">Opcja 1</option>
+                        <option value="opcja2">Opcja 2</option>
+                        <!-- Dodaj więcej opcji według potrzeb -->
+                    </select>
+                    <br>
+
+                    <label for="ileZwyklegoPrzychodu">Ilość:</label>
+                    <input type="number" id="ileZwyklegoPrzychodu" name="ileZwyklegoPrzychodu">
+                    <br>
+
+                    <label for="dataZwyklegoPrzychodu">Data:</label>
+                    <input type="date" id="dataZwyklegoPrzychodu" name="dataZwyklegoPrzychodu">
+                    <br>
+
+                    <button type="button" onclick="zapiszZwyklyPrzychod()">Zapisz zwykły przychód</button>
+                </form>
+            </div>
+
+            <div id="formularzStalyPrzychod" class="formularz" style="display: none;">
+                <form id="formStalyPrzychod">
+                    <label for="nazwaStalegoPrzychodu">Nazwa przychodu:</label>
+                    <select id="nazwaStalegoPrzychodu" name="nazwaStalegoPrzychodu">
+                        <!-- Dodaj opcje do wyboru -->
+                        <option value="opcja1">Opcja 1</option>
+                        <option value="opcja2">Opcja 2</option>
+                        <!-- Dodaj więcej opcji według potrzeb -->
+                    </select>
+                    <br>
+
+                    <label for="ileStalegoPrzychodu">Ilość:</label>
+                    <input type="number" id="ileStalegoPrzychodu" name="ileStalegoPrzychodu">
+                    <br>
+
+                    <label for="kiedyStalegoPrzychodu">Jak często ma  być pobierane?:</label>
+                    <select id="kiedyStalegoPrzychodu" name="kiedyStalegoPrzychodu">
+                        <option value="kiedy1">Co 5 minut</option>
+                        <option value="kiedy2">Co 1 godzinę</option>
+                        <option value="kiedy3">Codziennie</option>
+                        <option value="kiedy4">Co tydzień</option>
+                        <option value="kiedy5">Co miesiąc</option>
+                        <option value="kiedy6">Co rok</option>
+                    </select>
+                    <br>
+
+                    <label for="dataStalegoPrzychodu">Data:</label>
+                    <input type="date" id="dataStalegoPrzychodu" name="dataStalegoPrzychodu">
+                    <br>
+
+                    <button type="button" onclick="zapiszStalyPrzychod()">Zapisz stały przychód</button>
+                </form>
+            </div>
+
+            <div id="formularzZwyklaOszczednosc" class="formularz" style="display: none;">
+                <form id="formZwyklaOszczednosc">
+                    <label for="nazwaZwyklejOszczednosci">Nazwa oszczędności:</label>
+                    <select id="nazwaZwyklejOszczednosci" name="nazwaZwyklejOszczednosci">
+                        <!-- Dodaj opcje do wyboru -->
+                        <option value="opcja1">Opcja 1</option>
+                        <option value="opcja2">Opcja 2</option>
+                        <!-- Dodaj więcej opcji według potrzeb -->
+                    </select>
+                    <br>
+
+                    <label for="ileZwyklejOszczednosci">Ilość:</label>
+                    <input type="number" id="ileZwyklejOszczednosci" name="ileZwyklejOszczednosci">
+                    <br>
+
+                    <label for="dataZwyklejOszczednosci">Data:</label>
+                    <input type="date" id="dataZwyklejOszczednosci" name="dataZwyklejOszczednosci">
+                    <br>
+
+                    <button type="button" onclick="zapiszZwyklaOszczednosc()">Zapisz zwykłą oszczędność</button>
+                </form>
+            </div>
+
+            <div id="formularzStalaOszczednosc" class="formularz" style="display: none;">
+                <form id="formStalaOszczednosc">
+                    <label for="nazwaStalejOszczednosci">Nazwa oszczędności:</label>
+                    <select id="nazwaStalejOszczednosci" name="nazwaStalejOszczednosci">
+                        <!-- Dodaj opcje do wyboru -->
+                        <option value="opcja1">Opcja 1</option>
+                        <option value="opcja2">Opcja 2</option>
+                        <!-- Dodaj więcej opcji według potrzeb -->
+                    </select>
+                    <br>
+
+                    <label for="ileStalejOszczednosci">Ilość:</label>
+                    <input type="number" id="ileStalejOszczednosci" name="ileStalejOszczednosci">
+                    <br>
+
+                    <label for="kiedyStalejOszczednosci">Jak często ma być pobierane?:</label>
+                    <select id="kiedyStalejOszczednosci" name="kiedyStalejOszczednosci">
+                        <option value="kiedy1">Co 5 minut</option>
+                        <option value="kiedy2">Co 1 godzinę</option>
+                        <option value="kiedy3">Codziennie</option>
+                        <option value="kiedy4">Co tydzień</option>
+                        <option value="kiedy5">Co miesiąc</option>
+                        <option value="kiedy6">Co rok</option>
+                    </select>
+                    <br>
+
+                    <label for="dataStalejOszczednosci">Data:</label>
+                    <input type="date" id="dataStalejOszczednosci" name="dataStalejOszczednosci">
+                    <br>
+
+                    <button type="button" onclick="zapiszStalaOszczednosc()">Zapisz stałą oszczędność</button>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <div id="formularzStalyWydatek" class="formularz" style="display: none;">
-        <form id="formStalyWydatek">
-            <label for="nazwaStalegoWydatku">Nazwa wydatku:</label>
-            <select id="nazwaStalegoWydatku" name="nazwaStalegoWydatku">
-                <!-- Dodaj opcje do wyboru -->
-                <option value="opcja1">Opcja 1</option>
-                <option value="opcja2">Opcja 2</option>
-                <!-- Dodaj więcej opcji według potrzeb -->
-            </select>
-            <br>
 
-            <label for="ileStalegoWydatku">Ilość:</label>
-            <input type="number" id="ileStalegoWydatku" name="ileStalegoWydatku">
-            <br>
-
-            <label for="kiedyStalegoWydatku">Jak często ma  być pobierane?:</label>
-            <select id="kiedyStalegoWydatku" name="kiedyStalegoWydatku">
-            
-                <option value="kiedy1">Co 5 minut</option>
-                <option value="kiedy2">Co 1 godzine</option>
-                <option value="kiedy3">Codziennie</option>
-                <option value="kiedy4">Co tydzień</option>
-                <option value="kiedy5">Co miesiąc</option>
-                <option value="kiedy6">Co rok</option>
-               
-            </select>
-            <br>
-
-            <label for="dataStalegoWydatku">Data:</label>
-            <input type="date" id="dataStalegoWydatku" name="dataStalegoWydatku">
-            <br>
-
-            <button type="button" onclick="zapiszStaly()">Zapisz staly wydatek</button>
-        </form>
-    </div>
-
-    <div id="formularzZwyklyPrzychod" class="formularz" style="display: none;">
-        <form id="formZwyklyPrzychod">
-            <label for="nazwaZwyklegoPrzychodu">Nazwa przychodu:</label>
-            <select id="nazwaZwyklegoPrzychodu" name="nazwaZwyklegoPrzychodu">
-                <!-- Dodaj opcje do wyboru -->
-                <option value="opcja1">Opcja 1</option>
-                <option value="opcja2">Opcja 2</option>
-                <!-- Dodaj więcej opcji według potrzeb -->
-            </select>
-            <br>
-
-            <label for="ileZwyklegoPrzychodu">Ilość:</label>
-            <input type="number" id="ileZwyklegoPrzychodu" name="ileZwyklegoPrzychodu">
-            <br>
-
-            <label for="dataZwyklegoPrzychodu">Data:</label>
-            <input type="date" id="dataZwyklegoPrzychodu" name="dataZwyklegoPrzychodu">
-            <br>
-
-            <button type="button" onclick="zapiszZwyklyPrzychod()">Zapisz zwykły przychód</button>
-        </form>
-    </div>
-
-    <div id="formularzStalyPrzychod" class="formularz" style="display: none;">
-        <form id="formStalyPrzychod">
-            <label for="nazwaStalegoPrzychodu">Nazwa przychodu:</label>
-            <select id="nazwaStalegoPrzychodu" name="nazwaStalegoPrzychodu">
-                <!-- Dodaj opcje do wyboru -->
-                <option value="opcja1">Opcja 1</option>
-                <option value="opcja2">Opcja 2</option>
-                <!-- Dodaj więcej opcji według potrzeb -->
-            </select>
-            <br>
-
-            <label for="ileStalegoPrzychodu">Ilość:</label>
-            <input type="number" id="ileStalegoPrzychodu" name="ileStalegoPrzychodu">
-            <br>
-
-            <label for="kiedyStalegoPrzychodu">Jak często ma  być pobierane?:</label>
-            <select id="kiedyStalegoPrzychodu" name="kiedyStalegoPrzychodu">
-                <option value="kiedy1">Co 5 minut</option>
-                <option value="kiedy2">Co 1 godzinę</option>
-                <option value="kiedy3">Codziennie</option>
-                <option value="kiedy4">Co tydzień</option>
-                <option value="kiedy5">Co miesiąc</option>
-                <option value="kiedy6">Co rok</option>
-            </select>
-            <br>
-
-            <label for="dataStalegoPrzychodu">Data:</label>
-            <input type="date" id="dataStalegoPrzychodu" name="dataStalegoPrzychodu">
-            <br>
-
-            <button type="button" onclick="zapiszStalyPrzychod()">Zapisz stały przychód</button>
-        </form>
-    </div>
-
-    <div id="formularzZwyklaOszczednosc" class="formularz" style="display: none;">
-        <form id="formZwyklaOszczednosc">
-            <label for="nazwaZwyklejOszczednosci">Nazwa oszczędności:</label>
-            <select id="nazwaZwyklejOszczednosci" name="nazwaZwyklejOszczednosci">
-                <!-- Dodaj opcje do wyboru -->
-                <option value="opcja1">Opcja 1</option>
-                <option value="opcja2">Opcja 2</option>
-                <!-- Dodaj więcej opcji według potrzeb -->
-            </select>
-            <br>
-
-            <label for="ileZwyklejOszczednosci">Ilość:</label>
-            <input type="number" id="ileZwyklejOszczednosci" name="ileZwyklejOszczednosci">
-            <br>
-
-            <label for="dataZwyklejOszczednosci">Data:</label>
-            <input type="date" id="dataZwyklejOszczednosci" name="dataZwyklejOszczednosci">
-            <br>
-
-            <button type="button" onclick="zapiszZwyklaOszczednosc()">Zapisz zwykłą oszczędność</button>
-        </form>
-    </div>
-
-    <div id="formularzStalaOszczednosc" class="formularz" style="display: none;">
-        <form id="formStalaOszczednosc">
-            <label for="nazwaStalejOszczednosci">Nazwa oszczędności:</label>
-            <select id="nazwaStalejOszczednosci" name="nazwaStalejOszczednosci">
-                <!-- Dodaj opcje do wyboru -->
-                <option value="opcja1">Opcja 1</option>
-                <option value="opcja2">Opcja 2</option>
-                <!-- Dodaj więcej opcji według potrzeb -->
-            </select>
-            <br>
-
-            <label for="ileStalejOszczednosci">Ilość:</label>
-            <input type="number" id="ileStalejOszczednosci" name="ileStalejOszczednosci">
-            <br>
-
-            <label for="kiedyStalejOszczednosci">Jak często ma być pobierane?:</label>
-            <select id="kiedyStalejOszczednosci" name="kiedyStalejOszczednosci">
-                <option value="kiedy1">Co 5 minut</option>
-                <option value="kiedy2">Co 1 godzinę</option>
-                <option value="kiedy3">Codziennie</option>
-                <option value="kiedy4">Co tydzień</option>
-                <option value="kiedy5">Co miesiąc</option>
-                <option value="kiedy6">Co rok</option>
-            </select>
-            <br>
-
-            <label for="dataStalejOszczednosci">Data:</label>
-            <input type="date" id="dataStalejOszczednosci" name="dataStalejOszczednosci">
-            <br>
-
-            <button type="button" onclick="zapiszStalaOszczednosc()">Zapisz stałą oszczędność</button>
-        </form>
-    </div>
+    <div class="listy1">
     
+        <div class="row">
+      
+        <div class="col-12 col-lg-4">
+            <div class="sekcja3">
+
+                <h2>Lista wydatków</h2>
+
+                <ul>
+                    @foreach (var wydatekStaly in Model.WydatkiStale)
+                    {
+                        <li>
+                            @wydatekStaly.Nazwa: @wydatekStaly.Wartosc
+                            <div>
+                                <button class="przycisk1w" onclick="editSpending('@wydatekStaly.Nazwa')">Edytuj</button>
+                                <button class="przycisk1w" onclick="deleteSpending('@wydatekStaly.Nazwa')">Usuń</button>
+                            </div>
+                        </li>
+                    }
+                </ul>
 
 
- <div class="listy1">
-    <div class="sekcja3">
+                <ul>
+                    @foreach (var wydatekZmienny in Model.WydatkiZmienne)
+                    {
+                        <li>
+                            @wydatekZmienny.Nazwa: @wydatekZmienny.Wartosc
+                            <div>
+                                <button class="przycisk1w" onclick="editSpending('@wydatekZmienny.Nazwa')">Edytuj</button>
+                                <button class="przycisk1w" onclick="deleteSpending('@wydatekZmienny.Nazwa')">Usuń</button>
+                            </div>
+                        </li>
+                    }
+                </ul>
+
+            </div>
+        </div>
+
+    <div class="col-12 col-lg-4">
+            <div class="sekcja4">
+                <h2>Lista przychodów</h2>
+                <ul>
+                    @foreach (var przychodStaly in Model.PrzychodyStale)
+                    {
+                        <li>
+                            @przychodStaly.Nazwa: @przychodStaly.Wartosc
+                            <div>
+                                <button class="przycisk1i" onclick="editIncome('@przychodStaly.Nazwa')">Edytuj</button>
+                                <button class="przycisk1i" onclick="deleteIncome('@przychodStaly.Nazwa')">Usuń</button>
+                            </div>
+                        </li>
+                    }
+                </ul>
+
+
+                <ul>
+                    @foreach (var przychodZmienny in Model.PrzychodyZmienne)
+                    {
+                        <li>
+                            @przychodZmienny.Nazwa: @przychodZmienny.Wartosc
+                            <div>
+                                <button class="przycisk1i" onclick="editIncome('@przychodZmienny.Nazwa')">Edytuj</button>
+                                <button class="przycisk1i" onclick="deleteIncome('@przychodZmienny.Nazwa')">Usuń</button>
+                            </div>
+                        </li>
+                    }
+                </ul>
+
+
+            </div>
+        </div>
+
+    <div class="col-12 col-lg-4">
+            <div class="sekcja5">
+                <h2>Lista oszczędności </h2>
+                <ul>
+                    @foreach (var oszczednoscStala in Model.OszczednosciStale)
+                    {
+                        <li>
+                            @oszczednoscStala.Nazwa: @oszczednoscStala.Wartosc
+                            <div>
+                                <button class="przycisk1s" onclick="editSavings('@oszczednoscStala.Nazwa')">Edytuj</button>
+                                <button class="przycisk1s" onclick="deleteSavings('@oszczednoscStala.Nazwa')">Usuń</button>
+                            </div>
+                        </li>
+                    }
+                </ul>
+
+
+                <ul>
+                    @foreach (var oszczednoscZmienna in Model.OszczednosciZmienne)
+                    {
+                        <li>
+                            @oszczednoscZmienna.Nazwa: @oszczednoscZmienna.Wartosc
+                            <div>
+                                <button class="przycisk1s" onclick="editSavings('@oszczednoscZmienna.Nazwa')">Edytuj</button>
+                                <button class="przycisk1s" onclick="deleteSavings('@oszczednoscZmienna.Nazwa')">Usuń</button>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
    
-            <h2>Lista wydatków</h2>
-            <ul>
-                @{
-                    var spendingForId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2)?.Spending;
-                    if (spendingForId2 != null)
-                    {
-                        @foreach (var property in spendingForId2.GetType().GetProperties())
-                        {
-                            if (property.PropertyType == typeof(float))
-                            {
-                                var value = (float)property.GetValue(spendingForId2);
-                                if (value != 0)
-                                {
-                                    <li data-category="@property.Name">
-                                        @property.Name: @value
-                                        <div>
-                                            <button class="przycisk1w" onclick="editSpending('@property.Name')">Edytuj</button>
-                                            <button class="przycisk1w" onclick="deleteSpending('@property.Name')">Usuń</button>
-                                        </div>
-                                    </li>
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        <li>Brak informacji dla osoby o Id równym 2</li>
-                    }
-                }
-            </ul>
-
-    </div>
-
-    <div class="sekcja4">
-    <h2>Lista przychodów</h2>
-            <ul>
-                @{
-                    var incomeForId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2)?.Income;
-                    if (incomeForId2 != null)
-                    {
-                        foreach (var property in incomeForId2.GetType().GetProperties())
-                        {
-                            if (property.PropertyType == typeof(float))
-                            {
-                                var value = (float)property.GetValue(incomeForId2);
-                                if (value != 0)
-                                {
-                                    <li>@property.Name: @value
-                                        <div>
-                                            <button class="przycisk1i" onclick="editIncoming('@property.Name')">Edytuj</button>
-                                            <button class="przycisk1i" onclick="deleteIncoming('@property.Name')">Usuń</button>
-                                        </div>
-                                    </li>
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        <li>Brak informacji dla osoby o Id równym 2</li>
-                    }
-                }
-            </ul>
-    </div>
-    <div class="sekcja5">
-        <h2>Lista oszczędności</h2>
-            <ul>
-                @{
-                    var savingsForId2 = Model?.FirstOrDefault(modelc => modelc?.Person?.Id == 2)?.Saving;
-                    if (savingsForId2 != null)
-                    {
-                        foreach (var property in savingsForId2.GetType().GetProperties())
-                        {
-                            if (property.PropertyType == typeof(float))
-                            {
-                                var value = (float)property.GetValue(savingsForId2);
-                                if (value != 0)
-                                {
-                                    <li>@property.Name: @value
-                                        <div>
-                                            <button class="przycisk1s" onclick="editSavings('@property.Name')">Edytuj</button>
-                                            <button class="przycisk1s" onclick="deleteSavings('@property.Name')">Usuń</button>
-                                        </div>
-                                    </li>
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        <li>Brak informacji dla osoby o Id równym 2</li>
-                    }
-                }
-            </ul>
-    </div>
-    </div>
     
-</div>
+       
+
+      
+    
+
+   
+   
+
+
+
+   

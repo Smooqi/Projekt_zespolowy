@@ -70,68 +70,44 @@ footer {
 
 
 
-.cont{
-    width:100%;
-    height:auto;
-    margin-left:auto;
-    margin-right:auto
-}
 
-.cont2 {
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto
-}
-.info {
-    height: auto;
-    width:100%;
-    
-}
 
 .sekcja1 {
-    
-    display: inline-block;
     background-color: white;
-    width: 45%;
-    float: left;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 5vh;
+    padding: 3vh;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
     box-shadow: 5px 5px 5px #00859C;
     box-sizing: border-box;
 }
 
 .sekcja2 {
-    display: inline-block;
-    float: right;
     background-color: #00b6d7;
-    width: 45%;
-    border-radius: 20px;
-    padding: 20px;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    border-radius: 5vh;
+    padding: 3vh;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
     box-shadow: 5px 5px 5px #00859C;
     box-sizing: border-box;
 }
 
 .listy1 {
-    width:100%;
-      display: flex;
-      justify-content: space-between;
-      margin-top:5vh;
-      margin-bottom:10vh;
-    
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
 }
 
     .listy1 li {
+       
         list-style-type: none;
         background-color: white;
         border-radius: 5vh;
@@ -139,66 +115,69 @@ footer {
         margin: 2vh;
         color: #005362;
         font-family: Rubik;
-        font-size: 4vh;
+        font-size: 3vh;
     }
 
 
 .sekcja3 {
+    margin-bottom: 7vh;
+    margin-left: 3vh;
+    margin-right: 6vh;
     color: white;
-    flex: 1;
-    box-sizing: border-box;
+    width: 100%;
     background-color: #005362;
-    
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 5vh;
+    padding: 2vh;
     text-align: center;
     box-shadow: 5px 5px 5px #343434;
 }
 
 .sekcja4 {
+    margin-bottom: 7vh;
+    width: 100%;
+    margin-left: 3vh;
+    margin-right: 6vh;
     color: white;
-    flex: 1;
-    box-sizing: border-box;
     background-color: #00859C;
-   
-    margin-left: 5%;
-    margin-right: 5%;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 5vh;
+    padding: 2vh;
     text-align: center;
     box-shadow: 5px 5px 5px #025462;
 }
 .sekcja5 {
+    width: 100%;
+    margin-left: 3vh;
+    margin-right: 6vh;
     color: white;
-    flex: 1;
-    box-sizing: border-box;
     background-color: #00B6D7;
-   
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 5vh;
+    padding: 2vh;
     text-align: center;
     box-shadow: 5px 5px 5px #00859C;
 }
 
-
-
-.przyciski1 {
-    
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 50px;
+.sekcja3 h2{
+    font-size:4vh;
+}
+.sekcja4 h2 {
+    font-size: 4vh;
 }
 
+.sekcja5 h2 {
+    font-size: 4vh;
+}
+
+
+
+
 .przycisk1 {
-    
+    margin: 2vh;
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    border-radius: 100px;
+    padding: 2vh;
+    border-radius: 7vh;
     font-family: Rubik;
-    font-size: 22px;
+    font-size: 4vh;
     font-weight: 500;
     background-color: white;
     color: #005362;
@@ -210,11 +189,11 @@ footer {
         color: white;
         text-align: center;
         background-color: #005362;
-        border-radius: 100px;
-        padding: 20px;
+        border-radius: 7vh;
+        padding: 2vh;
         border: 3px solid white;
         font-family: Rubik;
-        font-size: 22px;
+        font-size: 4vh;
         font-weight: 500;
     }
 
@@ -222,9 +201,9 @@ footer {
     
     text-align: center;
    display:inline-block;
-    border-radius: 100px;
+    border-radius: 5vh;
     font-family: Rubik;
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: 500;
     background-color: white;
     color: #005362;
@@ -235,19 +214,19 @@ footer {
         color: white;
         text-align: center;
         background-color: #005362;
-        border-radius: 100px;
+        border-radius:5vh;
         border: 3px solid #005362;
         font-family: Rubik;
-        font-size: 20px;
+        font-size: 3vh;
         font-weight: 500;
     }
 
 .przycisk1i {
     text-align: center;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 5vh;
     font-family: Rubik;
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: 500;
     background-color: white;
     color: #00859C;
@@ -258,19 +237,19 @@ footer {
         color: white;
         text-align: center;
         background-color: #00859C;
-        border-radius: 100px;
+        border-radius: 5vh;
         border: 3px solid #00859C;
         font-family: Rubik;
-        font-size: 20px;
+        font-size: 3vh;
         font-weight: 500;
     }
 
 .przycisk1s {
     text-align: center;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 5vh;
     font-family: Rubik;
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: 500;
     background-color: white;
     color: #00B6D7;
@@ -281,10 +260,10 @@ footer {
         color: white;
         text-align: center;
         background-color: #00B6D7;
-        border-radius: 100px;
+        border-radius: 5vh;
         border: 3px solid #00B6D7;
         font-family: Rubik;
-        font-size: 20px;
+        font-size: 3vh;
         font-weight: 500;
     }
 
@@ -292,11 +271,12 @@ footer {
 .przyciskDodatkowy1,
 .przyciskDodatkowy2,
 .przyciskDodatkowy3 {
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    border-radius: 100px;
+    padding: 2vh;
+    border-radius: 7vh;
     font-family: Rubik;
-    font-size: 22px;
+    font-size: 3.5vh;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s, border 0.3s, color 0.3s;
@@ -323,33 +303,35 @@ footer {
 .przyciskDodatkowy1:hover {
     color: white;
     background-color: #005362;
-    border-radius: 100px;
-    padding: 20px;
+    border-radius: 7vh;
+    padding: 2vh;
     border: 3px solid white;
 }
 
 .przyciskDodatkowy2:hover {
     color: white;
     background-color: #00859C;
-    border-radius: 100px;
-    padding: 20px;
+    border-radius: 7vh;
+    padding: 2vh;
     border: 3px solid white;
 }
 
 .przyciskDodatkowy3:hover {
     color: white;
     background-color: #00B6D7;
-    border-radius: 100px;
-    padding: 20px;
+    border-radius: 7vh;
+    padding: 2vh;
     border: 3px solid white;
 }
 
 .przycisk2 {
+    margin: 2vh;
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    border-radius: 100px;
+    padding: 2vh;
+    border-radius: 7vh;
     font-family: Rubik;
-    font-size: 22px;
+    font-size: 4vh;
     font-weight: 500;
     background-color: white;
     color: #00859C;
@@ -359,21 +341,23 @@ footer {
         color: white;
         text-align: center;
         background-color: #00859C;
-        border-radius: 100px;
-        padding: 20px;
+        border-radius: 7vh;
+        padding: 2vh;
         border: 3px solid white;
         font-family: Rubik;
-        font-size: 22px;
+        font-size: 4vh;
         font-weight: 500;
     }
 
 
 .przycisk3 {
+    margin:2vh;
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    border-radius: 100px;
+    padding: 2vh;
+    border-radius: 7vh;
     font-family: Rubik;
-    font-size: 22px;
+    font-size: 4vh;
     font-weight: 500;
     background-color: white;
     color: #00B6D7;
@@ -383,28 +367,34 @@ footer {
         color: white;
         text-align: center;
         background-color: #00B6D7;
-        border-radius: 100px;
-        padding: 20px;
+        border-radius: 7vh;
+        padding: 2vh;
         border: 3px solid white;
         font-family: Rubik;
-        font-size: 22px;
+        font-size: 4vh;
         font-weight: 500;
     }
+
+
+
+
+
+
 
 /* Styl formularzy wydatków */
 #formularzZwyklyWydatek,
 #formularzStalyWydatek {
-    font-size: 20px;
-  
+    margin-top: 5vh;
+    font-size: 4vh;
 }
 
     #formularzZwyklyWydatek label,
     #formularzStalyWydatek label {
         display: block;
-        margin-bottom: 8px;
+        margin-bottom: 1vh;
         color: #005362;
         font-family: Rubik;
-        font-size: 22px;
+        font-size: 4vh;
         font-weight: 500;
     }
 
@@ -415,37 +405,37 @@ footer {
     #formularzZwyklyWydatek input[type="date"],
     #formularzStalyWydatek input[type="date"] {
         width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
+        padding: 1vh;
+        margin-bottom: 2vh;
         box-sizing: border-box;
-        border-radius: 100px;
+        border-radius: 5vh;
         border: 3px solid #005362;
     }
 
     #formularzZwyklyWydatek button,
     #formularzStalyWydatek button {
         text-align: center;
-        padding: 20px;
-        border-radius: 100px;
+        padding: 2vh;
+        border-radius: 5vh;
         font-family: Rubik;
-        font-size: 20px;
+        font-size: 4vh;
         font-weight: 500;
         background-color: white;
         color: #005362;
         border: 3px solid #005362;
-        margin-bottom:50px;
+        margin-bottom: 5vh;
     }
 
         #formularzZwyklyWydatek button:hover,
         #formularzStalyWydatek button:hover {
             color: white;
             text-align: center;
-            background-color: #005362;
-            border-radius: 100px;
-            padding: 20px;
+            background-color: #00B6D7;
+            border-radius: 5vh;
+            padding: 2vh;
             border: 3px solid white;
             font-family: Rubik;
-            font-size: 20px;
+            font-size: 4vh;
             font-weight: 500;
         }
 
@@ -470,18 +460,18 @@ footer {
 /* Styl formularzy przychodów */
 #formularzZwyklyPrzychod,
 #formularzStalyPrzychod {
-    font-size: 20px;
+    margin-top: 5vh;
+    font-size: 4vh;
 }
 
     #formularzZwyklyPrzychod label,
     #formularzStalyPrzychod label {
         display: block;
-        margin-bottom: 8px;
+        margin-bottom: 1vh;
         color: #00859C;
         font-family: Rubik;
-        font-size: 22px;
+        font-size: 4vh;
         font-weight: 500;
-        
     }
 
     #formularzZwyklyPrzychod select,
@@ -491,25 +481,25 @@ footer {
     #formularzZwyklyPrzychod input[type="date"],
     #formularzStalyPrzychod input[type="date"] {
         width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
+        padding: 1vh;
+        margin-bottom: 2vh;
         box-sizing: border-box;
-        border-radius: 100px;
+        border-radius: 5vh;
         border: 3px solid #00859C;
     }
 
     #formularzZwyklyPrzychod button,
     #formularzStalyPrzychod button {
         text-align: center;
-        padding: 20px;
-        border-radius: 100px;
+        padding: 2vh;
+        border-radius: 5vh;
         font-family: Rubik;
-        font-size: 20px;
+        font-size: 4vh;
         font-weight: 500;
         background-color: white;
         color: #005362;
         border: 3px solid #00859C;
-        margin-bottom: 50px;
+        margin-bottom: 5vh;
     }
 
         #formularzZwyklyPrzychod button:hover,
@@ -517,11 +507,11 @@ footer {
             color: white;
             text-align: center;
             background-color: #00859C;
-            border-radius: 100px;
-            padding: 20px;
+            border-radius: 5vh;
+            padding: 2vh;
             border: 3px solid white;
             font-family: Rubik;
-            font-size: 20px;
+            font-size: 4vh;
             font-weight: 500;
         }
 
@@ -546,49 +536,48 @@ footer {
 /* Styl formularzy oszczêdnoœci */
 #formularzZwyklaOszczednosc,
 #formularzStalaOszczednosc {
-    font-size: 20px;
-    
+    margin-top: 5vh;
+    font-size: 4vh;
 }
 
     #formularzZwyklaOszczednosc label,
     #formularzStalaOszczednosc label {
         display: block;
-        margin-bottom: 8px;
+        margin-bottom: 1vh;
         color: #00B6D7;
         font-family: Rubik;
-        font-size: 22px;
+        font-size: 4vh;
         font-weight: 500;
-        
     }
 
-    
 
-        #formularzZwyklaOszczednosc select,
-        #formularzStalaOszczednosc select,
-        #formularzZwyklaOszczednosc input[type="number"],
-        #formularzStalaOszczednosc input[type="number"],
-        #formularzZwyklaOszczednosc input[type="date"],
-        #formularzStalaOszczednosc input[type="date"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-            border-radius: 100px;
-            border: 3px solid #00B6D7;
-        }
+
+    #formularzZwyklaOszczednosc select,
+    #formularzStalaOszczednosc select,
+    #formularzZwyklaOszczednosc input[type="number"],
+    #formularzStalaOszczednosc input[type="number"],
+    #formularzZwyklaOszczednosc input[type="date"],
+    #formularzStalaOszczednosc input[type="date"] {
+        width: 100%;
+        padding: 1vh;
+        margin-bottom: 2vh;
+        box-sizing: border-box;
+        border-radius: 5vh;
+        border: 3px solid #00B6D7;
+    }
 
     #formularzZwyklaOszczednosc button,
     #formularzStalaOszczednosc button {
         text-align: center;
-        padding: 20px;
-        border-radius: 100px;
+        padding: 2vh;
+        border-radius: 5vh;
         font-family: Rubik;
-        font-size: 20px;
+        font-size: 4vh;
         font-weight: 500;
         background-color: white;
         color: #005362;
         border: 3px solid #00B6D7;
-        margin-bottom: 50px;
+        margin-bottom: 5vh;
     }
 
         #formularzZwyklaOszczednosc button:hover,
@@ -596,11 +585,11 @@ footer {
             color: white;
             text-align: center;
             background-color: #00B6D7;
-            border-radius: 100px;
-            padding: 20px;
+            border-radius: 5vh;
+            padding: 2vh;
             border: 3px solid white;
             font-family: Rubik;
-            font-size: 20px;
+            font-size: 4vh;
             font-weight: 500;
         }
 
@@ -628,27 +617,27 @@ footer {
 .sekcja1 > h1 {
     color: #00b6d7;
     font-family: Rubik;
-    font-size: 35px;
+    font-size: 5vh;
     font-weight: 500;
 }
 
 .sekcja2 > h1 {
     color: white;
     font-family: Rubik;
-    font-size: 35px;
+    font-size: 5vh;
     font-weight: 500;
 }
 
 .sekcja1 > p {
     font-family: Rubik;
-    font-size: 30px;
+    font-size: 3vh;
     text-align: center;
     color: #005362;
 }
 
 .sekcja2 > p {
     font-family: Rubik;
-    font-size: 30px;
+    font-size: 3vh;
     text-align: center;
     color: #005362;
 }
