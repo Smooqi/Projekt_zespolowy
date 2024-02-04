@@ -26,6 +26,7 @@ namespace SimpleMVC.Models
 
         [ForeignKey("IdDostepu")]
         public Dostep Dostep { get; set; }
+
         [ForeignKey("IdMajatek")]
         public Majatek Majatek { get; set; }    
     

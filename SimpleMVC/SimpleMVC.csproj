@@ -7,13 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Nowy folder1\**" />
     <Compile Remove="Views\Nowy folder2\**" />
-    <Content Remove="Views\Nowy folder1\**" />
     <Content Remove="Views\Nowy folder2\**" />
-    <EmbeddedResource Remove="Views\Nowy folder1\**" />
     <EmbeddedResource Remove="Views\Nowy folder2\**" />
-    <None Remove="Views\Nowy folder1\**" />
     <None Remove="Views\Nowy folder2\**" />
   </ItemGroup>
 
@@ -40,6 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Nowy folder\" />
     <Folder Include="wwwroot\Nowy folder\" />
   </ItemGroup>
 
